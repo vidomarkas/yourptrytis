@@ -2,5 +2,9 @@
 
 Static website presenting personal trainer services.
 
-Technologies used:
-HTML5 SCSS Javascript
+## Technologies used:
+HTML5/CSS JS SASS NPM NPM-scripts 
+
+## Architecture
+7-1 CSS architecture with SASS
+BEM 
