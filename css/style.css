@@ -110,17 +110,31 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+.background {
+  background-image: url(/assets/meghan-holmes-779221-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh; }
+
+.shade {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.64) 0%, rgba(12, 11, 11, 0) 100%);
+  height: 100vh; }
+
 .navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: .5rem;
+  height: 80px;
+  z-index: 1000;
+  border: 1px solid #707070;
+  border-radius: 10px;
   position: absolute;
   top: 40px;
   left: 140px;
   width: 85vw;
-  background: rgba(51, 50, 50, 0.37);
-  margin: 0 auto;
-  padding: .5rem;
-  border: 1px solid #707070;
-  border-radius: 10px;
-  height: 80px; }
+  background: rgba(32, 32, 32, 0.623); }
   .navigation__logobox {
     padding-left: 20px; }
     .navigation__logobox svg {
@@ -132,12 +146,35 @@ body {
       transform: translateY(-50%); }
   .navigation__links {
     display: flex;
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center; }
   .navigation__list {
     display: flex;
-    width: 50rem;
-    justify-content: space-between;
-    align-self: flex-end; }
+    align-items: center; }
+  .navigation__item {
+    list-style: none;
+    margin: 0 40px;
+    padding: 6px 14px; }
+    .navigation__item a:link,
+    .navigation__item a:active,
+    .navigation__item a:hover,
+    .navigation__item a:visited {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.4rem; }
+    .navigation__item--selected {
+      background: linear-gradient(to bottom, #28b0f2 0%, #3480e3 100%);
+      border-radius: 5px; }
   .navigation__languagebox {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    padding-right: 30px; }
+
+.text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  width: 100%;
+  min-width: 1px; }

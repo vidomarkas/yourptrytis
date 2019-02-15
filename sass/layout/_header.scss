@@ -1,0 +1,12 @@
+.background {
+    background-image: url(/assets/meghan-holmes-779221-unsplash.jpg);
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    height: 100vh;
+}
+
+.shade {
+    background: $color-shade;
+    height: 100vh;
+}
