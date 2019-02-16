@@ -1,0 +1,25 @@
+.cookies {
+    position: absolute;
+    left: 140px;
+    bottom: 60px;
+    height: 150px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+    &__text {
+        font-size: 12px;
+        color: $color-grey-dark;
+        padding: 20px;
+    }
+
+    &__cookie {
+        height: 80px;
+        width: 80px;
+        position: absolute;
+        bottom: -30px;
+        left: -20px;
+        z-index: 5;
+    }
+
+    
+}

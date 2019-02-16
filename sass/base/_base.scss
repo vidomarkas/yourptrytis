@@ -7,6 +7,7 @@
 }
 
 html {
+    overflow-x: hidden;
 
     //this defines what 1rem is
     font-size: 62.5%;//1rem = 10px 10px / 16px = 62.5%
@@ -34,5 +35,56 @@ body {
 
     @include respond(tab-port) {
         padding: 0rem;
+    }
+}
+
+.shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $color-shade;
+    height: 100vh;
+}
+
+.section-divider {
+    z-index: 100;
+    height: 100px;
+    background-image: linear-gradient(to right, rgb(48, 48, 48) 0%,rgb(12,11,11) 100%);;
+    width: 100vw;
+    transform: skewY(-3deg) translate(0,-50px);
+    position: relative;
+    border-top: 1px solid $color-grey-dark;
+    border-bottom: 1px solid $color-grey-dark;
+
+    &__container {
+        width: 85vw;
+        margin: 0 auto;
+        
+    }
+
+    &__text {
+        font-size: 3.2rem;
+        color: $color-primary;
+        font-weight: 400;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        span {
+            color: #fff;
+        }
+    }
+    &__text2 {
+        font-size: 1.6rem;
+        color: #fff;
+        font-weight: 800;
+        position: absolute;
+        top: 50%;
+        right: 15vw;
+        transform: translateY(-50%);
+
+        span {
+            color: #fff;
+        }
     }
 }

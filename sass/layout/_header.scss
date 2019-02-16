@@ -1,12 +1,61 @@
-.background {
-    background-image: url(/assets/meghan-holmes-779221-unsplash.jpg);
-    background-size:     cover;                     
-    background-repeat:   no-repeat;
-    background-position: center center;  
-    height: 100vh;
-}
 
-.shade {
-    background: $color-shade;
-    height: 100vh;
+
+
+
+.header {
+
+    &__background {
+        background-image: url(/assets/meghan-holmes-779221-unsplash.jpg);
+        background-size:     cover;                     
+        background-repeat:   no-repeat;
+        background-position: center center;  
+        height: 100vh;
+        width: 100vw;
+    }
+
+    &__intro {
+        
+        // margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 85vw;
+        margin: 0 auto;
+
+    }
+
+    &__slogan {
+        height: 340px;
+        width: 50%;
+
+
+        &-primary {
+            font-size: 8rem;
+            line-height: 8rem;
+            font-weight: 700;
+            color: #fff;
+            text-shadow: 0px 0px 30px #000000;
+        }
+
+        &-secondary {
+            color: $color-primary;
+        }
+    }
+
+    &__video {
+        border: none;
+        box-shadow: none;
+    }
+
+    &__box {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        
+    }
+
 }

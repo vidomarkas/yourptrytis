@@ -1,0 +1,36 @@
+.services {
+
+    &__container {
+        display: grid;
+        width: 85vw;
+        margin: 0 auto;
+        grid-template-columns: 750px 800px;
+        grid-template-rows: 300px 300px 300px;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+    &__consultation {
+        background: greenyellow;
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+    }
+
+    &__plans {
+        background: rgb(58, 71, 37);
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+    }
+
+    &__diet {
+        background: red;
+        grid-column: 1 / 1;
+        grid-row: 3 / 3;
+    }
+
+    &__personal {
+        background: blueviolet;
+        grid-column: 2 / 2;
+        grid-row: 1 / 4;
+    }
+}
