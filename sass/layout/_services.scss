@@ -4,14 +4,14 @@
         display: grid;
         width: 85vw;
         margin: 0 auto;
-        grid-template-columns: 750px 800px;
-        grid-template-rows: 300px 300px 300px;
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
+        grid-template-columns: 700px 750px;
+        grid-template-rows: 200px 200px 200px;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
     }
 
     &__consultation {
-        background: greenyellow;
+        
         grid-column: 1 / 1;
         grid-row: 1 / 1;
     }

@@ -1,5 +1,7 @@
 .card {
     position: relative;
+    border-radius: 5px;
+    box-shadow:         0px 3px 20px rgb(109, 109, 109);
     &--reversed {
 
     }
@@ -11,24 +13,43 @@
     &__img {
         height: 100%;
         width: 40%;
-        background-image: url(/assets/plans.jpeg);
-        background-position: center; 
+        overflow: hidden;
+        
         position: absolute;
         top:0;
         right: 0;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        backface-visibility: hidden;
+        
+        img {
+            height: 100%;
+            transform: translateX(-10%);
+            
+            
+        }
     }
 
-    &__title {
+    &__details{
+        padding: 20px;
+        &-title {
+            font-size: 2.6rem; 
+        }
+    
+        &-subtitle {
+    
+        }
+    
+        &-text {
+    
+        }
 
+        &-btn {
+
+        }
     }
 
-    &__subtitle {
-
-    }
-
-    &__text {
-
-    }
+    
 
 
 }

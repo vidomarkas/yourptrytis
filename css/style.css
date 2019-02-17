@@ -190,15 +190,26 @@ body {
     z-index: 5; }
 
 .card {
-  position: relative; }
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0px 3px 20px #6d6d6d; }
   .card__img {
     height: 100%;
     width: 40%;
-    background-image: url(/assets/plans.jpeg);
-    background-position: center;
+    overflow: hidden;
     position: absolute;
     top: 0;
-    right: 0; }
+    right: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    backface-visibility: hidden; }
+    .card__img img {
+      height: 100%;
+      transform: translateX(-10%); }
+  .card__details {
+    padding: 20px; }
+    .card__details-title {
+      font-size: 2.6rem; }
 
 .header__background {
   background-image: url(/assets/meghan-holmes-779221-unsplash.jpg);
@@ -302,13 +313,12 @@ body {
   display: grid;
   width: 85vw;
   margin: 0 auto;
-  grid-template-columns: 750px 800px;
-  grid-template-rows: 300px 300px 300px;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px; }
+  grid-template-columns: 700px 750px;
+  grid-template-rows: 200px 200px 200px;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px; }
 
 .services__consultation {
-  background: greenyellow;
   grid-column: 1 / 1;
   grid-row: 1 / 1; }
 
