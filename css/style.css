@@ -192,24 +192,52 @@ body {
 .card {
   position: relative;
   border-radius: 5px;
-  box-shadow: 0px 3px 20px #6d6d6d; }
+  box-shadow: 0px 3px 20px rgba(83, 83, 83, 0.356);
+  display: flex;
+  background: #fff; }
+  .card--highlighted {
+    color: #fff;
+    background: #000;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    border-radius: 5px;
+    box-shadow: 0px 3px 20px rgba(83, 83, 83, 0.356); }
   .card__img {
     height: 100%;
-    width: 40%;
+    width: 80%;
     overflow: hidden;
-    position: absolute;
-    top: 0;
-    right: 0;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     backface-visibility: hidden; }
+    .card__img--highlighted {
+      height: 50%;
+      width: 100%;
+      overflow: hidden;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px; }
+      .card__img--highlighted img {
+        width: 100%;
+        transform: translateY(-15%); }
     .card__img img {
       height: 100%;
       transform: translateX(-10%); }
   .card__details {
     padding: 20px; }
     .card__details-title {
-      font-size: 2.6rem; }
+      font-size: 2.6rem;
+      line-height: 2.8rem; }
+    .card__details-subtitle {
+      color: #b0afaf;
+      font-weight: 300;
+      font-size: 1rem;
+      padding: 5px 0 0 0; }
+    .card__details-text {
+      padding-bottom: 10px; }
+    .card__details-btn {
+      padding: 5px 10px;
+      margin-top: 10px;
+      border-radius: 5px; }
 
 .header__background {
   background-image: url(/assets/meghan-holmes-779221-unsplash.jpg);
@@ -263,7 +291,7 @@ body {
   position: fixed;
   top: 40px;
   left: 140px;
-  width: 85vw;
+  width: 85%;
   background: rgba(32, 32, 32, 0.623); }
   .navigation__logobox {
     padding-left: 20px; }
@@ -309,30 +337,36 @@ body {
   width: 100%;
   min-width: 1px; }
 
-.services__container {
-  display: grid;
-  width: 85vw;
-  margin: 0 auto;
-  grid-template-columns: 700px 750px;
-  grid-template-rows: 200px 200px 200px;
-  grid-column-gap: 40px;
-  grid-row-gap: 40px; }
+.services {
+  position: relative;
+  margin-top: 80px; }
+  .services__container {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 200px 200px 200px;
+    grid-column-gap: 2%;
+    grid-row-gap: 40px;
+    width: 80%;
+    margin: 0 auto; }
+  .services__consultation {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1; }
+  .services__plans {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2; }
+  .services__diet {
+    grid-column: 1 / 1;
+    grid-row: 3 / 3; }
+  .services__personal {
+    grid-column: 2 / 2;
+    grid-row: 1 / 4; }
 
-.services__consultation {
-  grid-column: 1 / 1;
-  grid-row: 1 / 1; }
-
-.services__plans {
-  background: #3a4725;
-  grid-column: 1 / 1;
-  grid-row: 2 / 2; }
-
-.services__diet {
-  background: red;
-  grid-column: 1 / 1;
-  grid-row: 3 / 3; }
-
-.services__personal {
-  background: blueviolet;
-  grid-column: 2 / 2;
-  grid-row: 1 / 4; }
+.services:before {
+  content: "";
+  background-image: linear-gradient(to bottom, rgba(53, 53, 53, 0.397) 0%, rgba(12, 11, 11, 0) 100%);
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -25%;
+  left: 0;
+  z-index: -1; }

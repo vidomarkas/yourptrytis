@@ -1,13 +1,21 @@
+
 .services {
+    position: relative;
+    margin-top: 80px;
+    
+
+    
 
     &__container {
         display: grid;
-        width: 85vw;
-        margin: 0 auto;
-        grid-template-columns: 700px 750px;
+        
+        grid-template-columns: 49% 49%;
         grid-template-rows: 200px 200px 200px;
-        grid-column-gap: 40px;
+        grid-column-gap: 2%;
         grid-row-gap: 40px;
+        width: 80%;
+        margin: 0 auto;
+        
     }
 
     &__consultation {
@@ -17,20 +25,32 @@
     }
 
     &__plans {
-        background: rgb(58, 71, 37);
+        
         grid-column: 1 / 1;
         grid-row: 2 / 2;
     }
 
     &__diet {
-        background: red;
+        
         grid-column: 1 / 1;
         grid-row: 3 / 3;
     }
 
     &__personal {
-        background: blueviolet;
+        
         grid-column: 2 / 2;
         grid-row: 1 / 4;
     }
+}
+
+.services:before {
+    content: "";
+    background-image: linear-gradient(to bottom, rgba(53, 53, 53, 0.397) 0%,rgba(12,11,11,0) 100%);
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -25%;
+    left: 0;
+    z-index: -1;
+
 }
