@@ -1,5 +1,6 @@
 .reviews {
     position: relative;
+
     &__background {
         min-height: 100vh;
         width: 100vw;
@@ -15,8 +16,6 @@
                 right: -100px;
                 border-bottom-left-radius: 55px;
                 transform: rotate(-1deg);
-
-                
             }
 
             &--middle {
@@ -36,12 +35,107 @@
                 width: 33vw;
                 height: 55%;
                 position: absolute;
-                bottom: -100px;
+                bottom: -40px;
                 left: -100px;
                 border-top-right-radius: 55px;
                 transform: rotate(-7deg);
             }
         }
+    }
+
+    &__container {
+        position: absolute;
+        left: 50%;
+        top: 8%;
+        width: 50%;
+        height: 40%;
+        transform: translateX(-50%);
+        z-index: 50;
+    }
+
+    &__screen {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        height: 100%;
+        width: 80%;
+        background: #fff;
+        border-radius: 25px;
+
+        &--logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+    
+            svg {
+                height: 50%;
+            }
+        }
+
+        &--prev {
+            position: absolute;
+            top: 0;
+            left: -5px;
+            
+            svg {
+            transform: rotate(180deg);
+            }
+            
+        }
+
+        &--next {
+            position: absolute;
+            bottom: 0;
+            right: -5px;
+        }
+    }
+
+    &__bubbles {
+        position: absolute;
+        top:100px;
+        left:0;
+        width: 3000px;
+        min-height: 460px;
+        
+        &__list {
+            list-style: none;
+        }
+
+        &__bubble {
+            position: absolute;
+            transition: transform 10s linear;
+            transform: rotate(0deg);
+
+            &__outer-circ {
+                position: relative;
+                height: 175px;
+                width: 175px;
+                border-radius: 50%;
+                background: #fff;      
+                box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692)      
+            }
+
+            &__inner-circ {
+                position: absolute;
+                top:50%;
+                left:50%;
+                background: red;
+                transform: translate(-50%, -50%);
+                height: 152px;
+                width: 152px;
+                border-radius: 50%;
+                overflow: hidden;
+                img {
+                    height: 100%;
+
+                    
+                }
+            }
+        }
+
+
     }
 }
 

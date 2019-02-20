@@ -404,10 +404,75 @@ body {
         width: 33vw;
         height: 55%;
         position: absolute;
-        bottom: -100px;
+        bottom: -40px;
         left: -100px;
         border-top-right-radius: 55px;
         transform: rotate(-7deg); }
+  .reviews__container {
+    position: absolute;
+    left: 50%;
+    top: 8%;
+    width: 50%;
+    height: 40%;
+    transform: translateX(-50%);
+    z-index: 50; }
+  .reviews__screen {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 80%;
+    background: #fff;
+    border-radius: 25px; }
+    .reviews__screen--logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .reviews__screen--logo svg {
+        height: 50%; }
+    .reviews__screen--prev {
+      position: absolute;
+      top: 0;
+      left: -5px; }
+      .reviews__screen--prev svg {
+        transform: rotate(180deg); }
+    .reviews__screen--next {
+      position: absolute;
+      bottom: 0;
+      right: -5px; }
+  .reviews__bubbles {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 3000px;
+    min-height: 460px; }
+    .reviews__bubbles__list {
+      list-style: none; }
+    .reviews__bubbles__bubble {
+      position: absolute;
+      transition: transform 10s linear;
+      transform: rotate(0deg); }
+      .reviews__bubbles__bubble__outer-circ {
+        position: relative;
+        height: 175px;
+        width: 175px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692); }
+      .reviews__bubbles__bubble__inner-circ {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: red;
+        transform: translate(-50%, -50%);
+        height: 152px;
+        width: 152px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .reviews__bubbles__bubble__inner-circ img {
+          height: 100%; }
 
 .reviews:before {
   content: "";
