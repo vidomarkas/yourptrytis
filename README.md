@@ -1,6 +1,6 @@
 # yourptrytis
 
-Static website presenting personal trainer services.
+"Almost" static website presenting personal trainer services.
 
 ## Technologies used:
 * HTML5/CSS JS
