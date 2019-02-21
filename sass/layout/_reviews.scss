@@ -107,8 +107,8 @@
         &__bubble {
             position: absolute;
             top: -100px;
-            right: -100px;
-            animation: floatX 3.2s*10 infinite linear forwards, floatPast $timing*50 infinite linear forwards; 
+            animation: floatX 3.2s*10 infinite linear forwards, floatPast 3.2s*20 infinite linear -45s;
+            
 
             &__outer-circ {
                 
@@ -142,8 +142,7 @@
         &__bubble2 {
             position: absolute;
             top: 0;
-            right: 200px;
-            animation: floatX $timing*30 infinite ease-in-out 5s forwards, floatPast $timing*50 infinite linear forwards; 
+            animation: floatX 3.2s*10 infinite linear forwards, floatPast 3.2s*20 infinite linear -37s;
             
 
             &__outer-circ {
@@ -177,8 +176,7 @@
         &__bubble3 {
             position: absolute;
             top: 200px;
-            right: -300px;
-            animation: floatX $timing*50 infinite linear 2s forwards, floatPast $timing*50 infinite linear forwards;
+            animation: floatX 3.2s*5 infinite linear 3s, floatPast 3.2s*20 infinite linear -25s;
             
 
             &__outer-circ {
@@ -211,9 +209,8 @@
         }
         &__bubble4 {
             position: absolute;
-            top: 500px;
-            right: -400px;
-            animation: floatX $timing*50 infinite linear 2s forwards, floatPast $timing*50 infinite linear forwards;
+            top: 300px;
+            animation: floatX 3.2s*8 infinite linear 3s, floatPast 3.2s*20 infinite linear -10s;
             
 
             &__outer-circ {
@@ -246,9 +243,8 @@
         }
         &__bubble5 {
             position: absolute;
-            top: 150px;
-            right: 450px;
-            animation: floatX $timing*50 infinite linear 2s forwards, floatPast $timing*50 infinite linear forwards;
+            top: 166px;
+            animation: floatX 3.2s*5 infinite linear 1s, floatPast 3.2s*20 infinite linear -5s;
             
 
             &__outer-circ {
@@ -281,9 +277,8 @@
         }
         &__bubble6 {
             position: absolute;
-            top: 350px;
-            right: -2000px;
-            animation: floatX $timing*50 infinite linear 2s forwards, floatPast $timing*50 infinite linear forwards;
+            top: 360px;
+            animation: floatX 3.2s*5 infinite linear 2s, floatPast 3.2s*20 infinite linear -37s;
             
 
             &__outer-circ {
@@ -316,9 +311,8 @@
         }
         &__bubble7 {
             position: absolute;
-            top: 520px;
-            right: 900px;
-            animation: floatX $timing*50 infinite linear 2s, floatPast $timing*50 infinite linear;
+            top: 220px;
+            animation: floatX 3.2s*5 infinite linear 1s, floatPast 3.2s*20 infinite linear -16s;
             
 
             &__outer-circ {
@@ -351,9 +345,8 @@
         }
         &__bubble8 {
             position: absolute;
-            top: 40px;
-            right: 700px;
-            animation: floatX $timing*50 infinite linear 2s, floatPast $timing*50 infinite linear;
+            top: 380px;
+            animation: floatX 3.2s*5 infinite linear 4s, floatPast 3.2s*20 infinite linear -28s;
             
 
             &__outer-circ {
@@ -386,9 +379,8 @@
         }
         &__bubble9 {
             position: absolute;
-            top: 500px;
-            right: -500px;
-            animation: floatX $timing*50 infinite linear 2s, floatPast $timing*50 infinite linear;
+            top: 120px;
+            animation: floatX 3.2s*5 infinite linear 4s, floatPast 3.2s*20 infinite linear -32s;
             
 
             &__outer-circ {
@@ -421,9 +413,8 @@
         }
         &__bubble10 {
             position: absolute;
-            top: 400px;
-            right: 400px;
-            animation: floatX $timing*50 infinite linear 2s;
+            top: 5px;
+            animation: floatX 3.2s*5 infinite linear 1s, floatPast 3.2s*20 infinite linear -20s;
             
 
             &__outer-circ {
@@ -456,9 +447,8 @@
         }
         &__bubble11 {
             position: absolute;
-            top: 400px;
-            right: 400px;
-            animation: floatX $timing*50 infinite linear 2s;
+            top: 250px;
+            animation: floatX 3.2s*5 infinite linear 2s, floatPast 3.2s*20 infinite linear -48s;
             
 
             &__outer-circ {
@@ -492,8 +482,7 @@
         &__bubble12 {
             position: absolute;
             top: 400px;
-            right: 400px;
-            animation: floatX $timing*50 infinite linear 2s;
+            animation: floatX 3.2s*5 infinite linear 5s, floatPast 3.2s*20 infinite linear -55s;
             
 
             &__outer-circ {
@@ -526,9 +515,8 @@
         }
         &__bubble13 {
             position: absolute;
-            top: 400px;
-            right: 400px;
-            animation: floatX $timing*50 infinite linear 2s;
+            top: 70px;
+            animation: floatX 3.2s*5 infinite linear 4s, floatPast 3.2s*20 infinite linear -54s;
             
 
             &__outer-circ {
@@ -561,9 +549,8 @@
         }
         &__bubble14 {
             position: absolute;
-            top: 400px;
-            right: 400px;
-            animation: floatX $timing*50 infinite linear 2s;
+            top: -40px;
+            animation: floatX 3.2s*5 infinite linear 4s, floatPast 3.2s*20 infinite linear -28s;
             
 
             &__outer-circ {
@@ -596,9 +583,8 @@
         }
         &__bubble15 {
             position: absolute;
-            top: 400px;
-            right: 400px;
-            animation: floatX $timing*50 infinite linear 2s;
+            top: -40px;
+            animation: floatX 3.2s*5 infinite linear 2s, floatPast 3.2s*20 infinite linear -14s;
             
 
             &__outer-circ {
@@ -631,9 +617,8 @@
         }
         &__bubble16 {
             position: absolute;
-            top: 400px;
-            right: 400px;
-            animation: floatX $timing*50 infinite linear 2s;
+            top: 340px;
+            animation: floatX 3.2s*5 infinite linear 2s, floatPast 3.2s*20 infinite linear -65s;
             
 
             &__outer-circ {
@@ -667,8 +652,7 @@
         &__bubble17 {
             position: absolute;
             top: 400px;
-            right: 400px;
-            animation: floatX $timing*50 infinite linear 2s;
+            animation: floatX 3.2s*5 infinite linear 4s, floatPast 3.2s*20 infinite linear -45s;
             
 
             &__outer-circ {
@@ -701,9 +685,8 @@
         }
         &__bubble18 {
             position: absolute;
-            top: 400px;
-            right: 400px;
-            animation: floatX $timing*50 infinite linear 2s;
+            top: -50px;
+            animation: floatX 3.2s*5 infinite linear 4s, floatPast 3.2s*20 infinite linear -68s;
             
 
             &__outer-circ {
@@ -737,8 +720,7 @@
         &__bubble19 {
             position: absolute;
             top: 400px;
-            right: 400px;
-            animation: floatX $timing*50 infinite linear 2s;
+            animation: floatX 3.2s*5 infinite linear, floatPast 3.2s*20 infinite linear -19s;
             
 
             &__outer-circ {
@@ -771,9 +753,8 @@
         }
         &__bubble20 {
             position: absolute;
-            top: 400px;
-            right: 400px;
-            animation: floatX $timing*50 infinite linear 2s;
+            top: 30px;
+            animation: floatX 3.2s*5 infinite linear 4s, floatPast 3.2s*20 infinite linear -62s;
             
 
             &__outer-circ {

@@ -87,23 +87,9 @@ body {
 
 @keyframes floatPast {
   0% {
-    transform: translateX(200px);
-    opacity: 0; }
-  20% {
-    transform: translateX(-400px);
-    opacity: 1; }
-  40% {
-    transform: translateX(-1000px);
-    opacity: 1; }
-  60% {
-    transform: translateX(-1600px);
-    opacity: 1; }
-  80% {
-    transform: translateX(-2000px);
-    opacity: 1; }
+    left: 2800px; }
   100% {
-    transform: translateX(-2400px);
-    opacity: 0; } }
+    left: -200px; } }
 
 @keyframes floatY {
   0% {
@@ -463,8 +449,7 @@ body {
     .reviews__bubbles__bubble {
       position: absolute;
       top: -100px;
-      right: -100px;
-      animation: floatX 32s infinite linear forwards, floatPast 60s infinite linear forwards; }
+      animation: floatX 32s infinite linear forwards, floatPast 64s infinite linear -45s; }
       .reviews__bubbles__bubble__outer-circ {
         position: relative;
         height: 175px;
@@ -487,8 +472,7 @@ body {
     .reviews__bubbles__bubble2 {
       position: absolute;
       top: 0;
-      right: 200px;
-      animation: floatX 36s infinite ease-in-out 5s forwards, floatPast 60s infinite linear forwards; }
+      animation: floatX 32s infinite linear forwards, floatPast 64s infinite linear -37s; }
       .reviews__bubbles__bubble2__outer-circ {
         position: relative;
         height: 175px;
@@ -512,8 +496,7 @@ body {
     .reviews__bubbles__bubble3 {
       position: absolute;
       top: 200px;
-      right: -300px;
-      animation: floatX 60s infinite linear 2s forwards, floatPast 60s infinite linear forwards; }
+      animation: floatX 16s infinite linear 3s, floatPast 64s infinite linear -25s; }
       .reviews__bubbles__bubble3__outer-circ {
         position: relative;
         height: 175px;
@@ -536,9 +519,8 @@ body {
           height: 100%; }
     .reviews__bubbles__bubble4 {
       position: absolute;
-      top: 500px;
-      right: -400px;
-      animation: floatX 60s infinite linear 2s forwards, floatPast 60s infinite linear forwards; }
+      top: 300px;
+      animation: floatX 25.6s infinite linear 3s, floatPast 64s infinite linear -10s; }
       .reviews__bubbles__bubble4__outer-circ {
         position: relative;
         height: 175px;
@@ -561,9 +543,8 @@ body {
           height: 100%; }
     .reviews__bubbles__bubble5 {
       position: absolute;
-      top: 150px;
-      right: 450px;
-      animation: floatX 60s infinite linear 2s forwards, floatPast 60s infinite linear forwards; }
+      top: 166px;
+      animation: floatX 16s infinite linear 1s, floatPast 64s infinite linear -5s; }
       .reviews__bubbles__bubble5__outer-circ {
         position: relative;
         height: 175px;
@@ -586,9 +567,8 @@ body {
           height: 100%; }
     .reviews__bubbles__bubble6 {
       position: absolute;
-      top: 350px;
-      right: -2000px;
-      animation: floatX 60s infinite linear 2s forwards, floatPast 60s infinite linear forwards; }
+      top: 360px;
+      animation: floatX 16s infinite linear 2s, floatPast 64s infinite linear -37s; }
       .reviews__bubbles__bubble6__outer-circ {
         position: relative;
         height: 175px;
@@ -611,9 +591,8 @@ body {
           height: 100%; }
     .reviews__bubbles__bubble7 {
       position: absolute;
-      top: 520px;
-      right: 900px;
-      animation: floatX 60s infinite linear 2s, floatPast 60s infinite linear; }
+      top: 220px;
+      animation: floatX 16s infinite linear 1s, floatPast 64s infinite linear -16s; }
       .reviews__bubbles__bubble7__outer-circ {
         position: relative;
         height: 175px;
@@ -636,9 +615,8 @@ body {
           height: 100%; }
     .reviews__bubbles__bubble8 {
       position: absolute;
-      top: 40px;
-      right: 700px;
-      animation: floatX 60s infinite linear 2s, floatPast 60s infinite linear; }
+      top: 380px;
+      animation: floatX 16s infinite linear 4s, floatPast 64s infinite linear -28s; }
       .reviews__bubbles__bubble8__outer-circ {
         position: relative;
         height: 175px;
@@ -661,9 +639,8 @@ body {
           height: 100%; }
     .reviews__bubbles__bubble9 {
       position: absolute;
-      top: 500px;
-      right: -500px;
-      animation: floatX 60s infinite linear 2s, floatPast 60s infinite linear; }
+      top: 120px;
+      animation: floatX 16s infinite linear 4s, floatPast 64s infinite linear -32s; }
       .reviews__bubbles__bubble9__outer-circ {
         position: relative;
         height: 175px;
@@ -686,9 +663,8 @@ body {
           height: 100%; }
     .reviews__bubbles__bubble10 {
       position: absolute;
-      top: 400px;
-      right: 400px;
-      animation: floatX 60s infinite linear 2s; }
+      top: 5px;
+      animation: floatX 16s infinite linear 1s, floatPast 64s infinite linear -20s; }
       .reviews__bubbles__bubble10__outer-circ {
         position: relative;
         height: 175px;
@@ -711,9 +687,8 @@ body {
           height: 100%; }
     .reviews__bubbles__bubble11 {
       position: absolute;
-      top: 400px;
-      right: 400px;
-      animation: floatX 60s infinite linear 2s; }
+      top: 250px;
+      animation: floatX 16s infinite linear 2s, floatPast 64s infinite linear -48s; }
       .reviews__bubbles__bubble11__outer-circ {
         position: relative;
         height: 175px;
@@ -737,8 +712,7 @@ body {
     .reviews__bubbles__bubble12 {
       position: absolute;
       top: 400px;
-      right: 400px;
-      animation: floatX 60s infinite linear 2s; }
+      animation: floatX 16s infinite linear 5s, floatPast 64s infinite linear -55s; }
       .reviews__bubbles__bubble12__outer-circ {
         position: relative;
         height: 175px;
@@ -761,9 +735,8 @@ body {
           height: 100%; }
     .reviews__bubbles__bubble13 {
       position: absolute;
-      top: 400px;
-      right: 400px;
-      animation: floatX 60s infinite linear 2s; }
+      top: 70px;
+      animation: floatX 16s infinite linear 4s, floatPast 64s infinite linear -54s; }
       .reviews__bubbles__bubble13__outer-circ {
         position: relative;
         height: 175px;
@@ -786,9 +759,8 @@ body {
           height: 100%; }
     .reviews__bubbles__bubble14 {
       position: absolute;
-      top: 400px;
-      right: 400px;
-      animation: floatX 60s infinite linear 2s; }
+      top: -40px;
+      animation: floatX 16s infinite linear 4s, floatPast 64s infinite linear -28s; }
       .reviews__bubbles__bubble14__outer-circ {
         position: relative;
         height: 175px;
@@ -811,9 +783,8 @@ body {
           height: 100%; }
     .reviews__bubbles__bubble15 {
       position: absolute;
-      top: 400px;
-      right: 400px;
-      animation: floatX 60s infinite linear 2s; }
+      top: -40px;
+      animation: floatX 16s infinite linear 2s, floatPast 64s infinite linear -14s; }
       .reviews__bubbles__bubble15__outer-circ {
         position: relative;
         height: 175px;
@@ -836,9 +807,8 @@ body {
           height: 100%; }
     .reviews__bubbles__bubble16 {
       position: absolute;
-      top: 400px;
-      right: 400px;
-      animation: floatX 60s infinite linear 2s; }
+      top: 340px;
+      animation: floatX 16s infinite linear 2s, floatPast 64s infinite linear -65s; }
       .reviews__bubbles__bubble16__outer-circ {
         position: relative;
         height: 175px;
@@ -862,8 +832,7 @@ body {
     .reviews__bubbles__bubble17 {
       position: absolute;
       top: 400px;
-      right: 400px;
-      animation: floatX 60s infinite linear 2s; }
+      animation: floatX 16s infinite linear 4s, floatPast 64s infinite linear -45s; }
       .reviews__bubbles__bubble17__outer-circ {
         position: relative;
         height: 175px;
@@ -886,9 +855,8 @@ body {
           height: 100%; }
     .reviews__bubbles__bubble18 {
       position: absolute;
-      top: 400px;
-      right: 400px;
-      animation: floatX 60s infinite linear 2s; }
+      top: -50px;
+      animation: floatX 16s infinite linear 4s, floatPast 64s infinite linear -68s; }
       .reviews__bubbles__bubble18__outer-circ {
         position: relative;
         height: 175px;
@@ -912,8 +880,7 @@ body {
     .reviews__bubbles__bubble19 {
       position: absolute;
       top: 400px;
-      right: 400px;
-      animation: floatX 60s infinite linear 2s; }
+      animation: floatX 16s infinite linear, floatPast 64s infinite linear -19s; }
       .reviews__bubbles__bubble19__outer-circ {
         position: relative;
         height: 175px;
@@ -936,9 +903,8 @@ body {
           height: 100%; }
     .reviews__bubbles__bubble20 {
       position: absolute;
-      top: 400px;
-      right: 400px;
-      animation: floatX 60s infinite linear 2s; }
+      top: 30px;
+      animation: floatX 16s infinite linear 4s, floatPast 64s infinite linear -62s; }
       .reviews__bubbles__bubble20__outer-circ {
         position: relative;
         height: 175px;
