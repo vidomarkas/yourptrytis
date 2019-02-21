@@ -1,11 +1,11 @@
 
-let bubble = document.getElementsByClassName('reviews__bubbles__bubble')[0];
+// let bubble = document.getElementsByClassName('reviews__bubbles__bubble')[0];
 
-setTimeout(function () {
-    bubble.style.transform = "rotate(359deg)";
+// setTimeout(function () {
+//     bubble.style.transform = "translateX(-400px)";
 
 
-}, 1);
+// }, 1);
 
 // for media queries using js
 

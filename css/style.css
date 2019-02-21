@@ -85,35 +85,45 @@ body {
     .section-divider__text2 span {
       color: #fff; }
 
-@keyframes moveInLeft {
+@keyframes floatPast {
   0% {
-    opacity: 0;
-    transform: translateX(-10rem); }
+    transform: translateX(200px);
+    opacity: 0; }
+  20% {
+    transform: translateX(-400px);
+    opacity: 1; }
+  40% {
+    transform: translateX(-1000px);
+    opacity: 1; }
+  60% {
+    transform: translateX(-1600px);
+    opacity: 1; }
   80% {
-    opacity: 0.5;
-    transform: translateX(2rem); }
+    transform: translateX(-2000px);
+    opacity: 1; }
   100% {
-    opacity: 1;
-    transform: translateX(0); } }
+    transform: translateX(-2400px);
+    opacity: 0; } }
 
-@keyframes moveInRight {
+@keyframes floatY {
   0% {
-    opacity: 0;
-    transform: translateX(10rem); }
-  80% {
-    opacity: 0.5;
-    transform: translateX(-2rem); }
+    transform: translateY(0px); }
+  25% {
+    transform: translateY(20px); }
+  50% {
+    transform: translateY(0px); }
+  75% {
+    transform: translateY(20px); }
   100% {
-    opacity: 1;
-    transform: translateX(0); } }
+    transform: translateY(0px); } }
 
-@keyframes moveInBottom {
+@keyframes floatX {
   0% {
-    opacity: 0;
-    transform: translateY(rem); }
+    transform: translateX(0px); }
+  50% {
+    transform: translateX(20px); }
   100% {
-    opacity: 1;
-    transform: translateY(0); } }
+    transform: translateX(0px); } }
 
 body {
   font-family: "Rubik", sans-serif;
@@ -289,7 +299,7 @@ body {
   z-index: 1000;
   border: 1px solid #707070;
   border-radius: 10px;
-  position: fixed;
+  position: absolute;
   top: 40px;
   left: 140px;
   width: 85%;
@@ -446,22 +456,48 @@ body {
     position: absolute;
     top: 100px;
     left: 0;
-    width: 3000px;
+    width: 100vw;
     min-height: 460px; }
     .reviews__bubbles__list {
       list-style: none; }
     .reviews__bubbles__bubble {
       position: absolute;
-      transition: transform 10s linear;
-      transform: rotate(0deg); }
+      top: -100px;
+      right: -100px;
+      animation: floatX 32s infinite linear forwards, floatPast 60s infinite linear forwards; }
       .reviews__bubbles__bubble__outer-circ {
         position: relative;
         height: 175px;
         width: 175px;
         border-radius: 50%;
         background: #fff;
-        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692); }
+        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
+        animation: floatY 20s infinite ease-out forwards; }
       .reviews__bubbles__bubble__inner-circ {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 152px;
+        width: 152px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .reviews__bubbles__bubble__inner-circ img {
+          height: 100%; }
+    .reviews__bubbles__bubble2 {
+      position: absolute;
+      top: 0;
+      right: 200px;
+      animation: floatX 36s infinite ease-in-out 5s forwards, floatPast 60s infinite linear forwards; }
+      .reviews__bubbles__bubble2__outer-circ {
+        position: relative;
+        height: 175px;
+        width: 175px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
+        animation: floatY 18s infinite linear 3s; }
+      .reviews__bubbles__bubble2__inner-circ {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -471,7 +507,457 @@ body {
         width: 152px;
         border-radius: 50%;
         overflow: hidden; }
-        .reviews__bubbles__bubble__inner-circ img {
+        .reviews__bubbles__bubble2__inner-circ img {
+          height: 100%; }
+    .reviews__bubbles__bubble3 {
+      position: absolute;
+      top: 200px;
+      right: -300px;
+      animation: floatX 60s infinite linear 2s forwards, floatPast 60s infinite linear forwards; }
+      .reviews__bubbles__bubble3__outer-circ {
+        position: relative;
+        height: 175px;
+        width: 175px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
+        animation: floatY 24s infinite ease-in 4s; }
+      .reviews__bubbles__bubble3__inner-circ {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: red;
+        transform: translate(-50%, -50%);
+        height: 152px;
+        width: 152px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .reviews__bubbles__bubble3__inner-circ img {
+          height: 100%; }
+    .reviews__bubbles__bubble4 {
+      position: absolute;
+      top: 500px;
+      right: -400px;
+      animation: floatX 60s infinite linear 2s forwards, floatPast 60s infinite linear forwards; }
+      .reviews__bubbles__bubble4__outer-circ {
+        position: relative;
+        height: 175px;
+        width: 175px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
+        animation: floatY 24s infinite ease-in 2s; }
+      .reviews__bubbles__bubble4__inner-circ {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: red;
+        transform: translate(-50%, -50%);
+        height: 152px;
+        width: 152px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .reviews__bubbles__bubble4__inner-circ img {
+          height: 100%; }
+    .reviews__bubbles__bubble5 {
+      position: absolute;
+      top: 150px;
+      right: 450px;
+      animation: floatX 60s infinite linear 2s forwards, floatPast 60s infinite linear forwards; }
+      .reviews__bubbles__bubble5__outer-circ {
+        position: relative;
+        height: 175px;
+        width: 175px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
+        animation: floatY 24s infinite ease-in 1s; }
+      .reviews__bubbles__bubble5__inner-circ {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: red;
+        transform: translate(-50%, -50%);
+        height: 152px;
+        width: 152px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .reviews__bubbles__bubble5__inner-circ img {
+          height: 100%; }
+    .reviews__bubbles__bubble6 {
+      position: absolute;
+      top: 350px;
+      right: -2000px;
+      animation: floatX 60s infinite linear 2s forwards, floatPast 60s infinite linear forwards; }
+      .reviews__bubbles__bubble6__outer-circ {
+        position: relative;
+        height: 175px;
+        width: 175px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
+        animation: floatY 24s infinite ease-in 2s; }
+      .reviews__bubbles__bubble6__inner-circ {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: red;
+        transform: translate(-50%, -50%);
+        height: 152px;
+        width: 152px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .reviews__bubbles__bubble6__inner-circ img {
+          height: 100%; }
+    .reviews__bubbles__bubble7 {
+      position: absolute;
+      top: 520px;
+      right: 900px;
+      animation: floatX 60s infinite linear 2s, floatPast 60s infinite linear; }
+      .reviews__bubbles__bubble7__outer-circ {
+        position: relative;
+        height: 175px;
+        width: 175px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
+        animation: floatY 24s infinite ease-in 1s; }
+      .reviews__bubbles__bubble7__inner-circ {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: red;
+        transform: translate(-50%, -50%);
+        height: 152px;
+        width: 152px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .reviews__bubbles__bubble7__inner-circ img {
+          height: 100%; }
+    .reviews__bubbles__bubble8 {
+      position: absolute;
+      top: 40px;
+      right: 700px;
+      animation: floatX 60s infinite linear 2s, floatPast 60s infinite linear; }
+      .reviews__bubbles__bubble8__outer-circ {
+        position: relative;
+        height: 175px;
+        width: 175px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
+        animation: floatY 24s infinite ease-in; }
+      .reviews__bubbles__bubble8__inner-circ {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: red;
+        transform: translate(-50%, -50%);
+        height: 152px;
+        width: 152px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .reviews__bubbles__bubble8__inner-circ img {
+          height: 100%; }
+    .reviews__bubbles__bubble9 {
+      position: absolute;
+      top: 500px;
+      right: -500px;
+      animation: floatX 60s infinite linear 2s, floatPast 60s infinite linear; }
+      .reviews__bubbles__bubble9__outer-circ {
+        position: relative;
+        height: 175px;
+        width: 175px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
+        animation: floatY 24s infinite ease-in 15s; }
+      .reviews__bubbles__bubble9__inner-circ {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: red;
+        transform: translate(-50%, -50%);
+        height: 152px;
+        width: 152px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .reviews__bubbles__bubble9__inner-circ img {
+          height: 100%; }
+    .reviews__bubbles__bubble10 {
+      position: absolute;
+      top: 400px;
+      right: 400px;
+      animation: floatX 60s infinite linear 2s; }
+      .reviews__bubbles__bubble10__outer-circ {
+        position: relative;
+        height: 175px;
+        width: 175px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
+        animation: floatY 24s infinite ease-in 15s; }
+      .reviews__bubbles__bubble10__inner-circ {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: red;
+        transform: translate(-50%, -50%);
+        height: 152px;
+        width: 152px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .reviews__bubbles__bubble10__inner-circ img {
+          height: 100%; }
+    .reviews__bubbles__bubble11 {
+      position: absolute;
+      top: 400px;
+      right: 400px;
+      animation: floatX 60s infinite linear 2s; }
+      .reviews__bubbles__bubble11__outer-circ {
+        position: relative;
+        height: 175px;
+        width: 175px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
+        animation: floatY 24s infinite ease-in 15s; }
+      .reviews__bubbles__bubble11__inner-circ {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: red;
+        transform: translate(-50%, -50%);
+        height: 152px;
+        width: 152px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .reviews__bubbles__bubble11__inner-circ img {
+          height: 100%; }
+    .reviews__bubbles__bubble12 {
+      position: absolute;
+      top: 400px;
+      right: 400px;
+      animation: floatX 60s infinite linear 2s; }
+      .reviews__bubbles__bubble12__outer-circ {
+        position: relative;
+        height: 175px;
+        width: 175px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
+        animation: floatY 24s infinite ease-in 15s; }
+      .reviews__bubbles__bubble12__inner-circ {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: red;
+        transform: translate(-50%, -50%);
+        height: 152px;
+        width: 152px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .reviews__bubbles__bubble12__inner-circ img {
+          height: 100%; }
+    .reviews__bubbles__bubble13 {
+      position: absolute;
+      top: 400px;
+      right: 400px;
+      animation: floatX 60s infinite linear 2s; }
+      .reviews__bubbles__bubble13__outer-circ {
+        position: relative;
+        height: 175px;
+        width: 175px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
+        animation: floatY 24s infinite ease-in 15s; }
+      .reviews__bubbles__bubble13__inner-circ {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: red;
+        transform: translate(-50%, -50%);
+        height: 152px;
+        width: 152px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .reviews__bubbles__bubble13__inner-circ img {
+          height: 100%; }
+    .reviews__bubbles__bubble14 {
+      position: absolute;
+      top: 400px;
+      right: 400px;
+      animation: floatX 60s infinite linear 2s; }
+      .reviews__bubbles__bubble14__outer-circ {
+        position: relative;
+        height: 175px;
+        width: 175px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
+        animation: floatY 24s infinite ease-in 15s; }
+      .reviews__bubbles__bubble14__inner-circ {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: red;
+        transform: translate(-50%, -50%);
+        height: 152px;
+        width: 152px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .reviews__bubbles__bubble14__inner-circ img {
+          height: 100%; }
+    .reviews__bubbles__bubble15 {
+      position: absolute;
+      top: 400px;
+      right: 400px;
+      animation: floatX 60s infinite linear 2s; }
+      .reviews__bubbles__bubble15__outer-circ {
+        position: relative;
+        height: 175px;
+        width: 175px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
+        animation: floatY 24s infinite ease-in 15s; }
+      .reviews__bubbles__bubble15__inner-circ {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: red;
+        transform: translate(-50%, -50%);
+        height: 152px;
+        width: 152px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .reviews__bubbles__bubble15__inner-circ img {
+          height: 100%; }
+    .reviews__bubbles__bubble16 {
+      position: absolute;
+      top: 400px;
+      right: 400px;
+      animation: floatX 60s infinite linear 2s; }
+      .reviews__bubbles__bubble16__outer-circ {
+        position: relative;
+        height: 175px;
+        width: 175px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
+        animation: floatY 24s infinite ease-in 15s; }
+      .reviews__bubbles__bubble16__inner-circ {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: red;
+        transform: translate(-50%, -50%);
+        height: 152px;
+        width: 152px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .reviews__bubbles__bubble16__inner-circ img {
+          height: 100%; }
+    .reviews__bubbles__bubble17 {
+      position: absolute;
+      top: 400px;
+      right: 400px;
+      animation: floatX 60s infinite linear 2s; }
+      .reviews__bubbles__bubble17__outer-circ {
+        position: relative;
+        height: 175px;
+        width: 175px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
+        animation: floatY 24s infinite ease-in 15s; }
+      .reviews__bubbles__bubble17__inner-circ {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: red;
+        transform: translate(-50%, -50%);
+        height: 152px;
+        width: 152px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .reviews__bubbles__bubble17__inner-circ img {
+          height: 100%; }
+    .reviews__bubbles__bubble18 {
+      position: absolute;
+      top: 400px;
+      right: 400px;
+      animation: floatX 60s infinite linear 2s; }
+      .reviews__bubbles__bubble18__outer-circ {
+        position: relative;
+        height: 175px;
+        width: 175px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
+        animation: floatY 24s infinite ease-in 15s; }
+      .reviews__bubbles__bubble18__inner-circ {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: red;
+        transform: translate(-50%, -50%);
+        height: 152px;
+        width: 152px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .reviews__bubbles__bubble18__inner-circ img {
+          height: 100%; }
+    .reviews__bubbles__bubble19 {
+      position: absolute;
+      top: 400px;
+      right: 400px;
+      animation: floatX 60s infinite linear 2s; }
+      .reviews__bubbles__bubble19__outer-circ {
+        position: relative;
+        height: 175px;
+        width: 175px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
+        animation: floatY 24s infinite ease-in 15s; }
+      .reviews__bubbles__bubble19__inner-circ {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: red;
+        transform: translate(-50%, -50%);
+        height: 152px;
+        width: 152px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .reviews__bubbles__bubble19__inner-circ img {
+          height: 100%; }
+    .reviews__bubbles__bubble20 {
+      position: absolute;
+      top: 400px;
+      right: 400px;
+      animation: floatX 60s infinite linear 2s; }
+      .reviews__bubbles__bubble20__outer-circ {
+        position: relative;
+        height: 175px;
+        width: 175px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
+        animation: floatY 24s infinite ease-in 15s; }
+      .reviews__bubbles__bubble20__inner-circ {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: red;
+        transform: translate(-50%, -50%);
+        height: 152px;
+        width: 152px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .reviews__bubbles__bubble20__inner-circ img {
           height: 100%; }
 
 .reviews:before {
