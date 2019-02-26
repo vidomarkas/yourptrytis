@@ -3,8 +3,8 @@
     min-height: 100vh;
     width: 100vw;
 
-    &__container {
-
+    a {
+        text-decoration: none;
     }
 
     &__grid {
@@ -31,8 +31,8 @@
             grid-column: 2 / 3;
             grid-row: 1 / 3;
         }
-        &--gmail {
-            background: black;
+        &--email {
+            position: relative;
             grid-column: 1 / 1;
             grid-row: 2 / 2;
         }
@@ -61,10 +61,6 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-
-        a {
-            text-decoration: none;
-        }
 
     &__background {
         position: relative;
@@ -119,13 +115,36 @@
         color: #fff;
         font-weight: 700;
         font-size: 14px;
-        
     }
+}
 
-    a {
-        text-decoration: none;
-    }
-
+.email {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     
 
+    &__container {
+        position: relative;
+        height: 90px;
+        width: 90px;
+        margin: 0 auto;
+
+        svg {
+            height:100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -48%);
+        }
+    }
+
+    &__name {
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+        font-size: 14px;
+        text-shadow: 1px 1px 3px rgb(148, 148, 148);
+    }
 }

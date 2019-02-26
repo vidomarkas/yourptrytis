@@ -1,4 +1,13 @@
+const hideCookies = () => {
+    const btn = document.getElementById("cookies_agreed");
+    const cookiesTable = document.getElementById("cookies");
 
+    btn.addEventListener("click", () => {
+        cookiesTable.style.display = "none";
+    })
+}
+
+hideCookies();
 // let bubble = document.getElementsByClassName('reviews__bubbles__bubble')[0];
 
 // setTimeout(function () {
@@ -14,3 +23,4 @@
 //   } else {
 //     /* The viewport is greater than 700 pixels wide */
 //   }
+
