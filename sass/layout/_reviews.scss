@@ -111,6 +111,7 @@
             animation: floatX 3.2s*10 infinite linear forwards, floatPast 3.2s*20 infinite linear -45s;
             
 
+
             &__outer-circ {
                 
                 position: relative;
@@ -790,6 +791,8 @@
 
     }
 }
+
+
 
 .reviews:before {
     content: "";
