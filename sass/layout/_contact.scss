@@ -35,7 +35,7 @@
             position: relative;
             grid-column: 1 / 1;
             grid-row: 2 / 2;
-            background: green;
+            
         }
         &--call {
             background: blue;
@@ -124,7 +124,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: yellow;
+    
     
 
     &__container {
@@ -193,7 +193,7 @@
     &__message:after {
         content: '';
         position: absolute;
-        top: 0;
+        top: 1px;
         left: 40%;
         width: 0;
         height: 0;
