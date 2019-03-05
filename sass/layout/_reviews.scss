@@ -1,6 +1,7 @@
 .reviews {
     position: relative;
-    // overflow: hidden;
+    // overflow-x: hidden;
+    width: 100vw;
 
     &__background {
         min-height: 100vh;

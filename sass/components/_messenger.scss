@@ -6,7 +6,8 @@
 }
 
 .messenger-shadow {
-    box-shadow: 0px 0px 20px #fff;
+    // box-shadow: 0px 0px 20px #fff;
+    animation: glowing 2s infinite;
 }
 
 .messenger {

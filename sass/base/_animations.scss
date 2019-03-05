@@ -47,6 +47,12 @@
 $rotation-size: 3px;
 $timing: 1.2s;
 
+@keyframes glowing {
+  0% {box-shadow: 0px 0px 20px #fff}
+  50% {box-shadow: 0px 0px 0px #fff}
+  100% {box-shadow: 0px 0px 20px #fff}
+}
+
 
 @keyframes floatPast {
     0% {

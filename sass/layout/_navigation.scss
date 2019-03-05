@@ -1,18 +1,24 @@
 .navigation {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: .5rem;
-    height: 80px;
+    
+    
+    
+    
     z-index: 1000;
-    border: 1px solid $color-grey-dark;
-    border-radius: 10px;
     position: fixed;
-    top: 40px;
-    left: 140px;
-    width: 85%;
+    top: 0;
+    left: 0;
+    width: 100vw;
     background: $color-nav;
     overflow: hidden;
+
+    &__container {
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: .5rem;
+        height: 60px;
+    }
 
     &__logobox {
         padding-left: 20px;
