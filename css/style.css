@@ -239,6 +239,33 @@ body {
       margin-top: 10px;
       border-radius: 5px; }
 
+.main-messenger {
+  position: fixed;
+  bottom: 60px;
+  right: 100px;
+  z-index: 1000; }
+
+.messenger-shadow {
+  box-shadow: 0px 0px 20px #fff; }
+
+.messenger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .messenger__background {
+    position: relative;
+    height: 90px;
+    width: 90px;
+    background: #fff;
+    border-radius: 50%; }
+    .messenger__background svg {
+      height: 70%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -48%); }
+
 .header__background {
   background-image: url(/assets/meghan-holmes-779221-unsplash.jpg);
   background-size: cover;
@@ -336,7 +363,7 @@ body {
   z-index: 1000;
   border: 1px solid #707070;
   border-radius: 10px;
-  position: absolute;
+  position: fixed;
   top: 40px;
   left: 140px;
   width: 85%;
@@ -1036,28 +1063,11 @@ body {
   z-index: -1;
   transform: skewY(-3deg) translate(0, -50px); }
 
-.messenger {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-  .messenger__background {
-    position: relative;
-    height: 90px;
-    width: 90px;
-    background: #fff;
-    border-radius: 50%; }
-    .messenger__background svg {
-      height: 70%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -48%); }
-  .messenger__name {
-    text-align: center;
-    color: #fff;
-    font-weight: 700;
-    font-size: 14px; }
+.messenger__name {
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px; }
 
 .whatsapp {
   position: absolute;

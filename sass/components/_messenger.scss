@@ -1,0 +1,34 @@
+.main-messenger {
+    position: fixed;
+    bottom: 60px;
+    right: 100px;
+    z-index: 1000;
+}
+
+.messenger-shadow {
+    box-shadow: 0px 0px 20px #fff;
+}
+
+.messenger {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &__background {
+        position: relative;
+        height: 90px;
+        width: 90px;
+        background: #fff;
+        border-radius: 50%;
+
+        svg {
+            height: 70%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -48%);
+        }
+
+    }
+}
