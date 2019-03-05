@@ -282,22 +282,50 @@ body {
 .footer {
   background: #000;
   color: #fff; }
+  .footer a:link,
+  .footer a:visited {
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s ease; }
+  .footer a:hover,
+  .footer a:active {
+    background: #6256FB; }
   .footer__container {
     width: 80%;
     margin: 0 auto; }
   .footer__nav {
     display: flex;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    padding-top: 100px;
+    padding-bottom: 100px; }
+    .footer__nav-heading {
+      padding-bottom: 20px; }
+      .footer__nav-heading p {
+        display: inline;
+        font-size: 20px;
+        padding-left: 2px; }
+      .footer__nav-heading-accent {
+        display: inline-block;
+        width: 4px;
+        height: 15px;
+        background: #6256FB; }
+    .footer__nav li {
+      list-style: none;
+      font-size: 16px;
+      line-height: 26px; }
   .footer__credentials {
     color: #707070;
     text-align: center;
     border-top: 1px solid #707070;
     font-size: 15px;
     line-height: 32px;
-    font-weight: 400;
-    text-decoration: none; }
-    .footer__credentials span {
-      color: #fff; }
+    font-weight: 400; }
+
+.icon {
+  position: relative;
+  /* Adjust these values accordingly */
+  top: 3px;
+  left: 0; }
 
 .navigation {
   display: flex;

@@ -2,6 +2,18 @@
     background: #000;
     color: #fff;
 
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: #fff;
+        transition: background-color 0.3s ease;
+    }
+
+    a:hover,
+    a:active {
+        background: $color-accent;
+    }
+
     &__container {
         width: 80%;
         margin: 0 auto;
@@ -11,7 +23,37 @@
     &__nav {
         display: flex;
         justify-content: space-evenly;
+        padding-top: 100px;
+        padding-bottom: 100px;
 
+        &-heading {
+            padding-bottom: 20px;
+
+            p {
+                display: inline;
+                font-size: 20px;
+                padding-left: 2px;
+            }
+
+            &-accent {
+                display: inline-block;
+                width: 4px;
+                height: 15px;
+                background: $color-accent;
+                
+            }
+        }
+
+        li {
+            list-style: none;
+            font-size: 16px;
+            line-height: 26px;
+
+            // svg {
+            //     display: inline-block;
+            //     vertical-align: middle;
+            // }
+        }
     }
 
     &__credentials {
@@ -21,14 +63,15 @@
         font-size: 15px;
         line-height: 32px;
         font-weight: 400;
-        text-decoration: none;
+        
 
-        span {
-            color: #fff;
-        }
-
-        a {
-
-        }
+        
     }
 }
+
+.icon {
+    position: relative;
+    /* Adjust these values accordingly */
+    top: 3px;
+    left: 0;
+  }
