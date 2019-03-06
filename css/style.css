@@ -165,18 +165,20 @@ body {
     color: #fff;
     text-decoration: none; }
   .btn-cta {
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-weight: 500;
     color: #fff;
     margin: 0 auto;
-    padding: 5px 10px;
-    border-radius: 5px; }
+    padding: 10px 60px;
+    border-radius: 5px;
+    position: relative; }
   .btn-cookie {
     position: absolute;
     right: 20px;
     bottom: 20px;
-    padding: 2px 18px;
-    border-radius: 5px; }
+    padding: 3px 40px;
+    border-radius: 5px;
+    font-size: 18px; }
 
 #cookies {
   display: block; }
@@ -191,7 +193,8 @@ body {
   border-radius: 5px;
   z-index: 500; }
   .cookies__text {
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 18px;
     color: #707070;
     padding: 20px; }
   .cookies__cookie {
@@ -300,7 +303,7 @@ body {
   height: 340px;
   width: 50%; }
   .header__slogan-primary {
-    font-size: 8rem;
+    font-size: 7rem;
     line-height: 8rem;
     font-weight: 700;
     color: #fff;

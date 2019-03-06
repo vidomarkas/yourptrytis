@@ -11,8 +11,10 @@
     background-color: #fff;
     border-radius: 5px;
     z-index: 500;
+
     &__text {
-        font-size: 12px;
+        font-size: 14px;
+        line-height: 18px;
         color: $color-grey-dark;
         padding: 20px;
     }
