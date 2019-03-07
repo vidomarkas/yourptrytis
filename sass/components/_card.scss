@@ -4,9 +4,7 @@
     box-shadow:         0px 3px 20px rgba(83, 83, 83, 0.356);
     display: flex;
     background: #fff;
-    &--reversed {
-
-    }
+    
 
     &--highlighted {
         color: #fff;
@@ -14,42 +12,51 @@
         display: flex;
         flex-direction: column-reverse;
         justify-content: flex-end;
-        border-radius: 5px;
-        box-shadow:         0px 3px 20px rgba(83, 83, 83, 0.356);
+        backface-visibility: hidden;
+        
+        
 
     }
 
     &__img {
         height: 100%;
-        width: 80%;
+        width: 60%;
+        min-width: 150px;
         overflow: hidden;
-        // position: absolute;
-        // top:0;
-        // right: 0;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
-        backface-visibility: hidden;
-
-        &--highlighted {
-            height: 50%;
-            width: 100%;
-            overflow: hidden;
-            border-top-right-radius: 5px;
-            border-top-left-radius: 5px;
-
-            img {
-                width: 100%;
-                transform: translateY(-15%);
-            }
-        }
+        position: relative;
         
         img {
             height: 100%;
-            transform: translateX(-10%);
-            
+            position: absolute;
+            right: 0;
+
             
         }
+
     }
+
+    &__img--highlighted {
+        height: 33%;
+        width: 100%;
+        overflow: hidden;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        
+
+        img {
+            width: 100%;
+            
+            // transform: translateY(-15%);
+            
+                /* default value: image is centered*/
+            // object-position: 0 0; /* positioned top left of the content box */
+        }
+    }
+        
+        
+    
 
     &__details{
         

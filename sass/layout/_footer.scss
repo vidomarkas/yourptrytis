@@ -11,7 +11,7 @@
 
     a:hover,
     a:active {
-        background: $color-accent;
+        background: $color-primary;
     }
 
     &__container {
@@ -39,7 +39,7 @@
                 display: inline-block;
                 width: 4px;
                 height: 15px;
-                background: $color-accent;
+                background: $color-primary;
                 
             }
         }

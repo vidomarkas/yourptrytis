@@ -217,27 +217,28 @@ body {
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-end;
-    border-radius: 5px;
-    box-shadow: 0px 3px 20px rgba(83, 83, 83, 0.356); }
+    backface-visibility: hidden; }
   .card__img {
     height: 100%;
-    width: 80%;
+    width: 60%;
+    min-width: 150px;
     overflow: hidden;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    backface-visibility: hidden; }
-    .card__img--highlighted {
-      height: 50%;
-      width: 100%;
-      overflow: hidden;
-      border-top-right-radius: 5px;
-      border-top-left-radius: 5px; }
-      .card__img--highlighted img {
-        width: 100%;
-        transform: translateY(-15%); }
+    position: relative; }
     .card__img img {
       height: 100%;
-      transform: translateX(-10%); }
+      position: absolute;
+      right: 0; }
+  .card__img--highlighted {
+    height: 33%;
+    width: 100%;
+    overflow: hidden;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px; }
+    .card__img--highlighted img {
+      width: 100%;
+      /* default value: image is centered*/ }
   .card__details {
     padding: 20px; }
     .card__details-title {
@@ -332,7 +333,7 @@ body {
     transition: background-color 0.3s ease; }
   .footer a:hover,
   .footer a:active {
-    background: #6256FB; }
+    background: #28B0F2; }
   .footer__container {
     width: 80%;
     margin: 0 auto; }
@@ -351,7 +352,7 @@ body {
         display: inline-block;
         width: 4px;
         height: 15px;
-        background: #6256FB; }
+        background: #28B0F2; }
     .footer__nav li {
       list-style: none;
       font-size: 16px;
@@ -414,7 +415,7 @@ body {
       text-decoration: none;
       font-size: 1.4rem; }
     .navigation__item--selected {
-      background: linear-gradient(to bottom, #28b0f2 0%, #3480e3 100%);
+      background-image: linear-gradient(to bottom, #28b0f2 0%, #3480e3 100%);
       border-radius: 5px; }
   .navigation__languagebox {
     display: flex;
@@ -437,7 +438,7 @@ body {
   .services__container {
     display: grid;
     grid-template-columns: 49% 49%;
-    grid-template-rows: 200px 200px 200px;
+    grid-auto-rows: 1fr 1fr 1fr;
     grid-column-gap: 2%;
     grid-row-gap: 40px;
     width: 80%;
