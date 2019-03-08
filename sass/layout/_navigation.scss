@@ -65,6 +65,11 @@
             font-size: 1.4rem;
         }
 
+        &:hover {
+            background-image: linear-gradient(to bottom, rgba(40,176,242,1) 0%,rgba(52,128,227,1) 100%);
+            border-radius: 5px;
+        }
+
         &--selected {
             background-image: linear-gradient(to bottom, rgba(40,176,242,1) 0%,rgba(52,128,227,1) 100%);
             border-radius: 5px;
