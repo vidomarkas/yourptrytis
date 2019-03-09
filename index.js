@@ -8,19 +8,25 @@ const hideCookies = () => {
 }
 
 hideCookies();
-// let bubble = document.getElementsByClassName('reviews__bubbles__bubble')[0];
-
-// setTimeout(function () {
-//     bubble.style.transform = "translateX(-400px)";
 
 
-// }, 1);
+const personalCard = document.getElementById("personalCard");
+// const personalCard = document.getElementsByClassName("services__personal")[0];
 
-// for media queries using js
+const dietCard = document.getElementById("dietCard");
+const consultCard = document.getElementById("consultCard");
+const planCard = document.getElementById("planCard");
 
-// if (window.matchMedia("(max-width: 700px)").matches) {
-//     /* The viewport is less than, or equal to, 700 pixels wide */
-//   } else {
-//     /* The viewport is greater than 700 pixels wide */
-//   }
+personalCard.addEventListener("click", () => {
+    personalCard.classList.add("active");
 
+    window.getComputedStyle(
+        document.getElementById("personalCard"), ':before'
+    ).style.setProperty(display, none);
+
+
+
+    dietCard.classList.remove("active");
+    consultCard.classList.remove("active");
+    planCard.classList.remove("active");
+})
