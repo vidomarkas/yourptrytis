@@ -223,6 +223,26 @@ body {
     backface-visibility: hidden;
     border-radius: 5px;
     box-shadow: 0px 3px 20px rgba(83, 83, 83, 0.356); }
+    .card__main__details {
+      z-index: 2;
+      padding: 20px;
+      position: relative; }
+      .card__main__details-title {
+        position: absolute;
+        bottom: 20px;
+        font-size: 2.6rem;
+        line-height: 2.8rem; }
+      .card__main__details-subtitle {
+        color: #b0afaf;
+        font-weight: 300;
+        font-size: 1rem;
+        padding: 5px 0 0 0; }
+      .card__main__details-text {
+        padding-bottom: 10px; }
+      .card__main__details-btn {
+        padding: 5px 10px;
+        margin-top: 10px;
+        border-radius: 5px; }
   .card__details {
     z-index: 2;
     padding: 20px;
@@ -232,21 +252,19 @@ body {
       bottom: 20px;
       font-size: 2.6rem;
       line-height: 2.8rem; }
-    .card__details-subtitle {
-      color: #b0afaf;
-      font-weight: 300;
-      font-size: 1rem;
-      padding: 5px 0 0 0; }
-    .card__details-text {
-      padding-bottom: 10px; }
-    .card__details-btn {
-      padding: 5px 10px;
-      margin-top: 10px;
-      border-radius: 5px; }
 
-.active {
+.overlay {
+  display: block;
+  position: absolute;
   text-shadow: 1px 1px 6px #000;
-  transform: translateX(10px); }
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%);
+  border-radius: 5px;
+  z-index: 1; }
 
 .main-messenger {
   position: fixed;
@@ -446,19 +464,6 @@ body {
     background-position: center;
     height: 180px;
     text-shadow: 1px 1px 6px #000; }
-  .services__consultation:hover:before {
-    display: none; }
-  .services__consultation::before {
-    display: block;
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%);
-    border-radius: 5px;
-    z-index: 1; }
   .services__plans {
     grid-column: 1 / 1;
     grid-row: 4 / 4;
@@ -467,19 +472,6 @@ body {
     background-position: center;
     height: 180px;
     text-shadow: 1px 1px 6px #000; }
-  .services__plans:hover:before {
-    display: none; }
-  .services__plans::before {
-    display: block;
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%);
-    border-radius: 5px;
-    z-index: 1; }
   .services__diet {
     grid-column: 1 / 1;
     grid-row: 3 / 3;
@@ -488,19 +480,6 @@ body {
     background-position: center;
     height: 180px;
     text-shadow: 1px 1px 6px #000; }
-  .services__diet:hover:before {
-    display: none; }
-  .services__diet::before {
-    display: block;
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%);
-    border-radius: 5px;
-    z-index: 1; }
   .services__personal {
     grid-column: 1 / 1;
     grid-row: 2 / 2;
@@ -508,19 +487,6 @@ body {
     background-size: cover;
     background-position: center;
     height: 180px; }
-  .services__personal:hover:before {
-    display: none; }
-  .services__personal::before {
-    display: block;
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%);
-    border-radius: 5px;
-    z-index: 1; }
   .services__main {
     grid-column: 2 / 2;
     grid-row: 1 / 5; }

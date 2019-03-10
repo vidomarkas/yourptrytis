@@ -30,22 +30,7 @@
         text-shadow: 1px 1px 6px #000;
     }
 
-    &__consultation:hover:before {
-        display: none;
-    }
-
-    &__consultation::before {
-        display: block;
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%,rgba(0, 0, 0, 0.65) 100%);
-        border-radius: 5px;
-        z-index: 1;
-    }
+   
 
     &__plans {
         grid-column: 1 / 1;
@@ -58,23 +43,8 @@
         text-shadow: 1px 1px 6px #000;
     }
 
-    &__plans:hover:before {
-        display: none;
-        
-    }
+    
 
-    &__plans::before {
-        display: block;
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%,rgba(0, 0, 0, 0.65) 100%);
-        border-radius: 5px;
-        z-index: 1;
-    }
 
     &__diet {
         
@@ -88,22 +58,8 @@
         text-shadow: 1px 1px 6px #000;
     }
 
-    &__diet:hover:before {
-        display: none;
-    }
-
-    &__diet::before {
-        display: block;
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%,rgba(0, 0, 0, 0.65) 100%);
-        border-radius: 5px;
-        z-index: 1;
-    }
+    
+    
 
     &__personal {
         grid-column: 1 / 1;
@@ -115,22 +71,7 @@
         height: 180px;
     }
 
-    &__personal:hover:before {
-        display: none;
-    }
-
-    &__personal::before {
-        display: block;
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%,rgba(0, 0, 0, 0.65) 100%);
-        border-radius: 5px;
-        z-index: 1;
-    }
+    
 
     &__main {
         

@@ -11,22 +11,40 @@ hideCookies();
 
 
 const personalCard = document.getElementById("personalCard");
-// const personalCard = document.getElementsByClassName("services__personal")[0];
-
 const dietCard = document.getElementById("dietCard");
 const consultCard = document.getElementById("consultCard");
 const planCard = document.getElementById("planCard");
 
+const personalOverlay = document.getElementById("personalOverlay");
+const consOverlay = document.getElementById("consOverlay");
+const planOverlay = document.getElementById("planOverlay");
+const dietOverlay = document.getElementById("dietOverlay");
+
 personalCard.addEventListener("click", () => {
-    personalCard.classList.add("active");
+    personalOverlay.classList.remove("overlay");
+    consOverlay.classList.add("overlay");
+    planOverlay.classList.add("overlay");
+    dietOverlay.classList.add("overlay");
 
-    window.getComputedStyle(
-        document.getElementById("personalCard"), ':before'
-    ).style.setProperty(display, none);
+})
+dietCard.addEventListener("click", () => {
+    personalOverlay.classList.add("overlay");
+    consOverlay.classList.add("overlay");
+    planOverlay.classList.add("overlay");
+    dietOverlay.classList.remove("overlay");
 
+})
+consultCard.addEventListener("click", () => {
+    personalOverlay.classList.add("overlay");
+    consOverlay.classList.remove("overlay");
+    planOverlay.classList.add("overlay");
+    dietOverlay.classList.add("overlay");
 
+})
+planCard.addEventListener("click", () => {
+    personalOverlay.classList.add("overlay");
+    consOverlay.classList.add("overlay");
+    planOverlay.classList.remove("overlay");
+    dietOverlay.classList.add("overlay");
 
-    dietCard.classList.remove("active");
-    consultCard.classList.remove("active");
-    planCard.classList.remove("active");
 })
