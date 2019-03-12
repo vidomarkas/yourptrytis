@@ -1,0 +1,17 @@
+.packages {
+
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__beginner {
+        background: red;
+    }
+    &__commited {
+        background: red;
+    }
+    &__achiever {
+        background: red;
+    }
+}

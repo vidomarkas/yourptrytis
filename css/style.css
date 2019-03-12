@@ -96,6 +96,12 @@ a:visited {
   color: #fff;
   text-decoration: none; }
 
+.show {
+  display: block; }
+
+.hidden {
+  display: none; }
+
 @keyframes glowing {
   0% {
     box-shadow: 0px 0px 20px #fff; }
@@ -163,7 +169,8 @@ body {
 .btn {
   text-decoration: none;
   color: #fff;
-  background-image: linear-gradient(to bottom, #28b0f2 0%, #3480e3 100%); }
+  background-image: linear-gradient(to bottom, #28b0f2 0%, #3480e3 100%);
+  cursor: pointer; }
   .btn-cta {
     font-size: 3rem;
     font-weight: 500;
@@ -186,7 +193,7 @@ body {
   display: block; }
 
 .cookies {
-  position: fixed;
+  position: absolute;
   left: 140px;
   bottom: 60px;
   height: 150px;
@@ -217,32 +224,56 @@ body {
   .card__main {
     color: #fff;
     background: #000;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-end;
-    backface-visibility: hidden;
     border-radius: 5px;
-    box-shadow: 0px 3px 20px rgba(83, 83, 83, 0.356); }
-    .card__main__details {
-      z-index: 2;
-      padding: 20px;
-      position: relative; }
-      .card__main__details-title {
+    box-shadow: 0px 3px 20px rgba(83, 83, 83, 0.356);
+    position: relative; }
+    .card__main__container {
+      padding: 5rem; }
+      .card__main__container ul {
+        list-style-type: none; }
+      .card__main__container h2 {
+        text-align: center; }
+      .card__main__container h3 {
+        padding-top: 2rem;
+        padding-bottom: 2rem; }
+    .card__main-title {
+      font-size: 2.6rem;
+      line-height: 2.8rem; }
+    .card__main-subtitle {
+      color: #b0afaf;
+      font-weight: 300;
+      font-size: 1rem;
+      padding: 5px 0 0 0; }
+    .card__main-text {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      font-weight: 400; }
+      .card__main-text span {
+        color: #28B0F2; }
+    .card__main-btn {
+      position: absolute;
+      bottom: 2%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0 auto;
+      padding: 15px 30px;
+      font-size: 2rem;
+      border-radius: 5px; }
+      .card__main-btn-back {
+        padding: .5rem 1rem;
         position: absolute;
-        bottom: 20px;
-        font-size: 2.6rem;
-        line-height: 2.8rem; }
-      .card__main__details-subtitle {
-        color: #b0afaf;
-        font-weight: 300;
-        font-size: 1rem;
-        padding: 5px 0 0 0; }
-      .card__main__details-text {
-        padding-bottom: 10px; }
-      .card__main__details-btn {
-        padding: 5px 10px;
-        margin-top: 10px;
+        bottom: 5%;
+        left: 5%;
         border-radius: 5px; }
+    .card__main__img {
+      height: 200px;
+      width: 100%;
+      margin: 0 auto;
+      background-image: url(/assets/training.jpg);
+      background-size: cover;
+      background-position: center;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px; }
   .card__details {
     z-index: 2;
     padding: 20px;
@@ -265,6 +296,12 @@ body {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%);
   border-radius: 5px;
   z-index: 1; }
+
+#personalCard,
+#consultCard,
+#planCard,
+#dietCard {
+  cursor: pointer; }
 
 .main-messenger {
   position: fixed;
@@ -391,7 +428,7 @@ body {
   background: rgba(45, 45, 45, 0.98);
   overflow: hidden; }
   .navigation__container {
-    width: 85%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -1210,3 +1247,16 @@ body {
   border-top: 0;
   margin-left: -44px;
   margin-top: -44px; }
+
+.packages__container {
+  display: flex;
+  justify-content: center; }
+
+.packages__beginner {
+  background: red; }
+
+.packages__commited {
+  background: red; }
+
+.packages__achiever {
+  background: red; }

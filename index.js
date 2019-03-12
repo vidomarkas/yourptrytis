@@ -20,11 +20,35 @@ const consOverlay = document.getElementById("consOverlay");
 const planOverlay = document.getElementById("planOverlay");
 const dietOverlay = document.getElementById("dietOverlay");
 
+const mainPersonal = document.getElementById("mainPersonal");
+const mainConsult = document.getElementById("mainConsult");
+const mainPlans = document.getElementById("mainPlans");
+const mainDiet = document.getElementById("mainDiet");
+
+const packagesBtn = document.getElementById("packagesBtn");
+const packages = document.getElementById("packages");
+const packagesBack = document.getElementById("packagesBack");
+
+packagesBtn.addEventListener("click", () => {
+    packages.classList.toggle("hidden")
+});
+
+packagesBack.addEventListener("click", () => {
+    packages.classList.toggle("hidden")
+});
+
+
 personalCard.addEventListener("click", () => {
     personalOverlay.classList.remove("overlay");
     consOverlay.classList.add("overlay");
     planOverlay.classList.add("overlay");
     dietOverlay.classList.add("overlay");
+    mainPersonal.classList.remove("hidden");
+
+
+    mainDiet.classList.add("hidden");
+    mainConsult.classList.add("hidden");
+    mainPlans.classList.add("hidden");
 
 })
 dietCard.addEventListener("click", () => {
@@ -32,6 +56,12 @@ dietCard.addEventListener("click", () => {
     consOverlay.classList.add("overlay");
     planOverlay.classList.add("overlay");
     dietOverlay.classList.remove("overlay");
+    mainDiet.classList.remove("hidden");
+
+
+    mainPersonal.classList.add("hidden");
+    mainConsult.classList.add("hidden");
+    mainPlans.classList.add("hidden");
 
 })
 consultCard.addEventListener("click", () => {
@@ -39,6 +69,11 @@ consultCard.addEventListener("click", () => {
     consOverlay.classList.remove("overlay");
     planOverlay.classList.add("overlay");
     dietOverlay.classList.add("overlay");
+    mainConsult.classList.remove("hidden");
+
+    mainDiet.classList.add("hidden");
+    mainPersonal.classList.add("hidden");
+    mainPlans.classList.add("hidden");
 
 })
 planCard.addEventListener("click", () => {
@@ -46,5 +81,11 @@ planCard.addEventListener("click", () => {
     consOverlay.classList.add("overlay");
     planOverlay.classList.remove("overlay");
     dietOverlay.classList.add("overlay");
+    mainPlans.classList.remove("hidden");
+
+    mainDiet.classList.add("hidden");
+    mainConsult.classList.add("hidden");
+    mainPersonal.classList.add("hidden");
 
 })
+
