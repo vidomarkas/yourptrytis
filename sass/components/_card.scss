@@ -46,6 +46,13 @@
             // padding: 10px;
             line-height: 2.8rem;
             
+            span {
+                 color: $color-primary;
+                 font-weight: 200;
+                 font-size: 80%;
+                 font-style: italic;
+            }
+
             &-accent {
                 
             }
@@ -99,13 +106,25 @@
             height: 200px;
             width: 100%;
             margin: 0 auto;
-            background-image: url(/assets/training.jpg);
+            
             background-size: cover;
             background-position: center;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
 
-            
+            &-personal {
+                background-image: url(/assets/training.jpg);
+            }
+            &-consult {
+                background-image: url(/assets/danielle-cerullo-782570-unsplash.jpg);
+            }
+            &-plans {
+                background-image: url(/assets/meghan-holmes-1057329-unsplash.jpg);
+                
+            }
+            &-diet {
+                background-image: url(/assets/buffet-chicken-cooking-5938.jpg);
+            }
         }
     }
     

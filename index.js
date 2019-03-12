@@ -34,7 +34,7 @@ packagesBtn.addEventListener("click", () => {
 });
 
 packagesBack.addEventListener("click", () => {
-    packages.classList.toggle("hidden")
+    packages.classList.add("hidden");
 });
 
 
@@ -62,6 +62,7 @@ dietCard.addEventListener("click", () => {
     mainPersonal.classList.add("hidden");
     mainConsult.classList.add("hidden");
     mainPlans.classList.add("hidden");
+    packages.classList.add("hidden");
 
 })
 consultCard.addEventListener("click", () => {
@@ -74,6 +75,7 @@ consultCard.addEventListener("click", () => {
     mainDiet.classList.add("hidden");
     mainPersonal.classList.add("hidden");
     mainPlans.classList.add("hidden");
+    packages.classList.add("hidden");
 
 })
 planCard.addEventListener("click", () => {
@@ -86,6 +88,7 @@ planCard.addEventListener("click", () => {
     mainDiet.classList.add("hidden");
     mainConsult.classList.add("hidden");
     mainPersonal.classList.add("hidden");
+    packages.classList.add("hidden");
 
 })
 

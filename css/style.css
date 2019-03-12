@@ -239,6 +239,11 @@ body {
     .card__main-title {
       font-size: 2.6rem;
       line-height: 2.8rem; }
+      .card__main-title span {
+        color: #28B0F2;
+        font-weight: 200;
+        font-size: 80%;
+        font-style: italic; }
     .card__main-subtitle {
       color: #b0afaf;
       font-weight: 300;
@@ -269,11 +274,18 @@ body {
       height: 200px;
       width: 100%;
       margin: 0 auto;
-      background-image: url(/assets/training.jpg);
       background-size: cover;
       background-position: center;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px; }
+      .card__main__img-personal {
+        background-image: url(/assets/training.jpg); }
+      .card__main__img-consult {
+        background-image: url(/assets/danielle-cerullo-782570-unsplash.jpg); }
+      .card__main__img-plans {
+        background-image: url(/assets/meghan-holmes-1057329-unsplash.jpg); }
+      .card__main__img-diet {
+        background-image: url(/assets/buffet-chicken-cooking-5938.jpg); }
   .card__details {
     z-index: 2;
     padding: 20px;
@@ -1250,13 +1262,13 @@ body {
 
 .packages__container {
   display: flex;
-  justify-content: center; }
+  justify-content: space-evenly; }
 
 .packages__beginner {
   background: red; }
 
 .packages__commited {
-  background: red; }
+  background: green; }
 
 .packages__achiever {
-  background: red; }
+  background: blue; }

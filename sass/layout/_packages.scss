@@ -2,16 +2,16 @@
 
     &__container {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     &__beginner {
         background: red;
     }
     &__commited {
-        background: red;
+        background: green;
     }
     &__achiever {
-        background: red;
+        background: blue;
     }
 }
