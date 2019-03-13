@@ -6,12 +6,13 @@
     }
 
     &__beginner {
-        background: red;
+        
+        background: linear-gradient(to left, #0575e6, #021b79);
     }
     &__commited {
-        background: green;
+        background: linear-gradient(234deg, #FDC830, #F37335);
     }
     &__achiever {
-        background: blue;
+        background: linear-gradient(to right, #ff416c, #ff4b2b);
     }
 }

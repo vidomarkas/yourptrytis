@@ -238,7 +238,8 @@ body {
         padding-bottom: 2rem; }
     .card__main-title {
       font-size: 2.6rem;
-      line-height: 2.8rem; }
+      line-height: 2.8rem;
+      margin-bottom: 3rem; }
       .card__main-title span {
         color: #28B0F2;
         font-weight: 200;
@@ -341,6 +342,35 @@ body {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -48%); }
+
+.package {
+  border-radius: 5px;
+  padding: 3.5rem;
+  box-shadow: inset 12px 0px 50px rgba(0, 0, 0, 0.6); }
+  .package__heading {
+    text-align: center;
+    font-size: 2.1rem; }
+  .package__price {
+    font-size: 6rem;
+    text-align: center;
+    font-weight: 700; }
+    .package__price span {
+      font-size: 3rem;
+      font-weight: 400;
+      padding: 1rem; }
+  .package__body {
+    border-top: 0.1rem solid #b0afaf;
+    padding: 1rem; }
+    .package__body__disabled {
+      color: #b0afaf; }
+  .package__buy {
+    border: 2px solid #fff;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 1.5rem;
+    padding: .5rem;
+    font-size: 1.1rem;
+    font-weight: 500; }
 
 .header__background {
   position: relative;
@@ -1265,10 +1295,10 @@ body {
   justify-content: space-evenly; }
 
 .packages__beginner {
-  background: red; }
+  background: linear-gradient(to left, #0575e6, #021b79); }
 
 .packages__commited {
-  background: green; }
+  background: linear-gradient(234deg, #FDC830, #F37335); }
 
 .packages__achiever {
-  background: blue; }
+  background: linear-gradient(to right, #ff416c, #ff4b2b); }
