@@ -4,7 +4,7 @@
     
     padding: 3.5rem;
     box-shadow: inset 12px 0px 50px rgba(0, 0, 0, 0.6);
-
+    transition: all 1s;
     
 
     &__heading {
@@ -40,7 +40,21 @@
         padding: .5rem;
         font-size: 1.1rem;
         font-weight: 500;
+        background: #fff;
+        color: #000;
 
         
     }
+
+    &__buy:hover {
+        
+        transform: scale(1.2);
+        transition: all .2s;
+        
+    }
+}
+
+.package:hover {
+    transform: scale(1.1);
+    transition: all 1s;
 }

@@ -178,8 +178,10 @@ body {
     margin: 0 auto;
     padding: 10px 60px;
     border-radius: 5px;
-    position: relative;
-    border: 3px solid #fff; }
+    position: relative; }
+  .btn-cta:hover {
+    transform: scale(1.05);
+    transition: all .3s; }
   .btn-cookie {
     position: absolute;
     right: 20px;
@@ -346,7 +348,8 @@ body {
 .package {
   border-radius: 5px;
   padding: 3.5rem;
-  box-shadow: inset 12px 0px 50px rgba(0, 0, 0, 0.6); }
+  box-shadow: inset 12px 0px 50px rgba(0, 0, 0, 0.6);
+  transition: all 1s; }
   .package__heading {
     text-align: center;
     font-size: 2.1rem; }
@@ -370,7 +373,16 @@ body {
     margin-top: 1.5rem;
     padding: .5rem;
     font-size: 1.1rem;
-    font-weight: 500; }
+    font-weight: 500;
+    background: #fff;
+    color: #000; }
+  .package__buy:hover {
+    transform: scale(1.2);
+    transition: all .2s; }
+
+.package:hover {
+  transform: scale(1.1);
+  transition: all 1s; }
 
 .header__background {
   position: relative;

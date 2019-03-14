@@ -19,10 +19,13 @@
         padding: 10px 60px;
         border-radius: 5px;
         position: relative;
-        border: 3px solid #fff;
+        // border: 3px solid #fff;
         
-        
-        
+    }
+
+    &-cta:hover {
+        transform: scale(1.05);
+        transition: all .3s;
     }
 
     &-cookie {
