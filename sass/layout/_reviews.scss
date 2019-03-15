@@ -59,11 +59,12 @@
         position: absolute;
         left: 50%;
         top: 0;
-        transform: translateX(-50%);
-        height: 100%;
-        width: 80%;
+        
+        height: 450px;
+        width: 100%;
         background: #fff;
-        border-radius: 25px;
+        // border-radius: 50%;
+        transform: skewY(-3deg) translateX(-50%);
 
         &--logo {
             position: absolute;
