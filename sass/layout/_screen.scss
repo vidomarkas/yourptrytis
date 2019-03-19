@@ -1,0 +1,47 @@
+.screen {
+    
+
+    &__container {
+        padding: 80px;
+        
+    }
+
+    &__details {
+        
+
+        &-picture {
+            transform: skewY(3deg) translateY(80px);
+            > .portrait__back {
+                box-shadow: 0px 2px 10px rgb(170, 170, 170);
+            }
+            
+        }
+
+        &-name {
+            color: $color-primary;
+            padding: 20px;
+            font-size: 3rem;
+            // text-decoration: underline;
+            
+        }
+    }
+
+    &__body {
+        &-text {
+            font-size: 1.8rem;
+            color: #657783;
+            padding: 20px;
+            text-align: center;
+        }
+    }
+}
+
+.quotes {
+    &-left {
+
+    }
+
+    &-right {
+        text-align: right;
+    }
+}
