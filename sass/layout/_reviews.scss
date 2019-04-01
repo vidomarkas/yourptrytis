@@ -1,10 +1,27 @@
+.reviews:before {
+    content: "";
+    background-image: linear-gradient(to bottom, rgba(53, 53, 53, 0.397) 0%,rgb(255, 255, 255) 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: skewY(-3deg) translate(0,-50px);
+}
+
 .reviews {
     position: relative;
     // overflow-x: hidden;
     width: 100vw;
+    min-height: 100vh;
 
     &__background {
-        min-height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        // z-index: -50;
+        height: 100%;
         width: 100vw;
 
         &-square {
@@ -45,63 +62,29 @@
         }
     }
 
-    &__container {
-        position: absolute;
-        left: 50%;
-        top: 8%;
-        width: 50%;
-        height: auto;
-        transform: translateX(-50%);
-        z-index: 50;
-        // overflow-y: hidden;
-        
-    }
+    
 
     &__screen {
-        position: absolute;
+        position: relative;
         left: 50%;
-        top: 0;
+        top: 100px;
         border-radius: 10px;
         // height: auto;
-        width: 100%;
+        width: 50%;
         background: #fff;
         // border-radius: 50%;
         transform: skewY(-3deg) translateX(-50%);
+        z-index: 50;
+        // margin-top: 10rem;
 
-        &--logo {
-            position: absolute;
-            top: 0;
-            right: 0;
-            
-    
-            svg {
-                height: 30px;
-            }
-        }
-
-        &--prev {
-            position: absolute;
-            top: 0;
-            left: -5px;
-            
-            svg {
-            transform: rotate(180deg);
-            }
-            
-        }
-
-        &--next {
-            position: absolute;
-            bottom: 0;
-            right: -5px;
-        }
     }
 
     &__bubbles {
         position: absolute;
-        top:100px;
+        top:0;
         left:0;
         width: 100vw;
+        height: 100%;
         // min-height: 460px;
         // overflow-y: hidden;
         
@@ -182,7 +165,7 @@
         }
         &__bubble3 {
             position: absolute;
-            top: 10%;
+            top: 100%;
             animation: floatX 3.2s*5 infinite linear 3s, floatPast 3.2s*20 infinite linear -25s;
             
 
@@ -216,7 +199,7 @@
         }
         &__bubble4 {
             position: absolute;
-            top: 20%;
+            top: 100%;
             animation: floatX 3.2s*8 infinite linear 3s, floatPast 3.2s*20 infinite linear -10s;
             
 
@@ -318,7 +301,7 @@
         }
         &__bubble7 {
             position: absolute;
-            top: 220px;
+            top: 100%;
             animation: floatX 3.2s*5 infinite linear 1s, floatPast 3.2s*20 infinite linear -16s;
             
 
@@ -352,7 +335,7 @@
         }
         &__bubble8 {
             position: absolute;
-            top: 380px;
+            top: 100%;
             animation: floatX 3.2s*5 infinite linear 4s, floatPast 3.2s*20 infinite linear -28s;
             
 
@@ -386,7 +369,7 @@
         }
         &__bubble9 {
             position: absolute;
-            top: 120px;
+            top: 100%;
             animation: floatX 3.2s*5 infinite linear 4s, floatPast 3.2s*20 infinite linear -32s;
             
 
@@ -420,7 +403,7 @@
         }
         &__bubble10 {
             position: absolute;
-            top: 5px;
+            top: 100%;
             animation: floatX 3.2s*5 infinite linear 1s, floatPast 3.2s*20 infinite linear -20s;
             
 
@@ -454,7 +437,7 @@
         }
         &__bubble11 {
             position: absolute;
-            top: 250px;
+            top: 100%;
             animation: floatX 3.2s*5 infinite linear 2s, floatPast 3.2s*20 infinite linear -48s;
             
 
@@ -488,7 +471,7 @@
         }
         &__bubble12 {
             position: absolute;
-            top: 400px;
+            top: 100%;
             animation: floatX 3.2s*5 infinite linear 5s, floatPast 3.2s*20 infinite linear -55s;
             
 
@@ -522,7 +505,7 @@
         }
         &__bubble13 {
             position: absolute;
-            top: 70px;
+            top: 100%;
             animation: floatX 3.2s*5 infinite linear 4s, floatPast 3.2s*20 infinite linear -54s;
             
 
@@ -556,7 +539,7 @@
         }
         &__bubble14 {
             position: absolute;
-            top: -40px;
+            top: 100%;
             animation: floatX 3.2s*5 infinite linear 4s, floatPast 3.2s*20 infinite linear -28s;
             
 
@@ -799,14 +782,3 @@
 
 
 
-.reviews:before {
-    content: "";
-    background-image: linear-gradient(to bottom, rgba(53, 53, 53, 0.397) 0%,rgb(255, 255, 255) 100%);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transform: skewY(-3deg) translate(0,-50px);
-}

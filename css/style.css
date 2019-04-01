@@ -598,11 +598,26 @@ body {
   z-index: -1;
   transform: skewY(-3deg) translate(0, -50px); }
 
+.reviews:before {
+  content: "";
+  background-image: linear-gradient(to bottom, rgba(53, 53, 53, 0.397) 0%, white 100%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: skewY(-3deg) translate(0, -50px); }
+
 .reviews {
   position: relative;
-  width: 100vw; }
+  width: 100vw;
+  min-height: 100vh; }
   .reviews__background {
-    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100vw; }
     .reviews__background-square {
       background: rgba(40, 175, 242, 0.692); }
@@ -633,43 +648,21 @@ body {
         left: -100px;
         border-top-right-radius: 55px;
         transform: rotate(-7deg); }
-  .reviews__container {
-    position: absolute;
-    left: 50%;
-    top: 8%;
-    width: 50%;
-    height: auto;
-    transform: translateX(-50%);
-    z-index: 50; }
   .reviews__screen {
-    position: absolute;
+    position: relative;
     left: 50%;
-    top: 0;
+    top: 100px;
     border-radius: 10px;
-    width: 100%;
+    width: 50%;
     background: #fff;
-    transform: skewY(-3deg) translateX(-50%); }
-    .reviews__screen--logo {
-      position: absolute;
-      top: 0;
-      right: 0; }
-      .reviews__screen--logo svg {
-        height: 30px; }
-    .reviews__screen--prev {
-      position: absolute;
-      top: 0;
-      left: -5px; }
-      .reviews__screen--prev svg {
-        transform: rotate(180deg); }
-    .reviews__screen--next {
-      position: absolute;
-      bottom: 0;
-      right: -5px; }
+    transform: skewY(-3deg) translateX(-50%);
+    z-index: 50; }
   .reviews__bubbles {
     position: absolute;
-    top: 100px;
+    top: 0;
     left: 0;
-    width: 100vw; }
+    width: 100vw;
+    height: 100%; }
     .reviews__bubbles__list {
       list-style: none; }
     .reviews__bubbles__bubble {
@@ -721,7 +714,7 @@ body {
           height: 100%; }
     .reviews__bubbles__bubble3 {
       position: absolute;
-      top: 10%;
+      top: 100%;
       animation: floatX 16s infinite linear 3s, floatPast 64s infinite linear -25s; }
       .reviews__bubbles__bubble3__outer-circ {
         position: relative;
@@ -745,7 +738,7 @@ body {
           height: 100%; }
     .reviews__bubbles__bubble4 {
       position: absolute;
-      top: 20%;
+      top: 100%;
       animation: floatX 25.6s infinite linear 3s, floatPast 64s infinite linear -10s; }
       .reviews__bubbles__bubble4__outer-circ {
         position: relative;
@@ -817,7 +810,7 @@ body {
           height: 100%; }
     .reviews__bubbles__bubble7 {
       position: absolute;
-      top: 220px;
+      top: 100%;
       animation: floatX 16s infinite linear 1s, floatPast 64s infinite linear -16s; }
       .reviews__bubbles__bubble7__outer-circ {
         position: relative;
@@ -841,7 +834,7 @@ body {
           height: 100%; }
     .reviews__bubbles__bubble8 {
       position: absolute;
-      top: 380px;
+      top: 100%;
       animation: floatX 16s infinite linear 4s, floatPast 64s infinite linear -28s; }
       .reviews__bubbles__bubble8__outer-circ {
         position: relative;
@@ -865,7 +858,7 @@ body {
           height: 100%; }
     .reviews__bubbles__bubble9 {
       position: absolute;
-      top: 120px;
+      top: 100%;
       animation: floatX 16s infinite linear 4s, floatPast 64s infinite linear -32s; }
       .reviews__bubbles__bubble9__outer-circ {
         position: relative;
@@ -889,7 +882,7 @@ body {
           height: 100%; }
     .reviews__bubbles__bubble10 {
       position: absolute;
-      top: 5px;
+      top: 100%;
       animation: floatX 16s infinite linear 1s, floatPast 64s infinite linear -20s; }
       .reviews__bubbles__bubble10__outer-circ {
         position: relative;
@@ -913,7 +906,7 @@ body {
           height: 100%; }
     .reviews__bubbles__bubble11 {
       position: absolute;
-      top: 250px;
+      top: 100%;
       animation: floatX 16s infinite linear 2s, floatPast 64s infinite linear -48s; }
       .reviews__bubbles__bubble11__outer-circ {
         position: relative;
@@ -937,7 +930,7 @@ body {
           height: 100%; }
     .reviews__bubbles__bubble12 {
       position: absolute;
-      top: 400px;
+      top: 100%;
       animation: floatX 16s infinite linear 5s, floatPast 64s infinite linear -55s; }
       .reviews__bubbles__bubble12__outer-circ {
         position: relative;
@@ -961,7 +954,7 @@ body {
           height: 100%; }
     .reviews__bubbles__bubble13 {
       position: absolute;
-      top: 70px;
+      top: 100%;
       animation: floatX 16s infinite linear 4s, floatPast 64s infinite linear -54s; }
       .reviews__bubbles__bubble13__outer-circ {
         position: relative;
@@ -985,7 +978,7 @@ body {
           height: 100%; }
     .reviews__bubbles__bubble14 {
       position: absolute;
-      top: -40px;
+      top: 100%;
       animation: floatX 16s infinite linear 4s, floatPast 64s infinite linear -28s; }
       .reviews__bubbles__bubble14__outer-circ {
         position: relative;
@@ -1151,17 +1144,6 @@ body {
         overflow: hidden; }
         .reviews__bubbles__bubble20__inner-circ img {
           height: 100%; }
-
-.reviews:before {
-  content: "";
-  background-image: linear-gradient(to bottom, rgba(53, 53, 53, 0.397) 0%, white 100%);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transform: skewY(-3deg) translate(0, -50px); }
 
 .contact {
   position: relative;
