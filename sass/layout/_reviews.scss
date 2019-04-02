@@ -133,7 +133,7 @@
         // width: 100%;
         overflow: hidden;
         z-index: 10;
-        transform: skewY(-3deg);
+        transform: skewY(-3deg) translateY(-16px);
         background-image: url("../../assets/Logo.svg");
         // background-size: cover;
         color: rgba(53, 53, 53, 0.397);

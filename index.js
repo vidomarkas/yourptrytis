@@ -130,6 +130,8 @@ clients.forEach(client => {
         modalImg.src = client.dataset.picture;
         if (client.dataset.age) {
             modalAge.innerHTML = ", " + client.dataset.age;
+        } else {
+            modalAge.innerHTML = "";
         }
     });
 
