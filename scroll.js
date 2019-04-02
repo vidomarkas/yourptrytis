@@ -17,6 +17,7 @@ window.onscroll = function () {
         homeLink.classList.remove("navigation__item--selected");
         servicesLink.classList.add("navigation__item--selected");
         reviewsLink.classList.remove("navigation__item--selected");
+        contactLink.classList.remove("navigation__item--selected");
     } else if (-500 < reviews.getBoundingClientRect().top && reviews.getBoundingClientRect().top < 350) {
 
         homeLink.classList.remove("navigation__item--selected");
@@ -28,6 +29,7 @@ window.onscroll = function () {
         homeLink.classList.remove("navigation__item--selected");
         reviewsLink.classList.remove("navigation__item--selected");
         contactLink.classList.add("navigation__item--selected");
+        servicesLink.classList.remove("navigation__item--selected");
     }
 }
 
