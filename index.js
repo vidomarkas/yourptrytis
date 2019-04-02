@@ -92,3 +92,13 @@ planCard.addEventListener("click", () => {
 
 })
 
+//modal
+
+const modal = document.getElementById('modal__background');
+const modalClose = document.querySelector('.modal__close');
+
+
+modalClose.addEventListener('click', () => {
+    modal.style.display = "none"
+})
+

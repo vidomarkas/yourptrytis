@@ -648,15 +648,15 @@ body {
         left: -100px;
         border-top-right-radius: 55px;
         transform: rotate(-7deg); }
-  .reviews__screen {
-    position: relative;
+  .reviews__modal {
+    position: fixed;
     left: 50%;
-    top: 100px;
+    top: 50%;
     border-radius: 10px;
     width: 50%;
     background: #fff;
-    transform: skewY(-3deg) translateX(-50%);
-    z-index: 50; }
+    transform: skewY(-3deg) translateY(-50%) translateX(-50%);
+    z-index: 5000; }
   .reviews__bubbles {
     position: absolute;
     top: 0;
@@ -904,246 +904,6 @@ body {
         overflow: hidden; }
         .reviews__bubbles__bubble10__inner-circ img {
           height: 100%; }
-    .reviews__bubbles__bubble11 {
-      position: absolute;
-      top: 100%;
-      animation: floatX 16s infinite linear 2s, floatPast 64s infinite linear -48s; }
-      .reviews__bubbles__bubble11__outer-circ {
-        position: relative;
-        height: 175px;
-        width: 175px;
-        border-radius: 50%;
-        background: #fff;
-        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
-        animation: floatY 24s infinite ease-in 15s; }
-      .reviews__bubbles__bubble11__inner-circ {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        background: red;
-        transform: translate(-50%, -50%);
-        height: 152px;
-        width: 152px;
-        border-radius: 50%;
-        overflow: hidden; }
-        .reviews__bubbles__bubble11__inner-circ img {
-          height: 100%; }
-    .reviews__bubbles__bubble12 {
-      position: absolute;
-      top: 100%;
-      animation: floatX 16s infinite linear 5s, floatPast 64s infinite linear -55s; }
-      .reviews__bubbles__bubble12__outer-circ {
-        position: relative;
-        height: 175px;
-        width: 175px;
-        border-radius: 50%;
-        background: #fff;
-        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
-        animation: floatY 24s infinite ease-in 15s; }
-      .reviews__bubbles__bubble12__inner-circ {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        background: red;
-        transform: translate(-50%, -50%);
-        height: 152px;
-        width: 152px;
-        border-radius: 50%;
-        overflow: hidden; }
-        .reviews__bubbles__bubble12__inner-circ img {
-          height: 100%; }
-    .reviews__bubbles__bubble13 {
-      position: absolute;
-      top: 100%;
-      animation: floatX 16s infinite linear 4s, floatPast 64s infinite linear -54s; }
-      .reviews__bubbles__bubble13__outer-circ {
-        position: relative;
-        height: 175px;
-        width: 175px;
-        border-radius: 50%;
-        background: #fff;
-        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
-        animation: floatY 24s infinite ease-in 15s; }
-      .reviews__bubbles__bubble13__inner-circ {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        background: red;
-        transform: translate(-50%, -50%);
-        height: 152px;
-        width: 152px;
-        border-radius: 50%;
-        overflow: hidden; }
-        .reviews__bubbles__bubble13__inner-circ img {
-          height: 100%; }
-    .reviews__bubbles__bubble14 {
-      position: absolute;
-      top: 100%;
-      animation: floatX 16s infinite linear 4s, floatPast 64s infinite linear -28s; }
-      .reviews__bubbles__bubble14__outer-circ {
-        position: relative;
-        height: 175px;
-        width: 175px;
-        border-radius: 50%;
-        background: #fff;
-        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
-        animation: floatY 24s infinite ease-in 15s; }
-      .reviews__bubbles__bubble14__inner-circ {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        background: red;
-        transform: translate(-50%, -50%);
-        height: 152px;
-        width: 152px;
-        border-radius: 50%;
-        overflow: hidden; }
-        .reviews__bubbles__bubble14__inner-circ img {
-          height: 100%; }
-    .reviews__bubbles__bubble15 {
-      position: absolute;
-      top: -40px;
-      animation: floatX 16s infinite linear 2s, floatPast 64s infinite linear -14s; }
-      .reviews__bubbles__bubble15__outer-circ {
-        position: relative;
-        height: 175px;
-        width: 175px;
-        border-radius: 50%;
-        background: #fff;
-        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
-        animation: floatY 24s infinite ease-in 15s; }
-      .reviews__bubbles__bubble15__inner-circ {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        background: red;
-        transform: translate(-50%, -50%);
-        height: 152px;
-        width: 152px;
-        border-radius: 50%;
-        overflow: hidden; }
-        .reviews__bubbles__bubble15__inner-circ img {
-          height: 100%; }
-    .reviews__bubbles__bubble16 {
-      position: absolute;
-      top: 340px;
-      animation: floatX 16s infinite linear 2s, floatPast 64s infinite linear -65s; }
-      .reviews__bubbles__bubble16__outer-circ {
-        position: relative;
-        height: 175px;
-        width: 175px;
-        border-radius: 50%;
-        background: #fff;
-        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
-        animation: floatY 24s infinite ease-in 15s; }
-      .reviews__bubbles__bubble16__inner-circ {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        background: red;
-        transform: translate(-50%, -50%);
-        height: 152px;
-        width: 152px;
-        border-radius: 50%;
-        overflow: hidden; }
-        .reviews__bubbles__bubble16__inner-circ img {
-          height: 100%; }
-    .reviews__bubbles__bubble17 {
-      position: absolute;
-      top: 400px;
-      animation: floatX 16s infinite linear 4s, floatPast 64s infinite linear -45s; }
-      .reviews__bubbles__bubble17__outer-circ {
-        position: relative;
-        height: 175px;
-        width: 175px;
-        border-radius: 50%;
-        background: #fff;
-        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
-        animation: floatY 24s infinite ease-in 15s; }
-      .reviews__bubbles__bubble17__inner-circ {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        background: red;
-        transform: translate(-50%, -50%);
-        height: 152px;
-        width: 152px;
-        border-radius: 50%;
-        overflow: hidden; }
-        .reviews__bubbles__bubble17__inner-circ img {
-          height: 100%; }
-    .reviews__bubbles__bubble18 {
-      position: absolute;
-      top: -50px;
-      animation: floatX 16s infinite linear 4s, floatPast 64s infinite linear -68s; }
-      .reviews__bubbles__bubble18__outer-circ {
-        position: relative;
-        height: 175px;
-        width: 175px;
-        border-radius: 50%;
-        background: #fff;
-        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
-        animation: floatY 24s infinite ease-in 15s; }
-      .reviews__bubbles__bubble18__inner-circ {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        background: red;
-        transform: translate(-50%, -50%);
-        height: 152px;
-        width: 152px;
-        border-radius: 50%;
-        overflow: hidden; }
-        .reviews__bubbles__bubble18__inner-circ img {
-          height: 100%; }
-    .reviews__bubbles__bubble19 {
-      position: absolute;
-      top: 400px;
-      animation: floatX 16s infinite linear, floatPast 64s infinite linear -19s; }
-      .reviews__bubbles__bubble19__outer-circ {
-        position: relative;
-        height: 175px;
-        width: 175px;
-        border-radius: 50%;
-        background: #fff;
-        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
-        animation: floatY 24s infinite ease-in 15s; }
-      .reviews__bubbles__bubble19__inner-circ {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        background: red;
-        transform: translate(-50%, -50%);
-        height: 152px;
-        width: 152px;
-        border-radius: 50%;
-        overflow: hidden; }
-        .reviews__bubbles__bubble19__inner-circ img {
-          height: 100%; }
-    .reviews__bubbles__bubble20 {
-      position: absolute;
-      top: 30px;
-      animation: floatX 16s infinite linear 4s, floatPast 64s infinite linear -62s; }
-      .reviews__bubbles__bubble20__outer-circ {
-        position: relative;
-        height: 175px;
-        width: 175px;
-        border-radius: 50%;
-        background: #fff;
-        box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
-        animation: floatY 24s infinite ease-in 15s; }
-      .reviews__bubbles__bubble20__inner-circ {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        background: red;
-        transform: translate(-50%, -50%);
-        height: 152px;
-        width: 152px;
-        border-radius: 50%;
-        overflow: hidden; }
-        .reviews__bubbles__bubble20__inner-circ img {
-          height: 100%; }
 
 .contact {
   position: relative;
@@ -1299,24 +1059,47 @@ body {
 .packages__achiever {
   background: linear-gradient(to right, #ff416c, #ff4b2b); }
 
-.screen__container {
-  padding: 80px; }
-
-.screen__details-picture {
-  transform: skewY(3deg) translateY(80px); }
-  .screen__details-picture > .portrait__back {
-    box-shadow: 0px 2px 10px #aaaaaa; }
-
-.screen__details-name {
-  color: #28B0F2;
-  padding: 20px;
-  font-size: 3rem; }
-
-.screen__body-text {
-  font-size: 1.8rem;
-  color: #657783;
-  padding: 20px;
-  text-align: center; }
+.modal {
+  position: fixed;
+  display: block;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%; }
+  .modal__background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 4999;
+    display: none; }
+  .modal__container {
+    padding: 80px; }
+  .modal__close {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 50px;
+    line-height: 50px;
+    color: #28B0F2; }
+  .modal__details-picture {
+    transform: skewY(3deg) translateY(80px); }
+    .modal__details-picture > .portrait__back {
+      box-shadow: 0px 2px 10px #aaaaaa; }
+  .modal__details-name {
+    color: #28B0F2;
+    padding: 20px;
+    font-size: 3rem; }
+  .modal__body-text {
+    font-size: 1.8rem;
+    color: #657783;
+    padding: 20px;
+    text-align: center; }
 
 .quotes-right {
   text-align: right; }

@@ -1,10 +1,40 @@
-.screen {
-    
+.modal {
+    position: fixed;
+    display: block;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; 
+
+    &__background {
+        position: fixed;
+        top:0;
+        left:0;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(0,0,0,0.4);
+        z-index: 4999;
+        display: none;
+    }
 
     &__container {
         padding: 80px;
         
     }
+
+    &__close {
+        cursor: pointer;
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        font-size: 50px;
+        line-height: 50px;
+        color: $color-primary;
+        
+        
+    }
+
 
     &__details {
         
