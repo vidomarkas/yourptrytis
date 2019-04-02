@@ -647,12 +647,12 @@
                         <div class="modal__details-picture">
                             
                             <div class="portrait__back">
-                                <img src="/assets/viktoras.jpg" alt="trainer">
+                                <img id="modal-img" src="/assets/viktoras.jpg" alt="trainer">
                             </div>
                             
                         </div>
                         <div class="modal__details-name">
-                            <h4>James Cameron</h4>
+                            <h4 id="modal-name">James Cameron</h4><span id="modal-age"></span>
                         </div>
                     </div>
                     <div class="modal__body">
@@ -662,7 +662,7 @@
                             </svg>     
                         </div>
                         <div class="modal__body-text">
-                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, et. Repellendus recusandae necessitatibus deserunt accusamus, blanditiis rem debitis quidem nemo, vel sit amet nesciunt? Corrupti odit deleniti reprehenderit. Iusto, nulla. Ad officiis eum commodi perspiciatis fugit, facere cum dolores aliquid?</p>
+                            <p id="modal-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, et. Repellendus recusandae necessitatibus deserunt accusamus, blanditiis rem debitis quidem nemo, vel sit amet nesciunt? Corrupti odit deleniti reprehenderit. Iusto, nulla. Ad officiis eum commodi perspiciatis fugit, facere cum dolores aliquid?</p>
                         </div>
                         <div class="quotes-right">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#D8DFE8" width="48" height="48" viewBox="0 0 32 32">
@@ -679,189 +679,89 @@
             
         
         <div class="reviews__bubbles">
-            <ul class="reviews__bubbles__list">
-                <li id="bubble1" class="reviews__bubbles__bubble">
-                    <a href="#">
-                        <div class="reviews__bubbles__bubble__outer-circ">
-                            <div class="reviews__bubbles__bubble__inner-circ">
-                                <img src="/assets/personal.jpg" alt="client">
-                            </div>
+            
+
+                <div class="bubble reviews__bubbles__bubble1" id="client1" data-name="Ana" data-age="35" data-picture="/assets/trainer.jpg" data-text="I am so happy, that I started to train with Rytis. I have reached my initial goals and I still can't stop.">
+                    <div class="bubble__outer-circ">
+                        <div class="bubble__inner-circ">
+                            <img src="/assets/trainer.jpg" alt="client">
                         </div>
-                    </a>
-                </li>
-                <li class="reviews__bubbles__bubble2">
-                    <a href="#">
-                        <div class="reviews__bubbles__bubble2__outer-circ">
-                            <div class="reviews__bubbles__bubble__inner-circ">
-                                <img src="/assets/diana.jpg" alt="client">
-                            </div>
+                    </div>
+                </div>
+
+                <div id="client2" class="bubble reviews__bubbles__bubble2" data-name="Viktoras" data-age="30" data-picture="/assets/viktoras.jpg" data-text="Very good trainer">
+                    <div class="bubble__outer-circ">
+                        <div class="bubble__inner-circ">
+                            <img src="/assets/personal.jpg" alt="client">
                         </div>
-                    </a>
-                </li>
-                <li class="reviews__bubbles__bubble3">
-                    <a href="#">
-                        <div class="reviews__bubbles__bubble3__outer-circ">
-                            <div class="reviews__bubbles__bubble__inner-circ">
-                                <img src="/assets/edita.jpg" alt="client">
-                            </div>
+                    </div>
+                </div>
+                <div id="client3"  class="bubble reviews__bubbles__bubble3" data-name="Edita" data-age="40" data-picture="/assets/edita.jpg" data-text="I am so happy, that I started to train with Rytis. I have reached my initial goals and I still can't stop. I am so happy, that I started to train with Rytis. I have reached my initial goals and I still can't stop.I am so happy, that I started to train with Rytis. I have reached my initial goals and I still can't stop.I am so happy, that I started to train with Rytis. I have reached my initial goals and I still can't stop.I am so happy, that I started to train with Rytis. I have reached my initial goals and I still can't stop. I am so happy, that I started to train with Rytis. I have reached my initial goals and I still can't stop.I am so happy, that I started to train with Rytis. I have reached my initial goals and I still can't stop.I am so happy, that I started to train with Rytis. I have reached my initial goals and I still can't stop.I am so happy, that I started to train with Rytis. I have reached my initial goals and I still can't stop. I am so happy, that I started to train with Rytis. I have reached my initial goals and I still can't stop.I am so happy, that I started to train with Rytis. I have reached my initial goals and I still can't stop.I am so happy, that I started to train with Rytis. I have reached my initial goals and I still can't stop.">
+                    <div class="bubble__outer-circ">
+                        <div class="bubble__inner-circ">
+                            <img src="/assets/personal.jpg" alt="client">
                         </div>
-                    </a>
-                </li>
-                <li class="reviews__bubbles__bubble4">
-                    <a href="#">
-                        <div class="reviews__bubbles__bubble4__outer-circ">
-                            <div class="reviews__bubbles__bubble__inner-circ">
-                                <img src="/assets/portrait.jpg" alt="client">
-                            </div>
+                    </div>
+                </div>
+                <div id="client4" class="bubble reviews__bubbles__bubble4" data-name="Aiste" data-age="30" data-picture="/assets/aiste.jpg" data-text="Very good trainer">
+                    <div class="bubble__outer-circ">
+                        <div class="bubble__inner-circ">
+                            <img src="/assets/personal.jpg" alt="client">
                         </div>
-                    </a>
-                </li>
-                <li class="reviews__bubbles__bubble5">
-                    <a href="#">
-                        <div class="reviews__bubbles__bubble5__outer-circ">
-                            <div class="reviews__bubbles__bubble__inner-circ">
-                                <img src="/assets/personal.jpg" alt="client">
-                            </div>
+                    </div>
+                </div>
+
+                <div id="client5"  class="bubble reviews__bubbles__bubble5" data-name="Rytis"  data-picture="/assets/portrait.jpg" data-text="I'm very good">
+                    <div class="bubble__outer-circ">
+                        <div class="bubble__inner-circ">
+                            <img src="/assets/portrait.jpg" alt="client">
                         </div>
-                    </a>
-                </li>
-                <li class="reviews__bubbles__bubble6">
-                    <a href="#">
-                        <div class="reviews__bubbles__bubble6__outer-circ">
-                            <div class="reviews__bubbles__bubble__inner-circ">
-                                <img src="/assets/viktoras.jpg" alt="client">
-                            </div>
+                    </div>
+                </div>
+
+                <div class="reviews-logo">
+                    
+                </div>
+
+                <div  id="client6" class="bubble reviews__bubbles__bubble6">
+                    <div class="bubble__outer-circ">
+                        <div class="bubble__inner-circ">
+                            <img src="/assets/personal.jpg" alt="client">
                         </div>
-                    </a>
-                </li>
-                <li class="reviews__bubbles__bubble7">
-                    <a href="#">
-                        <div class="reviews__bubbles__bubble7__outer-circ">
-                            <div class="reviews__bubbles__bubble__inner-circ">
-                                <img src="/assets/aiste.jpg" alt="client">
-                            </div>
+                    </div>
+                </div>
+                <div  id="client7" class="bubble reviews__bubbles__bubble7">
+                    <div class="bubble__outer-circ">
+                        <div class="bubble__inner-circ">
+                            <img src="/assets/personal.jpg" alt="client">
                         </div>
-                    </a>
-                </li>
-                <li class="reviews__bubbles__bubble8">
-                    <a href="#">
-                        <div class="reviews__bubbles__bubble8__outer-circ">
-                            <div class="reviews__bubbles__bubble__inner-circ">
-                                <img src="/assets/trainer.jpg" alt="client">
-                            </div>
+                    </div>
+                </div>
+                <div  id="client8" class="bubble reviews__bubbles__bubble8">
+                    <div class="bubble__outer-circ">
+                        <div class="bubble__inner-circ">
+                            <img src="/assets/personal.jpg" alt="client">
                         </div>
-                    </a>
-                </li>
-                <li class="reviews__bubbles__bubble9">
-                    <a href="#">
-                        <div class="reviews__bubbles__bubble9__outer-circ">
-                            <div class="reviews__bubbles__bubble__inner-circ">
-                                <img src="/assets/trainer.jpg" alt="client">
-                            </div>
+                    </div>
+                </div>
+                <div  id="client9" class="bubble reviews__bubbles__bubble9">
+                    <div class="bubble__outer-circ">
+                        <div class="bubble__inner-circ">
+                            <img src="/assets/personal.jpg" alt="client">
                         </div>
-                    </a>
-                </li>
-                <li class="reviews__bubbles__bubble10">
-                    <a href="#">
-                        <div class="reviews__bubbles__bubble10__outer-circ">
-                            <div class="reviews__bubbles__bubble__inner-circ">
-                                <img src="/assets/viktoras.jpg" alt="client">
-                            </div>
+                    </div>
+                </div>
+                <div id="client10"  class="bubble reviews__bubbles__bubble10">
+                    <div class="bubble__outer-circ">
+                        <div class="bubble__inner-circ">
+                            <img src="/assets/personal.jpg" alt="client">
                         </div>
-                    </a>
-                </li>
-                <!-- <li class="reviews__bubbles__bubble11">
-                    <a href="#">
-                        <div class="reviews__bubbles__bubble11__outer-circ">
-                            <div class="reviews__bubbles__bubble__inner-circ">
-                                <img src="/assets/aiste.jpg" alt="client">
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="reviews__bubbles__bubble12">
-                    <a href="#">
-                        <div class="reviews__bubbles__bubble12__outer-circ">
-                            <div class="reviews__bubbles__bubble__inner-circ">
-                                <img src="/assets/diana.jpg" alt="client">
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="reviews__bubbles__bubble13">
-                    <a href="#">
-                        <div class="reviews__bubbles__bubble13__outer-circ">
-                            <div class="reviews__bubbles__bubble__inner-circ">
-                                <img src="/assets/edita.jpg" alt="client">
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="reviews__bubbles__bubble14">
-                    <a href="#">
-                        <div class="reviews__bubbles__bubble14__outer-circ">
-                            <div class="reviews__bubbles__bubble__inner-circ">
-                                <img src="/assets/portrait.jpg" alt="client">
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="reviews__bubbles__bubble15">
-                    <a href="#">
-                        <div class="reviews__bubbles__bubble15__outer-circ">
-                            <div class="reviews__bubbles__bubble__inner-circ">
-                                <img src="/assets/personal.jpg" alt="client">
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="reviews__bubbles__bubble16">
-                    <a href="#">
-                        <div class="reviews__bubbles__bubble16__outer-circ">
-                            <div class="reviews__bubbles__bubble__inner-circ">
-                                <img src="/assets/trainer.jpg" alt="client">
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="reviews__bubbles__bubble17">
-                    <a href="#">
-                        <div class="reviews__bubbles__bubble17__outer-circ">
-                            <div class="reviews__bubbles__bubble__inner-circ">
-                                <img src="/assets/trainer.jpg" alt="client">
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="reviews__bubbles__bubble18">
-                    <a href="#">
-                        <div class="reviews__bubbles__bubble18__outer-circ">
-                            <div class="reviews__bubbles__bubble__inner-circ">
-                                <img src="/assets/trainer.jpg" alt="client">
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="reviews__bubbles__bubble19">
-                    <a href="#">
-                        <div class="reviews__bubbles__bubble19__outer-circ">
-                            <div class="reviews__bubbles__bubble__inner-circ">
-                                <img src="/assets/trainer.jpg" alt="client">
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="reviews__bubbles__bubble20">
-                    <a href="#">
-                        <div class="reviews__bubbles__bubble20__outer-circ">
-                            <div class="reviews__bubbles__bubble__inner-circ">
-                                <img src="/assets/trainer.jpg" alt="client">
-                            </div>
-                        </div>
-                    </a>
-                </li> -->
+                    </div>
+                </div>
+
                 
-            </ul>
+                
+            
         </div>
     </section>
 

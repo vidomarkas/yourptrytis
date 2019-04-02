@@ -52,6 +52,10 @@
             padding: 20px;
             font-size: 3rem;
             // text-decoration: underline;
+            h4 {
+                display: inline;
+            }
+            
             
         }
     }
@@ -62,6 +66,8 @@
             color: #657783;
             padding: 20px;
             text-align: center;
+            max-height: 25vh;
+            overflow-y: scroll;
         }
     }
 }
