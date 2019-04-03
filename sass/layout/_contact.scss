@@ -11,6 +11,23 @@
         text-decoration: none;
     }
 
+    &__header {
+        text-align: center;
+        font-size: 40px;
+        color: $color-black-light;
+        span {
+            color: $color-primary;
+            text-shadow: 0px 0px 6px rgb(78, 78, 78);
+        }
+    }
+
+    &__subheader {
+        color: $color-black-light;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
     &__flex {
         margin-top: 100px;
         display: flex;
