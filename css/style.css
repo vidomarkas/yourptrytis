@@ -413,6 +413,35 @@ body {
   transform: scale(1.1);
   transition: all 1s; }
 
+.contact__form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); }
+
+.contact__form-email {
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-bottom: 10px;
+  height: 40px;
+  background-color: grey;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); }
+
+.contact__form-text {
+  border-radius: 10px;
+  resize: none;
+  height: 50%;
+  margin-bottom: 10px; }
+
+.contact__form-button {
+  border-radius: 10px;
+  background-color: yellowgreen;
+  width: 50px; }
+
 .header__background {
   position: relative;
   background-image: url(/assets/meghan-holmes-779221-unsplash.jpg);
@@ -654,7 +683,7 @@ body {
         border-bottom-left-radius: 55px;
         transform: rotate(-1deg); }
       .reviews__background-square--middle {
-        width: 70%;
+        width: 80%;
         height: 80%;
         position: absolute;
         left: 0;
@@ -703,26 +732,29 @@ body {
   position: relative;
   min-height: 100vh;
   width: 100vw; }
-  .contact a {
-    text-decoration: none; }
-  .contact__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 2%;
-    grid-row-gap: 40px;
+  .contact__container {
     width: 80%;
     margin: 0 auto; }
-    .contact__grid--map {
-      grid-column: 1 / 2;
-      grid-row: 1 / 1;
-      background: red;
-      height: 400px; }
-    .contact__grid--contact-form {
-      grid-column: 2 / 3;
-      grid-row: 1 / 1;
-      background: blue;
-      height: 400px; }
+  .contact a {
+    text-decoration: none; }
+  .contact__flex {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around; }
+  .contact__details {
+    background: greenyellow;
+    height: 400px; }
+    .contact__details ul {
+      list-style: none; }
+  .contact__map {
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    box-shadow: 2px 2px 6px rgba(5, 5, 20, 0.5);
+    border-radius: 10px; }
+  .contact__form {
+    height: 400px;
+    width: 20%; }
 
 .contact:before {
   content: "";
