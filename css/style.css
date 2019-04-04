@@ -436,7 +436,8 @@ body {
     height: 40px;
     font-size: 16px;
     padding: 10px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    font-family: Rubik; }
   .contact__form-text {
     border-radius: 10px;
     resize: none;
@@ -444,7 +445,8 @@ body {
     margin-bottom: 20px;
     font-size: 16px;
     padding: 10px;
-    border: none; }
+    border: none;
+    font-family: Rubik; }
   .contact__form-button {
     display: inline-block;
     border: none;
