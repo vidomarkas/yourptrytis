@@ -2,6 +2,7 @@
     position: relative;
     min-height: 100vh;
     width: 100vw;
+    
 
     &__container {
         width: 80%;
@@ -36,23 +37,47 @@
 
     &__details {
         
-        background: greenyellow;
+        
         height: 400px;
         // box-shadow: 2px 2px 6px rgba(0, 0, 0, .5);
 
         ul {
             list-style: none;
         }
+
+        h5 {
+            font-size: 40px;
+            
+        }
+        
+        p {
+            font-size: 20px;
+            display: inline;
+        }
+
+        a {
+            font-size: 20px;
+        }
+
+        svg {
+            display: inline;
+            margin-right: 5px;
+        }
         
     }
     
     &__map {
         
-        height: 400px;
-        width: 400px;
+        height: 200px;
+        width: 100%;
         overflow: hidden;
         box-shadow: 2px 2px 6px rgba(5px, 5px, 20px, .5);
         border-radius: 10px;
+        position: absolute;
+        bottom:0;
+        left: 0;
+        
+        
         
     }
     &__form {
@@ -73,12 +98,15 @@
     background-image: linear-gradient(to bottom, rgba(53, 53, 53, 0.397) 0%,rgb(255, 255, 255) 100%);
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 130%;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: -2;
     transform: skewY(-3deg) translate(0,-50px);
+    
 }
+
+
 
 
 
