@@ -1,8 +1,8 @@
 
 .services {
     position: relative;
-    margin-top: 80px;
-    margin-bottom: 120px;
+    margin-top: 8rem;
+    margin-bottom: 12rem;
     min-height: 100vh;
     
 
@@ -12,7 +12,7 @@
         display: grid;
         
         grid-template-columns: 29% 69%;
-        grid-auto-rows: 180px 180px 180px 180px;
+        grid-auto-rows: 18rem 18rem 18rem 18rem;
         grid-gap: 2.3rem;
         width: 80%;
         margin: 0 auto;
@@ -27,7 +27,7 @@
         background-size: cover;
         background-position: center;
         height: 180px; 
-        text-shadow: 1px 1px 6px #000;
+        text-shadow: .1rem .1rem .6rem #000;
         
     }
 
@@ -40,8 +40,8 @@
         background-image: url(/assets/plans.jpeg);
         background-size: cover;
         background-position: center;
-        height: 180px;
-        text-shadow: 1px 1px 6px #000;
+        height: 18rem;
+        text-shadow: .1rem .1rem .6rem #000;
         
     }
 
@@ -56,8 +56,8 @@
         background-image: url(/assets/diet.jpg);
         background-size: cover;
         background-position: center;
-        height: 180px;
-        text-shadow: 1px 1px 6px #000;
+        height: 18rem;
+        text-shadow: .1rem .1rem .6rem #000;
         
     }
 
@@ -71,7 +71,7 @@
         background-image: url(/assets/personal.jpg);
         background-size: cover;
         background-position: center;
-        height: 180px;
+        height: 18rem;
         
     }
 
@@ -94,6 +94,6 @@
     top: -27%;
     left: 0;
     z-index: -1;
-    transform: skewY(-3deg) translate(0,-50px);
+    transform: skewY(-3deg) translate(0,-5rem);
 
 }

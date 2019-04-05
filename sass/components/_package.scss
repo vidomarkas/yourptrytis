@@ -1,9 +1,9 @@
 .package {
 
-    border-radius: 5px;
+    border-radius: .5rem;
     
     padding: 3.5rem;
-    box-shadow: inset 12px 0px 50px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 1.2rem 0rem 5rem rgba(0, 0, 0, 0.6);
     transition: all 1s;
     
 
@@ -33,9 +33,9 @@
     }
 
     &__buy {
-        border: 2px solid #fff;
+        border: .2rem solid #fff;
         text-align: center;
-        border-radius: 15px;
+        border-radius: 1.5rem;
         margin-top: 1.5rem;
         padding: .5rem;
         font-size: 1.1rem;

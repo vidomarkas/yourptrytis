@@ -7,7 +7,7 @@
     top: 0;
     left: 0;
     z-index: -1;
-    transform: skewY(-3deg) translate(0,-50px);
+    transform: skewY(-3deg) translate(0,-5rem);
 }
 
 .reviews {
@@ -31,9 +31,9 @@
                 width: 33vw;
                 height: 45%;
                 position: absolute;
-                top: -100px;
-                right: -100px;
-                border-bottom-left-radius: 55px;
+                top: -10rem;
+                right: -10rem;
+                border-bottom-left-radius: 5.5rem;
                 transform: rotate(-1deg);
             }
 
@@ -47,16 +47,16 @@
                 bottom:0;
                 margin: auto;
                 transform: rotate(-3deg);
-                border-radius: 55px;
+                border-radius: 5.5rem;
             }
 
             &--bottom {
                 width: 33vw;
                 height: 55%;
                 position: absolute;
-                bottom: -40px;
-                left: -100px;
-                border-top-right-radius: 55px;
+                bottom: -4rem;
+                left: -10rem;
+                border-top-right-radius: 5.5rem;
                 transform: rotate(-7deg);
             }
         }
@@ -68,7 +68,7 @@
         position: fixed;
         left: 50%;
         top: 50%;
-        border-radius: 10px;
+        border-radius: 1rem;
         // height: auto;
         width: 50%;
         background: #fff;
@@ -133,7 +133,7 @@
         // width: 100%;
         overflow: hidden;
         z-index: 10;
-        transform: skewY(-3deg) translateY(-16px);
+        transform: skewY(-3deg) translateY(-1.6rem);
         background-image: url("../../assets/Logo.svg");
         // background-size: cover;
         color: rgba(53, 53, 53, 0.397);

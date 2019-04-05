@@ -18,15 +18,15 @@
         justify-content: space-between;
         margin: 0 auto;
         padding: .5rem;
-        height: 60px;
+        height: 6rem;
     }
 
     &__logobox {
-        padding-left: 20px;
+        padding-left: 2rem;
 
       svg {
-        height: 40px;
-        width: 73px;
+        height: 4rem;
+        width: 7.3rem;
         margin: 0;
         position: absolute;
         top: 50%;
@@ -52,8 +52,8 @@
 
     &__item {
         list-style: none;
-        margin: 0 40px;
-        padding: 6px 14px;
+        margin: 0 4rem;
+        padding: .6rem 1.4rem;
         
 
         a:link,
@@ -67,12 +67,12 @@
 
         &:hover {
             background-image: linear-gradient(to bottom, rgba(40,176,242,1) 0%,rgba(52,128,227,1) 100%);
-            border-radius: 5px;
+            border-radius: .5rem;
         }
 
         &--selected {
             background-image: linear-gradient(to bottom, rgba(40,176,242,1) 0%,rgba(52,128,227,1) 100%);
-            border-radius: 5px;
+            border-radius: .5rem;
             
         }
     }
@@ -80,7 +80,7 @@
     &__languagebox {
         display: flex;
         flex-direction: column;
-        padding-right: 30px;
+        padding-right: 3rem;
 
     }
 }
@@ -91,5 +91,5 @@
     white-space: nowrap;
     display:block;
     width:100%;
-    min-width:1px;
+    min-width:.1rem;
   }

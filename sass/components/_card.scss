@@ -1,6 +1,6 @@
 .card {
     position: relative;
-    border-radius: 5px;
+    border-radius: .5rem;
     
     display: flex;
     
@@ -16,8 +16,8 @@
         // flex-direction: column;
         // justify-content: space-evenly;
         // backface-visibility: hidden;
-        border-radius: 5px;
-        box-shadow:         0px 3px 20px rgba(83, 83, 83, 0.356);
+        border-radius: .5rem;
+        box-shadow:         0rem .3rem 2rem rgba(83, 83, 83, 0.356);
         position: relative;
         // padding: 5%;
         
@@ -65,7 +65,7 @@
             color: $color-grey-light;
             font-weight: 300;
             font-size: 1rem;
-            padding: 5px 0 0 0;
+            padding: .5rem 0 0 0;
         }
     
         &-text {
@@ -88,16 +88,16 @@
             left: 50%;
             transform: translate(-50%, -50%);
             margin: 0 auto;
-            padding: 15px 30px;
+            padding: 1.5rem 3rem;
             font-size: 2rem;
-            border-radius: 5px;
+            border-radius: .5rem;
             
             &-back {
                 padding: .5rem 1rem;
                 position: absolute;
                 bottom: 5%;
                 left: 5%;
-                border-radius: 5px;
+                border-radius: .5rem;
                 
                 
             }
@@ -105,14 +105,14 @@
         
 
         &__img {
-            height: 200px;
+            height: 20rem;
             width: 100%;
             margin: 0 auto;
             
             background-size: cover;
             background-position: center;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
+            border-top-left-radius: .5rem;
+            border-top-right-radius: .5rem;
 
             &-personal {
                 background-image: url(/assets/training.jpg);
@@ -133,12 +133,12 @@
 
     &__details{
         z-index: 2;
-        padding: 20px;
+        padding: 2rem;
         position: relative;
 
         &-title {
             position: absolute;
-            bottom: 20px;
+            bottom: 2rem;
             font-size: 2.6rem;
             line-height: 2.8rem;
             
@@ -153,14 +153,14 @@
 .overlay {
     display: block;
     position: absolute;
-    text-shadow: 1px 1px 6px #000;
+    text-shadow: .1rem .1rem .6rem #000;
     content: "";
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%,rgba(0, 0, 0, 0.65) 100%);
-    border-radius: 5px;
+    border-radius: .5rem;
     z-index: 1;
 }
 

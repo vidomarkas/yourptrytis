@@ -48,6 +48,6 @@ components
         @media (max-width: 75em) { @content }; //1200px
     }
     @if $breakpoint == big-desktop {
-        @media (min-width: 112.5em) { @content }; //1800px
+        @media (min-width: 187.5em) { @content }; //3000px
     }
 }

@@ -4,29 +4,29 @@
 
 .cookies {
     position: absolute;
-    left: 140px;
-    bottom: 60px;
-    height: 150px;
-    width: 300px;
+    left: 14rem;
+    bottom: 6rem;
+    height: 15rem;
+    width: 30rem;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: .5rem;
     z-index: 500;
-    box-shadow: 0px 6px 20px rgba(134, 134, 134, 0.692);
+    box-shadow: 0rem .6rem 2rem rgba(134, 134, 134, 0.692);
     
 
     &__text {
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
         color: $color-grey-dark;
-        padding: 20px;
+        padding: 2rem;
     }
 
     &__cookie {
-        height: 80px;
-        width: 80px;
+        height: 8rem;
+        width: 8rem;
         position: absolute;
-        bottom: -30px;
-        left: -20px;
+        bottom: -3rem;
+        left: -2rem;
         z-index: 501;
     }
 
