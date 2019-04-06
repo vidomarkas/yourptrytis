@@ -17,6 +17,10 @@
     &__container {
         width: 80%;
         margin: 0 auto;
+
+        @include respond(phone){
+            width: 100%;
+        }
         
     }
 
@@ -25,6 +29,13 @@
         justify-content: space-evenly;
         padding-top: 5rem;
         padding-bottom: 10rem;
+        // text-align: center;
+        margin-left: 8rem;
+
+        &-helpcenter {
+            margin-right: 2rem;
+            margin-left: 2rem;
+        }
 
         &-logo {
             text-align: center;

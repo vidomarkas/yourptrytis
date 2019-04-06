@@ -51,8 +51,15 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: $color-shade;
-    height: 100vh;
+    background-image: $color-shade;
+    background-size: cover;
+    background-repeat:   no-repeat;
+    min-height: 100vh;
+    height: 100%;
+    content: "";
+    width: 100%;
+    z-index: -3;
+
 }
 
 .section-divider {

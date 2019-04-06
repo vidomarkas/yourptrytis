@@ -55,8 +55,14 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.64) 0%, rgba(12, 11, 11, 0) 100%);
-  height: 100vh; }
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.64) 0%, rgba(12, 11, 11, 0) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  height: 100%;
+  content: "";
+  width: 100%;
+  z-index: -3; }
 
 .section-divider {
   z-index: 100;
@@ -214,7 +220,7 @@ body {
 .cookies {
   position: absolute;
   left: 9rem;
-  bottom: 6rem;
+  top: 6rem;
   height: 15rem;
   width: 30rem;
   background-color: #fff;
@@ -470,28 +476,26 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     top: 0;
-    left: 0; }
+    left: 0;
+    z-index: -5; }
   .header__intro {
     display: flex;
     justify-content: space-evenly;
     width: 85vw;
-    margin: 17rem auto 0 auto; }
-    @media (max-width: 75em) {
-      .header__intro {
-        margin: 15rem auto 5rem auto; } }
+    margin: 0 auto; }
     @media (max-width: 56.25em) {
       .header__intro {
-        flex-direction: column;
-        margin: 5rem auto 5rem auto; } }
+        flex-direction: column; } }
     @media (max-width: 37.5em) {
       .header__intro {
         width: 100vw; } }
   .header__slogan {
     height: 34rem;
-    width: 50%; }
+    width: 50%;
+    margin-top: 10rem; }
     @media (max-width: 56.25em) {
       .header__slogan {
         width: 100%;
@@ -516,7 +520,8 @@ body {
       color: #28B0F2; }
   .header__video {
     border: none;
-    box-shadow: none; }
+    box-shadow: none;
+    margin-top: 10rem; }
     @media (max-width: 75em) {
       .header__video {
         width: 50%; } }
@@ -533,7 +538,9 @@ body {
     width: 50%;
     max-width: 40rem;
     text-align: center;
-    margin: 5rem auto 0 auto; }
+    margin: 5rem auto 0 auto;
+    position: relative;
+    height: 200px; }
 
 .footer {
   background: #000;
@@ -549,11 +556,18 @@ body {
   .footer__container {
     width: 80%;
     margin: 0 auto; }
+    @media (max-width: 37.5em) {
+      .footer__container {
+        width: 100%; } }
   .footer__nav {
     display: flex;
     justify-content: space-evenly;
     padding-top: 5rem;
-    padding-bottom: 10rem; }
+    padding-bottom: 10rem;
+    margin-left: 8rem; }
+    .footer__nav-helpcenter {
+      margin-right: 2rem;
+      margin-left: 2rem; }
     .footer__nav-logo {
       text-align: center;
       padding-top: 5rem; }
@@ -750,7 +764,7 @@ body {
   height: 100%;
   top: -27%;
   left: 0;
-  z-index: -1;
+  z-index: -6;
   transform: skewY(-3deg) translate(0, -5rem); }
 
 .reviews:before {

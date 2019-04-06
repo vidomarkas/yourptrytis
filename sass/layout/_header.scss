@@ -12,10 +12,11 @@
         background-size:     cover;                     
         background-repeat:   no-repeat;
         background-position: center center;
-        height: 100vh;
+        height: 100%;
         width: 100vw;
         top: 0;
         left: 0;
+        z-index: -5;
     }
 
     &__intro {
@@ -27,15 +28,15 @@
         // top: 50%;
         // transform: translateY(-50%);
         width: 85vw;
-        margin: 17rem auto 0 auto;
+        margin: 0 auto;
         
         @include respond(tab-land) { //width < 1200px
-            margin: 15rem auto 5rem auto;
+            // margin: 15rem auto 5rem auto;
         }
 
         @include respond(tab-port) { //width < 1200px
             flex-direction: column;
-            margin: 5rem auto 5rem auto;
+            // margin: 5rem auto 5rem auto;
         }
 
         @include respond(phone) { //width < 1200px
@@ -49,6 +50,7 @@
     &__slogan {
         height: 34rem;
         width: 50%;
+        margin-top: 10rem;
 
         @include respond(tab-port) { //width < 1200px
             width: 100%;
@@ -84,6 +86,7 @@
     &__video {
         border: none;
         box-shadow: none;
+        margin-top: 10rem;;
         @include respond(tab-land) { //width < 1200px
            width: 50%;
            
@@ -109,6 +112,8 @@
         max-width: 40rem;
         text-align: center;
         margin: 5rem auto 0 auto;
+        position: relative;
+        height: 200px;
 
         @include respond(tab-land) { //width < 1200px
             // top: 82%;
