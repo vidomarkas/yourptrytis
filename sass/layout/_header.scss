@@ -38,6 +38,10 @@
             margin: 5rem auto 5rem auto;
         }
 
+        @include respond(phone) { //width < 1200px
+            width: 100vw;
+        }
+
         
 
     }
@@ -88,6 +92,11 @@
         @include respond(tab-port) { //width < 1200px
             width: 70%;
             margin: 0 auto;
+        }
+        @include respond(phone) { 
+            width: 100%;
+            margin: 0 auto;
+            padding: 2rem;
         }
     }
 
