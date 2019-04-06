@@ -873,6 +873,9 @@ body {
     box-shadow: 0.2rem 0.2rem 0.6rem rgba(0, 0, 0, 0.5);
     position: relative;
     margin-top: 5rem; }
+    @media (max-width: 56.25em) {
+      .contact__map {
+        height: 200px; } }
   .contact__form {
     height: 40rem;
     width: 30%; }

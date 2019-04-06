@@ -74,6 +74,10 @@
         box-shadow: .2rem .2rem .6rem rgba(0, 0, 0, .5);
         position: relative;
         margin-top: 5rem;
+
+        @include respond(tab-port) {
+            height: 200px;
+        }
         
         
         
