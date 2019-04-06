@@ -2,11 +2,17 @@
     position: relative;
     min-height: 60vh;
     width: 100vw;
+
+    
     
 
     &__container {
         width: 80%;
         margin: 0 auto;
+
+        @include respond(tab-port) {
+            width: 90%;
+        }
     }
     a {
         text-decoration: none;
@@ -33,6 +39,12 @@
         margin-top: 10rem;
         display: flex;
         justify-content: space-around;
+
+        @include respond(phone) {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5rem;
+        }
     }
 
     &__details {
@@ -86,7 +98,15 @@
         
         // background: blue;
         height: 40rem;
-        width: 30%;
+        width: 34%;
+
+        @include respond(tab-port) {
+            width: 40%;
+        }
+        @include respond(phone) {
+            width: 70%;
+            height: 46rem;
+        }
         
         // justify-content: flex-start;
         

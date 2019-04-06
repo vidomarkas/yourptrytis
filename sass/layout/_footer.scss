@@ -23,8 +23,13 @@
     &__nav {
         display: flex;
         justify-content: space-evenly;
-        padding-top: 10rem;
+        padding-top: 5rem;
         padding-bottom: 10rem;
+
+        &-logo {
+            text-align: center;
+            padding-top: 5rem;
+        }
 
         &-heading {
             padding-bottom: 2rem;
