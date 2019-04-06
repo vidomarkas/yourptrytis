@@ -19,10 +19,21 @@
         margin: 0 auto;
         padding: .5rem;
         height: 6rem;
+
+        @include respond(tab-land) { //width < 1200px
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        
     }
 
     &__logobox {
         padding-left: 2rem;
+
+        @include respond(tab-land) { 
+            padding-left: 0;
+        }
 
       svg {
         height: 4rem;
@@ -40,6 +51,10 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
+
+        @include respond(tab-port) { 
+            justify-content: center;
+        }
     }
 
     &__list {
@@ -54,6 +69,15 @@
         list-style: none;
         margin: 0 4rem;
         padding: .6rem 1.4rem;
+
+
+        @include respond(tab-land) { 
+            margin: 0 2rem;
+        }
+
+        @include respond(tab-port) { 
+            margin: 0 .5rem;
+        }
         
 
         a:link,
@@ -81,6 +105,16 @@
         display: flex;
         flex-direction: column;
         padding-right: 3rem;
+
+        @include respond(tab-port) { 
+            padding-right: 0;
+            display: flex;
+            flex-direction: row;
+
+            svg {
+                margin-right: .5rem;
+            }
+        }
 
     }
 }

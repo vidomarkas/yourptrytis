@@ -83,11 +83,10 @@
         }
 
         &-btn {
-            position: absolute;
-            bottom: 2%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             margin: 0 auto;
+            width: 40%;
+            // display: inline-block;
+            text-align: center;
             padding: 1.5rem 3rem;
             font-size: 2rem;
             border-radius: .5rem;

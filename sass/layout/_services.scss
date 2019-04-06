@@ -16,6 +16,11 @@
         grid-gap: 2.3rem;
         width: 80%;
         margin: 0 auto;
+
+        @include respond(tab-land) { //width < 1200px
+            grid-template-columns: repeat(4, 1fr) ;
+            grid-auto-rows: auto auto;
+        }
         
     }
 
@@ -28,6 +33,11 @@
         background-position: center;
         height: 180px; 
         text-shadow: .1rem .1rem .6rem #000;
+
+        @include respond(tab-land) { //width < 1200px
+            grid-column: 1 / 2;
+            grid-row: 1 / 1;
+        }
         
     }
 
@@ -42,6 +52,11 @@
         background-position: center;
         height: 18rem;
         text-shadow: .1rem .1rem .6rem #000;
+
+        @include respond(tab-land) { //width < 1200px
+            grid-column: 2 / 3;
+            grid-row: 1 / 1;
+        }
         
     }
 
@@ -59,6 +74,11 @@
         height: 18rem;
         text-shadow: .1rem .1rem .6rem #000;
         
+
+        @include respond(tab-land) { //width < 1200px
+            grid-column: 3 / 4;
+            grid-row: 1 / 1;
+        }
     }
 
     
@@ -72,6 +92,11 @@
         background-size: cover;
         background-position: center;
         height: 18rem;
+
+        @include respond(tab-land) { //width < 1200px
+            grid-column: 4 / 5;
+            grid-row: 1 / 1;
+        }
         
     }
 
@@ -81,6 +106,11 @@
         
         grid-column: 2 / 2;
         grid-row: 1 / 5;
+
+        @include respond(tab-land) { //width < 1200px
+            grid-column: 1 / 5;
+            grid-row: 2 / 2;
+        }
         
     }
 }
