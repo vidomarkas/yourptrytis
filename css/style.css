@@ -37,10 +37,10 @@ html {
       font-size: 50%; } }
   @media (max-width: 37.5em) {
     html {
-      font-size: 40%; } }
+      font-size: 45%; } }
   @media (max-width: 25em) {
     html {
-      font-size: 30%; } }
+      font-size: 40%; } }
   @media (min-width: 187.5em) {
     html {
       font-size: 75%; } }
@@ -675,7 +675,7 @@ body {
   position: relative;
   margin-top: 8rem;
   margin-bottom: 12rem;
-  min-height: 100vh; }
+  height: auto; }
   .services__container {
     display: grid;
     grid-template-columns: 29% 69%;

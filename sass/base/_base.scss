@@ -20,11 +20,11 @@ html {
     }
     
     @include respond(phone) {
-        font-size: 40%;
+        font-size: 45%;
     }
 
     @include respond(sm-phone) {
-        font-size: 30%;
+        font-size: 40%;
     }
 
     @include respond(big-desktop) { //width > 1800px
