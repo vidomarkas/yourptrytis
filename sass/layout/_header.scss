@@ -59,6 +59,10 @@
             text-align: center;
         }
 
+        @include respond(phone){
+            margin-top: 7rem;
+        }
+
 
         &-primary {
             font-size: 7rem;
@@ -108,15 +112,18 @@
         // top: 80%;
         // left: 50%;
         // transform: translate(-50%, -50%);
-        width: 50%;
+        // width: 50%;
         max-width: 40rem;
         text-align: center;
         margin: 5rem auto 0 auto;
         position: relative;
-        height: 200px;
+        // height: 200px;
 
-        @include respond(tab-land) { //width < 1200px
-            // top: 82%;
+        @include respond(phone) { //width < 1200px
+            margin: 4rem auto -2rem auto;
+        }
+        @include respond(sm-phone) { //width < 1200px
+            margin: 5rem auto -4rem auto;
         }
         
     }

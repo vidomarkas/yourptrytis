@@ -209,6 +209,14 @@ body {
     transform: skewY(-3deg);
     box-shadow: 0rem 0rem 2rem #414141;
     transition: all .4s; }
+    @media (max-width: 37.5em) {
+      .btn-cta {
+        font-size: 2em;
+        padding: 1rem 3rem; } }
+    @media (max-width: 25em) {
+      .btn-cta {
+        font-size: 2em;
+        padding: 1rem 2rem; } }
   .btn-cta:hover {
     transform: scale(1.05);
     transition: all .4s;
@@ -502,6 +510,9 @@ body {
         height: auto;
         padding: 3rem;
         text-align: center; } }
+    @media (max-width: 37.5em) {
+      .header__slogan {
+        margin-top: 7rem; } }
     .header__slogan-primary {
       font-size: 7rem;
       line-height: 8rem;
@@ -535,12 +546,16 @@ body {
         margin: 0 auto;
         padding: 2rem; } }
   .header__box {
-    width: 50%;
     max-width: 40rem;
     text-align: center;
     margin: 5rem auto 0 auto;
-    position: relative;
-    height: 200px; }
+    position: relative; }
+    @media (max-width: 37.5em) {
+      .header__box {
+        margin: 4rem auto -2rem auto; } }
+    @media (max-width: 25em) {
+      .header__box {
+        margin: 5rem auto -4rem auto; } }
 
 .footer {
   background: #000;
