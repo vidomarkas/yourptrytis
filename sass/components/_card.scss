@@ -20,6 +20,7 @@
         box-shadow:         0rem .3rem 2rem rgba(83, 83, 83, 0.356);
         position: relative;
         // padding: 5%;
+        // margin-top: 5rem;
         
         
         &__container {
@@ -132,16 +133,30 @@
 
     &__details{
         z-index: 2;
-        padding: 2rem;
-        position: relative;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
-        &-title {
-            position: absolute;
-            bottom: 2rem;
-            font-size: 2.6rem;
-            line-height: 2.8rem;
+        
+            
+        font-size: 2.6rem;
+        line-height: 2.8rem;
+        padding: 1rem;
+
+        @include respond(tab-port){
+            
+            font-size: 2rem;
             
         }
+        @include respond(tab-port){
+            
+            font-size: 1.5rem;
+            line-height: 1.9rem;
+            padding: .3rem;
+        }
+            
+        
     
     }
 
@@ -161,6 +176,11 @@
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%,rgba(0, 0, 0, 0.65) 100%);
     border-radius: .5rem;
     z-index: 1;
+
+    @include respond(tab-port){
+        z-index: 0;
+        overflow: hidden;
+    }
 }
 
 
