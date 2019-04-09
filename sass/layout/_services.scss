@@ -1,3 +1,16 @@
+.services:before {
+    content: "";
+    background-image: linear-gradient(to bottom, rgba(53, 53, 53, 0.397) 0%,rgb(255, 255, 255) 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -6;
+    transform: skewY(-3deg) translate(0,-5rem);
+
+}
+
 
 .services {
     position: relative;
@@ -141,15 +154,3 @@
     }
 }
 
-.services:before {
-    content: "";
-    background-image: linear-gradient(to bottom, rgba(53, 53, 53, 0.397) 0%,rgb(255, 255, 255) 100%);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0%;
-    left: 0;
-    z-index: -6;
-    transform: skewY(-3deg) translate(0,-5rem);
-
-}

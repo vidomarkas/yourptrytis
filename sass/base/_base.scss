@@ -63,17 +63,22 @@ body {
 }
 
 .section-divider {
+    // opacity: 0;
     z-index: 100;
     height: 10rem;
     background-image: linear-gradient(to right, rgb(48, 48, 48) 0%,rgb(12,11,11) 100%);;
     width: 100vw;
     transform: skewY(-3deg) translate(0,-5rem);
     position: relative;
-    border-top: .1rem solid $color-grey-dark;
-    border-bottom: .1rem solid $color-grey-dark;
+    // border-top: .1rem solid $color-grey-dark;
+    // border-bottom: .1rem solid $color-grey-dark;
+    
+    @include respond(tab-port){
+        transform: skewY(-3deg) translate(0,-30px);
+    }
 
     @include respond(sm-phone){
-        transform: skewY(-3deg) translate(0,-3rem);
+        transform: skewY(-3deg) translate(0,-30px);
     }
 
     &__container {

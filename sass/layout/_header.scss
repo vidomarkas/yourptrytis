@@ -6,6 +6,12 @@
     position: relative;
     min-height: 100vh;
     
+
+    @include respond(tab-port) {
+        min-height: 80rem;
+        // height: 100vh;
+    }
+    
     &__background {
         position: absolute;
         background-image: url(/assets/meghan-holmes-779221-unsplash.jpg);
@@ -16,7 +22,9 @@
         width: 100vw;
         top: 0;
         left: 0;
+        
         z-index: -5;
+        transform: skewY(-3deg);
     }
 
     &__intro {
@@ -29,9 +37,10 @@
         // transform: translateY(-50%);
         width: 85vw;
         margin: 0 auto;
+        // margin: 15rem auto 5rem auto;
         
         @include respond(tab-land) { //width < 1200px
-            // margin: 15rem auto 5rem auto;
+            //margin: 15rem auto 5rem auto;
         }
 
         @include respond(tab-port) { //width < 1200px
@@ -41,6 +50,9 @@
 
         @include respond(phone) { //width < 1200px
             width: 100vw;
+        }
+        @include respond(sm-phone) { //width < 1200px
+            min-height: 35rem;
         }
 
         
@@ -80,6 +92,10 @@
                 font-size: 5.5rem;
                 line-height: 7rem;
             }
+            @include respond(phone) { //width < 1200px
+                font-size: 4.5rem;
+                line-height: 5rem;
+            }
         }
 
         &-secondary {
@@ -104,6 +120,7 @@
             width: 100%;
             margin: 0 auto;
             padding: 2rem;
+            height: 35rem;
         }
     }
 
@@ -117,13 +134,17 @@
         text-align: center;
         margin: 5rem auto 0 auto;
         position: relative;
-        // height: 200px;
+        //height: 200px;
+
+        @include respond(tab-port) { //width < 1200px
+            margin:  2.5rem auto;
+        }
 
         @include respond(phone) { //width < 1200px
-            margin: 4rem auto -2rem auto;
+            margin: 4rem auto 2.5rem auto;
         }
         @include respond(sm-phone) { //width < 1200px
-            margin: 5rem auto -4rem auto;
+            margin: 5rem auto 4rem auto;
         }
         
     }

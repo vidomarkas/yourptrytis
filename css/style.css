@@ -70,12 +70,13 @@ body {
   background-image: linear-gradient(to right, #303030 0%, #0c0b0b 100%);
   width: 100vw;
   transform: skewY(-3deg) translate(0, -5rem);
-  position: relative;
-  border-top: 0.1rem solid #707070;
-  border-bottom: 0.1rem solid #707070; }
+  position: relative; }
+  @media (max-width: 56.25em) {
+    .section-divider {
+      transform: skewY(-3deg) translate(0, -30px); } }
   @media (max-width: 25em) {
     .section-divider {
-      transform: skewY(-3deg) translate(0, -3rem); } }
+      transform: skewY(-3deg) translate(0, -30px); } }
   .section-divider__container {
     width: 85vw;
     margin: 0 auto; }
@@ -205,7 +206,7 @@ body {
     font-size: 3rem;
     font-weight: 500;
     color: #fff;
-    margin: 0 auto;
+    margin: 5rem auto;
     padding: 1rem 6rem;
     border-radius: .5rem;
     position: relative;
@@ -473,6 +474,14 @@ body {
     padding: 1rem;
     margin-bottom: 2rem;
     font-family: Rubik; }
+  .contact__form-name {
+    border-radius: 1rem;
+    border: none;
+    height: 4rem;
+    font-size: 1.6rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-family: Rubik; }
   .contact__form-text {
     border-radius: 1rem;
     resize: none;
@@ -493,6 +502,9 @@ body {
 .header {
   position: relative;
   min-height: 100vh; }
+  @media (max-width: 56.25em) {
+    .header {
+      min-height: 80rem; } }
   .header__background {
     position: absolute;
     background-image: url(/assets/meghan-holmes-779221-unsplash.jpg);
@@ -503,7 +515,8 @@ body {
     width: 100vw;
     top: 0;
     left: 0;
-    z-index: -5; }
+    z-index: -5;
+    transform: skewY(-3deg); }
   .header__intro {
     display: flex;
     justify-content: space-evenly;
@@ -515,6 +528,9 @@ body {
     @media (max-width: 37.5em) {
       .header__intro {
         width: 100vw; } }
+    @media (max-width: 25em) {
+      .header__intro {
+        min-height: 35rem; } }
   .header__slogan {
     height: 34rem;
     width: 50%;
@@ -542,6 +558,10 @@ body {
         .header__slogan-primary {
           font-size: 5.5rem;
           line-height: 7rem; } }
+      @media (max-width: 37.5em) {
+        .header__slogan-primary {
+          font-size: 4.5rem;
+          line-height: 5rem; } }
     .header__slogan-secondary {
       color: #28B0F2; }
   .header__video {
@@ -559,18 +579,22 @@ body {
       .header__video {
         width: 100%;
         margin: 0 auto;
-        padding: 2rem; } }
+        padding: 2rem;
+        height: 35rem; } }
   .header__box {
     max-width: 40rem;
     text-align: center;
     margin: 5rem auto 0 auto;
     position: relative; }
+    @media (max-width: 56.25em) {
+      .header__box {
+        margin: 2.5rem auto; } }
     @media (max-width: 37.5em) {
       .header__box {
-        margin: 4rem auto -2rem auto; } }
+        margin: 4rem auto 2.5rem auto; } }
     @media (max-width: 25em) {
       .header__box {
-        margin: 5rem auto -4rem auto; } }
+        margin: 5rem auto 4rem auto; } }
 
 .footer {
   background: #000;
@@ -715,6 +739,17 @@ body {
   width: 100%;
   min-width: .1rem; }
 
+.services:before {
+  content: "";
+  background-image: linear-gradient(to bottom, rgba(53, 53, 53, 0.397) 0%, white 100%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -6;
+  transform: skewY(-3deg) translate(0, -5rem); }
+
 .services {
   position: relative;
   margin-bottom: 12rem;
@@ -804,17 +839,6 @@ body {
       .services__main {
         grid-column: 1 / 5;
         grid-row: 2 / 3; } }
-
-.services:before {
-  content: "";
-  background-image: linear-gradient(to bottom, rgba(53, 53, 53, 0.397) 0%, white 100%);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0%;
-  left: 0;
-  z-index: -6;
-  transform: skewY(-3deg) translate(0, -5rem); }
 
 .reviews:before {
   content: "";

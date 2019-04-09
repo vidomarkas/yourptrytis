@@ -217,7 +217,8 @@
     </div>
 
     <section id="header" class="header">
-        <div class="header__background"></div>
+        <div class="header__background">
+        </div>
         <div class="shade"></div>
         <div class="header__intro">
             <div class="header__slogan">
@@ -230,6 +231,7 @@
             <a  href="#services">
                 <div class="btn btn-cta">Let's get started!</div></a>
         </div>
+    
     </section>
 
 
@@ -850,10 +852,11 @@
                 </div >
 
                 <div class="contact__form">
-                    <form class="contact__form-container" action="">
+                    <form class="contact__form-container" action="https://is76y3fet5.execute-api.us-east-1.amazonaws.com/dev/email/send" method="post">
                         <h6>Easy to start</h6>
-                        <input class="contact__form-email" placeholder="Your email address" type="email" id="email" required>
-                        <textarea class="contact__form-text" placeholder="I want to try this. When are you available?" name="" id="message" cols="30" rows="10"></textarea>
+                        <input class="contact__form-email" name="email" placeholder="Your email address" type="email" id="email" required>
+                        <input class="contact__form-name" name="name" placeholder="Your name" type="text" id="name" required>
+                        <textarea class="contact__form-text" placeholder="I want to try this. When are you available?" name="content" id="message" cols="30" rows="10"></textarea>
                         <button class="contact__form-button btn" type="submit">Send</button>
                     </form>
                 </div>
