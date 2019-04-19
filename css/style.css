@@ -303,6 +303,9 @@ body {
       .card__main__container h3 {
         padding-top: 2rem;
         padding-bottom: 2rem; }
+      @media (max-width: 25em) {
+        .card__main__container {
+          padding: .6rem; } }
     .card__main-title {
       font-size: 2.6rem;
       line-height: 2.8rem;
@@ -422,9 +425,33 @@ body {
   padding: 3.5rem;
   box-shadow: inset 1.2rem 0rem 5rem rgba(0, 0, 0, 0.6);
   transition: all 1s; }
+  @media (max-width: 56.25em) {
+    .package {
+      padding: 1rem;
+      width: 80%;
+      margin: 0 auto; } }
+  @media (max-width: 25em) {
+    .package {
+      padding: 1rem;
+      width: 96%;
+      margin: 0 auto; } }
+  @media (max-width: 56.25em) {
+    .package__flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; } }
+  @media (max-width: 56.25em) {
+    .package__head {
+      margin: auto 5rem;
+      border-top: none;
+      padding: 1rem;
+      align-self: center; } }
   .package__heading {
     text-align: center;
     font-size: 2.1rem; }
+    @media (max-width: 56.25em) {
+      .package__heading {
+        font-size: 2.8rem; } }
   .package__price {
     font-size: 6rem;
     text-align: center;
@@ -433,9 +460,20 @@ body {
       font-size: 3rem;
       font-weight: 400;
       padding: 1rem; }
+      @media (max-width: 56.25em) {
+        .package__price span {
+          padding: .1rem; } }
   .package__body {
     border-top: 0.1rem solid #b0afaf;
     padding: 1rem; }
+    @media (max-width: 56.25em) {
+      .package__body {
+        margin: auto 5rem;
+        border-top: none;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 1rem;
+        font-size: 1.6rem;
+        align-self: flex-end; } }
     .package__body__disabled {
       color: #b0afaf; }
     .package__body svg {
@@ -451,6 +489,11 @@ body {
     background: #fff;
     color: #000;
     transition: all .2s; }
+    @media (max-width: 56.25em) {
+      .package__buy {
+        width: 40%;
+        margin: 0 auto;
+        margin-top: 1.5rem; } }
   .package__buy:hover {
     transform: scale(1.2);
     transition: all .2s; }
@@ -781,6 +824,12 @@ body {
         grid-auto-rows: auto auto; } }
     @media (max-width: 56.25em) {
       .services__container {
+        width: 96%;
+        grid-auto-rows: 8rem auto;
+        grid-gap: 2rem; } }
+    @media (max-width: 25em) {
+      .services__container {
+        width: 96%;
         grid-auto-rows: 8rem auto;
         grid-gap: 2rem; } }
   .services__consultation {
@@ -1015,16 +1064,22 @@ body {
 
 .packages__container {
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-around; }
+  @media (max-width: 56.25em) {
+    .packages__container {
+      flex-direction: column; } }
 
 .packages__beginner {
-  background: linear-gradient(to left, #0575e6, #021b79); }
+  background: linear-gradient(to left, #f1f1f1, #7d7f83);
+  margin-bottom: 2rem;
+  color: #000; }
 
 .packages__commited {
-  background: linear-gradient(234deg, #FDC830, #F37335); }
+  background: linear-gradient(234deg, #b8d7fa, #6084d1);
+  margin-bottom: 2rem; }
 
 .packages__achiever {
-  background: linear-gradient(to right, #ff416c, #ff4b2b); }
+  background: linear-gradient(to left, #0575e6, #021b79); }
 
 .modal {
   position: fixed;

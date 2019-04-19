@@ -41,6 +41,10 @@
                 padding-top: 2rem;
                 padding-bottom: 2rem;
             }
+
+            @include respond(sm-phone){
+                padding: .6rem;
+            }
         }
         
     

@@ -5,11 +5,48 @@
     padding: 3.5rem;
     box-shadow: inset 1.2rem 0rem 5rem rgba(0, 0, 0, 0.6);
     transition: all 1s;
+
+    @include respond(tab-port) {
+        padding: 1rem;
+        width: 80%;
+        margin: 0 auto;
+    };
+    @include respond(sm-phone) {
+        padding: 1rem;
+        width: 96%;
+        margin: 0 auto;
+    };
+
+    &__flex {
+        
+        @include respond(tab-port){
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+        }
+    }
+
+    &__head {
+        @include respond(tab-port){
+            margin:  auto 5rem;
+            border-top: none;
+            // background-color: rgba(0, 0, 0, 0.2);
+            padding: 1rem;
+            align-self: center;
+            
+        }
+    }
     
 
     &__heading {
         text-align: center;
         font-size: 2.1rem;
+
+        @include respond(tab-port){
+            font-size: 2.8rem;
+            
+        }
         
     }
 
@@ -21,11 +58,26 @@
             font-size: 3rem;
             font-weight: 400;
             padding: 1rem;
+
+            @include respond(tab-port){
+                padding: .1rem;
+            }
         }
     }
     &__body {
         border-top: .1rem solid $color-grey-light;
         padding: 1rem;
+
+        @include respond(tab-port){
+            margin:  auto 5rem;
+            border-top: none;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 1rem;
+            font-size: 1.6rem;
+            align-self: flex-end;
+            
+        }
+
         &__disabled {
             color: $color-grey-light;
         }
@@ -48,7 +100,11 @@
         color: #000;
         transition: all .2s;
 
-        
+        @include respond(tab-port){
+            width: 40%;
+            margin: 0 auto;
+            margin-top: 1.5rem;
+        }
     }
 
     &__buy:hover {

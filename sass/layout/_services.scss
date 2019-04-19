@@ -36,7 +36,12 @@
             grid-auto-rows: auto auto;
         }
         @include respond(tab-port) { 
-            
+            width: 96%;
+            grid-auto-rows: 8rem auto;
+            grid-gap: 2rem;
+        }
+        @include respond(sm-phone) { 
+            width: 96%;
             grid-auto-rows: 8rem auto;
             grid-gap: 2rem;
         }
