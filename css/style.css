@@ -296,6 +296,8 @@ body {
       padding: 5rem; }
       .card__main__container ul {
         list-style-type: none; }
+        .card__main__container ul svg {
+          height: 1.2rem; }
       .card__main__container h2 {
         text-align: center; }
       .card__main__container h3 {
@@ -436,6 +438,8 @@ body {
     padding: 1rem; }
     .package__body__disabled {
       color: #b0afaf; }
+    .package__body svg {
+      height: 1.2rem; }
   .package__buy {
     border: .2rem solid #fff;
     text-align: center;
@@ -646,6 +650,8 @@ body {
       list-style: none;
       font-size: 1.6rem;
       line-height: 2.6rem; }
+      .footer__nav li svg {
+        height: 1.8rem; }
   .footer__credentials {
     color: #707070;
     text-align: center;
@@ -969,7 +975,8 @@ body {
       font-size: 2rem; }
     .contact__details svg {
       display: inline;
-      margin-right: .5rem; }
+      margin-right: .5rem;
+      height: 2rem; }
   .contact__map {
     height: 20rem;
     width: 100%;
