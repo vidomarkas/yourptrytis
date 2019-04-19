@@ -39,6 +39,7 @@
         margin-top: 10rem;
         display: flex;
         justify-content: space-around;
+        height: auto;
 
         @include respond(phone) {
             flex-direction: column;
@@ -96,12 +97,11 @@
         
     }
     &__form {
-        
-        // background: blue;
         height: 40rem;
         width: 34%;
 
         @include respond(tab-port) {
+            height: 46rem;
             width: 40%;
         }
         @include respond(phone) {
