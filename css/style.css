@@ -69,14 +69,20 @@ body {
   height: 10rem;
   background-image: linear-gradient(to right, #303030 0%, #0c0b0b 100%);
   width: 100vw;
-  transform: skewY(-3deg) translate(0, -5rem);
+  transform: skewY(-3deg) translate(0, -50px);
   position: relative; }
+  @media (max-width: 75em) {
+    .section-divider {
+      transform: skewY(-3deg) translate(0, -45px); } }
   @media (max-width: 56.25em) {
     .section-divider {
-      transform: skewY(-3deg) translate(0, -30px); } }
+      transform: skewY(-3deg) translate(0, -40px); } }
+  @media (max-width: 37.5em) {
+    .section-divider {
+      transform: skewY(-3deg) translate(0, -36px); } }
   @media (max-width: 25em) {
     .section-divider {
-      transform: skewY(-3deg) translate(0, -30px); } }
+      transform: skewY(-3deg) translate(0, -32px); } }
   .section-divider__container {
     width: 85vw;
     margin: 0 auto; }
