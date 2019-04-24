@@ -21,11 +21,11 @@
   min-height: 100vh;
 
   @include respond(tab-port) {
-    height: auto;
+    min-height: 80rem;
   }
 
   @include respond(sm-phone) {
-    height: 40rem;
+    min-height: 60rem;
   }
 
   &__background {
@@ -80,12 +80,18 @@
     top: 50%;
     border-radius: 1rem;
     // height: auto;
-    width: 50%;
+    width: 60%;
     background: #fff;
     // border-radius: 50%;
     transform: skewY(-3deg) translateY(-50%) translateX(-50%);
     z-index: 5000;
     // margin-top: 10rem;
+    @include respond(tab-land) {
+      width: 80%;
+    }
+    @include respond(phone) {
+      width: 90%;
+    }
   }
 
   &__bubbles {

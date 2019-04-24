@@ -912,10 +912,10 @@ body {
   min-height: 100vh; }
   @media (max-width: 56.25em) {
     .reviews {
-      height: auto; } }
+      min-height: 80rem; } }
   @media (max-width: 25em) {
     .reviews {
-      height: 40rem; } }
+      min-height: 60rem; } }
   .reviews__background {
     position: absolute;
     top: 0;
@@ -956,10 +956,16 @@ body {
     left: 50%;
     top: 50%;
     border-radius: 1rem;
-    width: 50%;
+    width: 60%;
     background: #fff;
     transform: skewY(-3deg) translateY(-50%) translateX(-50%);
     z-index: 5000; }
+    @media (max-width: 75em) {
+      .reviews__modal {
+        width: 80%; } }
+    @media (max-width: 37.5em) {
+      .reviews__modal {
+        width: 90%; } }
   .reviews__bubbles {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1106,6 +1112,15 @@ body {
     display: none; }
   .modal__container {
     padding: 8rem; }
+    @media (max-width: 75em) {
+      .modal__container {
+        padding: 6rem; } }
+    @media (max-width: 56.25em) {
+      .modal__container {
+        padding: 3rem; } }
+    @media (max-width: 37.5em) {
+      .modal__container {
+        padding: 1rem; } }
   .modal__close {
     cursor: pointer;
     position: absolute;
@@ -1116,6 +1131,15 @@ body {
     color: #28B0F2; }
   .modal__details-picture {
     transform: skewY(3deg) translateY(8rem); }
+    @media (max-width: 75em) {
+      .modal__details-picture {
+        transform: skewY(3deg) translateY(10rem); } }
+    @media (max-width: 56.25em) {
+      .modal__details-picture {
+        transform: skewY(3deg) translateY(12rem); } }
+    @media (max-width: 37.5em) {
+      .modal__details-picture {
+        transform: skewY(3deg) translateY(14rem); } }
     .modal__details-picture > .portrait__back {
       box-shadow: 0rem 0.2rem 1rem #aaaaaa; }
   .modal__details-name {
