@@ -1,129 +1,154 @@
-
-
-
-
 .header {
-    position: relative;
-    min-height: 100vh;
-    
+  position: relative;
+  min-height: 100vh;
+
+  @include respond(tab-port) {
+    min-height: 80rem;
+    // height: 100vh;
+  }
+
+  &__background {
+    position: absolute;
+    background-image: url(/assets/meghan-holmes-779221-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100vw;
+    top: 0;
+    left: 0;
+
+    z-index: -5;
+    transform: skewY(-3deg);
+  }
+
+  &__intro {
+    display: flex;
+    justify-content: space-between;
+
+    // top: 50%;
+    // transform: translateY(-50%);
+    // width: 85vw;
+    // margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 80%;
+    height: 100vh;
+    // margin: 15rem auto 5rem auto;
+    @include respond(tab-port) {
+      display: block;
+      height: 100vh;
+    }
+
+    img {
+      margin-top: 10rem;
+      height: 90%;
+      @include respond(tab-port) {
+        display: none;
+      }
+    }
+
+    @include respond(tab-land) {
+      //width < 1200px
+      //margin: 15rem auto 5rem auto;
+    }
 
     @include respond(tab-port) {
-        min-height: 80rem;
-        // height: 100vh;
-    }
-    
-    &__background {
-        position: absolute;
-        background-image: url(/assets/meghan-holmes-779221-unsplash.jpg);
-        background-size:     cover;                     
-        background-repeat:   no-repeat;
-        background-position: center center;
-        height: 100%;
-        width: 100vw;
-        top: 0;
-        left: 0;
-        
-        z-index: -5;
-        transform: skewY(-3deg);
+      //width < 1200px
+      flex-direction: column;
+      // margin: 5rem auto 5rem auto;
     }
 
-    &__intro {
-        
-        
-        display: flex;
-        justify-content: space-evenly;
-        
-        // top: 50%;
-        // transform: translateY(-50%);
-        width: 85vw;
-        margin: 0 auto;
-        // margin: 15rem auto 5rem auto;
-        
-        @include respond(tab-land) { //width < 1200px
-            //margin: 15rem auto 5rem auto;
-        }
+    @include respond(phone) {
+      //width < 1200px
+      width: 100vw;
+    }
+    @include respond(sm-phone) {
+      //width < 1200px
+      min-height: 35rem;
+    }
+  }
 
-        @include respond(tab-port) { //width < 1200px
-            flex-direction: column;
-            // margin: 5rem auto 5rem auto;
-        }
+  &__slogan {
+    height: 34rem;
+    width: 50%;
+    margin-top: 10rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-        @include respond(phone) { //width < 1200px
-            width: 100vw;
-        }
-        @include respond(sm-phone) { //width < 1200px
-            min-height: 35rem;
-        }
-
-        
-
+    @include respond(tab-port) {
+      //width < 1200px
+      width: 100%;
+      height: 100%;
+      padding: 3rem;
+      text-align: center;
     }
 
-    &__slogan {
-        height: 34rem;
-        width: 50%;
-        margin-top: 10rem;
-
-        @include respond(tab-port) { //width < 1200px
-            width: 100%;
-            height: auto;
-            padding: 3rem;
-            text-align: center;
-        }
-
-        @include respond(phone){
-            margin-top: 7rem;
-        }
-
-
-        &-primary {
-            font-size: 7rem;
-            line-height: 8rem;
-            font-weight: 700;
-            color: #fff;
-            text-shadow: 0rem 0rem 3rem #000000;
-
-            @include respond(tab-land) { //width < 1200px
-                font-size: 6rem;
-                line-height: 6.5rem;
-            }
-
-            @include respond(tab-port) { //width < 1200px
-                font-size: 5.5rem;
-                line-height: 7rem;
-            }
-            @include respond(phone) { //width < 1200px
-                font-size: 4.5rem;
-                line-height: 5rem;
-            }
-        }
-
-        &-secondary {
-            color: $color-primary;
-        }
+    @include respond(phone) {
+      margin-top: 7rem;
     }
 
-    &__video {
-        border: none;
-        box-shadow: none;
-        margin-top: 10rem;;
-        @include respond(tab-land) { //width < 1200px
-           width: 50%;
-           
-        }
+    &-primary {
+      font-size: 7rem;
+      line-height: 8rem;
+      font-weight: 700;
+      color: #fff;
+      text-shadow: 0rem 0rem 3rem #000000;
 
-        @include respond(tab-port) { //width < 1200px
-            width: 70%;
-            margin: 0 auto;
-        }
-        @include respond(phone) { 
-            width: 100%;
-            margin: 0 auto;
-            padding: 2rem;
-            height: 35rem;
-        }
+      @include respond(tab-land) {
+        //width < 1200px
+        font-size: 6rem;
+        line-height: 6.5rem;
+      }
+
+      @include respond(tab-port) {
+        //width < 1200px
+        font-size: 5.5rem;
+        line-height: 7rem;
+      }
+      @include respond(phone) {
+        //width < 1200px
+        font-size: 4.5rem;
+        line-height: 5rem;
+      }
     }
 
-    
+    &-secondary {
+      color: $color-primary;
+      //   font-style: italic;
+      font-size: 4rem;
+      //   font-weight: 500;
+      font-family: "Dancing Script", cursive;
+      span {
+        color: #fff;
+      }
+    }
+  }
 
+  &__video {
+    border: none;
+    box-shadow: none;
+    margin-top: 10rem;
+    @include respond(tab-land) {
+      //width < 1200px
+      width: 50%;
+    }
+
+    @include respond(tab-port) {
+      //width < 1200px
+      width: 70%;
+      margin: 0 auto;
+    }
+    @include respond(phone) {
+      width: 100%;
+      margin: 0 auto;
+      padding: 2rem;
+      height: 35rem;
+    }
+  }
 }
