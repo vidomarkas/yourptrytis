@@ -209,24 +209,20 @@ body {
   background-image: linear-gradient(to bottom, #28b0f2 0%, #3480e3 100%);
   cursor: pointer; }
   .btn-cta {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 500;
     color: #fff;
-    margin: 5rem auto;
-    padding: 1rem 6rem;
+    padding: 1rem 3rem;
     border-radius: .5rem;
     position: relative;
-    transform: skewY(-3deg);
     box-shadow: 0rem 0rem 2rem #414141;
     transition: all .4s; }
     @media (max-width: 37.5em) {
       .btn-cta {
-        font-size: 2em;
-        padding: 1rem 3rem; } }
+        font-size: 2em; } }
     @media (max-width: 25em) {
       .btn-cta {
-        font-size: 2em;
-        padding: 1rem 2rem; } }
+        font-size: 2em; } }
   .btn-cta:hover {
     transform: scale(1.05);
     transition: all .4s;
@@ -630,20 +626,6 @@ body {
         margin: 0 auto;
         padding: 2rem;
         height: 35rem; } }
-  .header__box {
-    max-width: 40rem;
-    text-align: center;
-    margin: 5rem auto 0 auto;
-    position: relative; }
-    @media (max-width: 56.25em) {
-      .header__box {
-        margin: 2.5rem auto; } }
-    @media (max-width: 37.5em) {
-      .header__box {
-        margin: 4rem auto 2.5rem auto; } }
-    @media (max-width: 25em) {
-      .header__box {
-        margin: 5rem auto 4rem auto; } }
 
 .footer {
   background: #000;
