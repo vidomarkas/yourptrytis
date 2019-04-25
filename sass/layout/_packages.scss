@@ -1,29 +1,35 @@
 .packages {
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
 
-    
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
 
-    &__container {
-        display: flex;
-        justify-content: space-around;
+  &__pricing {
+    text-align: center;
+    font-size: 3.4rem;
+    margin-bottom: 2.7rem;
+  }
 
-        @include respond(tab-port) {
-            flex-direction: column;
-        }
-    }
-
-    &__beginner {
-        // background: #28b0f2;
-        background: linear-gradient(to left, #f1f1f1, #7d7f83);
-        margin-bottom: 2rem;
-        color: #000;
-    }
-    &__commited {
-        // background: #3480e3;
-        background: linear-gradient(234deg, rgb(184, 215, 250), rgb(96, 132, 209));
-        margin-bottom: 2rem;
-    }
-    &__achiever {
-        // background: #6256FB;
-        background: linear-gradient(to left, #0575e6, #021b79);
-    }
+  &__beginner {
+    // background: #28b0f2;
+    // background: linear-gradient(to left, #f1f1f1, #7d7f83);
+    // margin-bottom: 2rem;
+    color: #000;
+  }
+  &__committed {
+    // background: #3480e3;
+    // background: linear-gradient(234deg, rgb(184, 215, 250), rgb(96, 132, 209));
+    // margin-bottom: 2rem;
+  }
+  &__achiever {
+    // background: #6256FB;
+    // background: linear-gradient(to left, #0575e6, #021b79);
+  }
 }

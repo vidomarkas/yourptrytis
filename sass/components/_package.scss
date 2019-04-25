@@ -1,123 +1,169 @@
 .package {
+  border-radius: 0.5rem;
+  //   border: 2px solid #000;
+  padding: 3.5rem;
+  //   box-shadow: inset 1.2rem 0rem 5rem rgba(0, 0, 0, 0.6);
+  //   transition: all 1s;
 
-    border-radius: .5rem;
-    
-    padding: 3.5rem;
-    box-shadow: inset 1.2rem 0rem 5rem rgba(0, 0, 0, 0.6);
-    transition: all 1s;
+  @include respond(tab-port) {
+    padding: 1rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+  @include respond(sm-phone) {
+    padding: 1rem;
+    width: 88%;
+    margin: 0 auto;
+  }
+
+  &__head {
+    @include respond(tab-port) {
+      margin: auto 5rem;
+      border-top: none;
+      // background-color: rgba(0, 0, 0, 0.2);
+      padding: 1rem;
+    }
+  }
+
+  &__heading {
+    text-align: center;
+    font-size: 4rem;
+    position: relative;
 
     @include respond(tab-port) {
-        padding: 1rem;
-        width: 80%;
-        margin: 0 auto;
-    };
-    @include respond(sm-phone) {
-        padding: 1rem;
-        width: 96%;
-        margin: 0 auto;
-    };
-
-    &__head {
-        @include respond(tab-port){
-            margin:  auto 5rem;
-            border-top: none;
-            // background-color: rgba(0, 0, 0, 0.2);
-            padding: 1rem;
-           
-            
-        }
+      font-size: 2.8rem;
     }
-    
+  }
 
-    &__heading {
-        text-align: center;
-        font-size: 2.1rem;
-        position: relative;
+  // &__heading::before {
+  //     background-color: yellowgreen;
+  //     content: "";
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     width: 100%;
+  //     height: 100%;
+  //     z-index: 0;
 
-        @include respond(tab-port){
-            font-size: 2.8rem;
-            
-        }
+  // }
+
+  &__price {
+    font-size: 6rem;
+    text-align: center;
+    font-weight: 700;
+    span {
+      font-size: 3rem;
+      font-weight: 400;
+      padding: 1rem;
+
+      @include respond(tab-port) {
+        padding: 0.1rem;
+      }
     }
+  }
+  &__body {
+    border-top: 0.1rem solid $color-grey-light;
+    padding: 1rem;
+    font-size: 2.2rem;
+    line-height: 3.2rem;
 
-    // &__heading::before {
-    //     background-color: yellowgreen;
-    //     content: "";
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     z-index: 0;
-
-    // }
-
-    &__price {
-        font-size: 6rem;
-        text-align: center;
-        font-weight: 700;
-        span {
-            font-size: 3rem;
-            font-weight: 400;
-            padding: 1rem;
-
-            @include respond(tab-port){
-                padding: .1rem;
-            }
-        }
-    }
-    &__body {
-        border-top: .1rem solid $color-grey-light;
-        padding: 1rem;
-
-        @include respond(tab-port){
-            margin:  auto 5rem;
-            border-top: none;
-            background-color: rgba(0, 0, 0, 0.2);
-            padding: 1rem;
-            font-size: 1.6rem;
-            
-            
-        }
-
-        &__disabled {
-            color: $color-grey-light;
-        }
-
-        svg {
-            height: 1.2rem;
-        }
-        
+    @include respond(tab-port) {
+      //   margin: auto 5rem;
+      border-top: none;
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 0;
+      font-size: 1.6rem;
     }
 
-    &__buy {
-        border: .2rem solid #fff;
-        text-align: center;
-        border-radius: 1.5rem;
-        margin-top: 1.5rem;
-        padding: .5rem;
-        font-size: 1.1rem;
-        font-weight: 500;
-        background: #fff;
-        color: #000;
-        transition: all .2s;
-
-        @include respond(tab-port){
-            width: 40%;
-            margin: 0 auto;
-            margin-top: 1.5rem;
-        }
+    &__disabled {
+      color: $color-grey-light;
     }
 
-    &__buy:hover {
-        
-        transform: scale(1.2);
-        transition: all .2s;
-        
+    svg {
+      height: 1.2rem;
     }
+  }
+
+  &__buy {
+    border: 0.2rem solid #fff;
+    text-align: center;
+    border-radius: 1.5rem;
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background: #fff;
+    color: #000;
+    transition: all 0.2s;
+
+    @include respond(tab-port) {
+      width: 40%;
+      margin: 0 auto;
+      margin-top: 1.5rem;
+    }
+  }
+
+  &__buy:hover {
+    transform: scale(1.2);
+    transition: all 0.2s;
+  }
 }
 
 .package:hover {
-    transform: scale(1.1);
-    transition: all 1s;
+  //   transform: scale(1.1);
+  //   transition: all 1s;
+}
+
+.beginner__heading {
+}
+.committed__heading {
+}
+.achiever__heading {
+}
+
+.beginner__heading::after {
+  height: 60px;
+  width: 120%;
+  background-color: #f5c7f77a;
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: -10%;
+  z-index: -1;
+  transform: skewX(-6deg) skewY(-6deg);
+  border-radius: 5px;
+  @include respond(tab-port) {
+    width: 100%;
+  }
+}
+.committed__heading::after {
+  height: 60px;
+  width: 120%;
+  background-color: #c8e6f5;
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: -10%;
+  z-index: -1;
+  transform: skewX(-6deg) skewY(-6deg);
+  border-radius: 5px;
+  @include respond(tab-port) {
+    width: 100%;
+  }
+}
+.achiever__heading::after {
+  height: 60px;
+  width: 120%;
+  background-color: #94e736;
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: -10%;
+  z-index: -1;
+  transform: skewX(-6deg) skewY(-6deg);
+  border-radius: 5px;
+
+  @include respond(tab-port) {
+    width: 100%;
+  }
 }
