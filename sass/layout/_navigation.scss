@@ -1,129 +1,126 @@
 .navigation {
-    
-    
-    
-    
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    background: $color-nav;
-    overflow: hidden;
-    
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: $color-nav;
+  overflow: hidden;
 
-    &__container {
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-        padding: .5rem;
-        height: 6rem;
+  &__container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0.5rem;
+    height: 6rem;
 
-        @include respond(tab-land) { //width < 1200px
-            justify-content: space-around;
-            width: 100%;
-        }
+    @include respond(tab-land) {
+      //width < 1200px
+      justify-content: space-around;
+      width: 100%;
+    }
+  }
 
-        
+  &__logobox {
+    padding-left: 2rem;
+
+    @include respond(tab-land) {
+      padding-left: 0;
     }
 
-    &__logobox {
-        padding-left: 2rem;
+    img {
+      height: 8rem;
+      width: 8rem;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
 
-        @include respond(tab-land) { 
-            padding-left: 0;
-        }
+  &__links {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(tab-port) {
+      justify-content: center;
+    }
+  }
+
+  &__list {
+    display: flex;
+    // width: 50rem;
+    // justify-content: space-between;
+    // align-self: flex-end;
+    align-items: center;
+  }
+
+  &__item {
+    list-style: none;
+    margin: 0 4rem;
+    padding: 0.6rem 1.4rem;
+
+    @include respond(tab-land) {
+      margin: 0 2rem;
+    }
+
+    @include respond(tab-port) {
+      margin: 0 0.5rem;
+    }
+
+    a:link,
+    a:active,
+    a:hover,
+    a:visited {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.4rem;
+    }
+
+    &:hover {
+      background-image: linear-gradient(
+        to bottom,
+        rgba(40, 176, 242, 1) 0%,
+        rgba(52, 128, 227, 1) 100%
+      );
+      border-radius: 0.5rem;
+    }
+
+    &--selected {
+      background-image: linear-gradient(
+        to bottom,
+        rgba(40, 176, 242, 1) 0%,
+        rgba(52, 128, 227, 1) 100%
+      );
+      border-radius: 0.5rem;
+    }
+  }
+
+  &__languagebox {
+    display: flex;
+    flex-direction: column;
+    padding-right: 3rem;
+
+    @include respond(tab-port) {
+      padding-right: 0;
+      display: flex;
+      flex-direction: row;
 
       svg {
-        height: 4rem;
-        width: 7.3rem;
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        
+        margin-right: 0.5rem;
       }
     }
-
-    &__links {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-
-        @include respond(tab-port) { 
-            justify-content: center;
-        }
-    }
-
-    &__list {
-        display: flex;
-        // width: 50rem;
-        // justify-content: space-between;
-        // align-self: flex-end;
-        align-items: center;
-    }
-
-    &__item {
-        list-style: none;
-        margin: 0 4rem;
-        padding: .6rem 1.4rem;
-
-
-        @include respond(tab-land) { 
-            margin: 0 2rem;
-        }
-
-        @include respond(tab-port) { 
-            margin: 0 .5rem;
-        }
-        
-
-        a:link,
-        a:active,
-        a:hover,
-        a:visited{
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.4rem;
-        }
-
-        &:hover {
-            background-image: linear-gradient(to bottom, rgba(40,176,242,1) 0%,rgba(52,128,227,1) 100%);
-            border-radius: .5rem;
-        }
-
-        &--selected {
-            background-image: linear-gradient(to bottom, rgba(40,176,242,1) 0%,rgba(52,128,227,1) 100%);
-            border-radius: .5rem;
-            
-        }
-    }
-
-    &__languagebox {
-        display: flex;
-        flex-direction: column;
-        padding-right: 3rem;
-
-        @include respond(tab-port) { 
-            padding-right: 0;
-            display: flex;
-            flex-direction: row;
-
-            svg {
-                margin-right: .5rem;
-            }
-        }
-
-    }
+  }
 }
 
-.text{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    display:block;
-    width:100%;
-    min-width:.1rem;
-  }
+.text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  width: 100%;
+  min-width: 0.1rem;
+}

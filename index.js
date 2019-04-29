@@ -1,13 +1,13 @@
-const hideCookies = () => {
-  const btn = document.getElementById("cookies_agreed");
-  const cookiesTable = document.getElementById("cookies");
+// const hideCookies = () => {
+//   const btn = document.getElementById("cookies_agreed");
+//   const cookiesTable = document.getElementById("cookies");
 
-  btn.addEventListener("click", () => {
-    cookiesTable.style.display = "none";
-  });
-};
+//   btn.addEventListener("click", () => {
+//     cookiesTable.style.display = "none";
+//   });
+// };
 
-hideCookies();
+// hideCookies();
 
 const personalCard = document.getElementById("personalCard");
 const dietCard = document.getElementById("dietCard");
@@ -97,18 +97,12 @@ const modalClose = document.querySelector(".modal__close");
 modalClose.addEventListener("click", () => {
   modal.style.display = "none";
 });
-const clients = [
-  document.getElementById("client1"),
-  document.getElementById("client2"),
-  document.getElementById("client3"),
-  document.getElementById("client4"),
-  document.getElementById("client5"),
-  document.getElementById("client6"),
-  document.getElementById("client7"),
-  document.getElementById("client8"),
-  document.getElementById("client9"),
-  document.getElementById("client10")
-];
+
+const clients = [];
+
+for (let i = 1; i < 11; i++) {
+  clients.push(document.getElementById(`client${i}`));
+}
 
 clients.forEach(client => {
   client.addEventListener("click", () => {

@@ -98,8 +98,9 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
     height: 100%;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
 
     @include respond(tab-land) {
@@ -143,18 +144,19 @@
     }
   }
 
-  &-logo {
-    grid-column: 2 / span 2;
-    grid-row: 2 / 3;
-    // height: 100%;
-    // width: 100%;
-    overflow: hidden;
-    z-index: 10;
-    transform: skewY(-3deg) translateY(-1.6rem);
-    background-image: url("../../assets/Logo.svg");
-    // background-size: cover;
-    color: rgba(53, 53, 53, 0.397);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+  // &-logo {
+  //   grid-column: 2 / span 2;
+  //   grid-row: 2 / 3;
+  //   // height: 100%;
+  //   // width: 100%;
+  //   overflow: hidden;
+  //   z-index: 10;
+  //   transform: skewY(-3deg) translateY(-1.6rem);
+  //   // background-image: url("../../assets/Logo.png");
+  //   background-size: cover;
+  //   // background-size: cover;
+  //   color: rgba(53, 53, 53, 0.397);
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  // }
 }

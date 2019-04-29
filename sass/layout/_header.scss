@@ -45,7 +45,8 @@
 
     img {
       margin-top: 10rem;
-      height: 90%;
+      height: 84%;
+
       @include respond(tab-port) {
         display: none;
       }

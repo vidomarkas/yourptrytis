@@ -26,12 +26,7 @@
     <div class="navigation">
         <div class="navigation__container">
             <div class="navigation__logobox">
-                    <a href="#" class="navigation__link text"><svg xmlns="http://www.w3.org/2000/svg" width="122" height="67.739" viewBox="0 0 122 67.739">
-                        <g id="Logo" transform="translate(-146 -11)">
-                        <text id="yourPT" transform="translate(207 52)" fill="#fff" font-size="38" font-family="SegoeUI, Segoe UI" letter-spacing="0.02em"><tspan x="-60.18" y="0">yourPT</tspan></text>
-                        <text id="RYTIS" transform="translate(214.633 73.739)" fill="#fff" font-size="20" font-family="SegoeUI, Segoe UI" letter-spacing="0.5em"><tspan x="-44.722" y="0">RYTIS</tspan></text>
-                        </g>
-                    </svg></a>
+                    <a href="#" class="navigation__link text"><img src="./assets/logo.png" alt="logo"></a>
                 
             </div>
             <div id="navigation" class="navigation__links">
@@ -95,7 +90,7 @@
         </div>
     </div>
 
-    <div id="cookies" class="cookies">
+    <!-- <div id="cookies" class="cookies">
         <div class="cookies__text">
             <p>We use cookies to ensure you get the best experience on our website. Don't worry, they're calorie free :)</p>
         </div>
@@ -104,7 +99,7 @@
 
         </div>
         <a id="cookies_agreed" class="btn btn-cookie" >OK</a>
-    </div>
+    </div> -->
 
     <section id="header" class="header">
         <div class="header__background">
@@ -149,7 +144,7 @@
                                     <div class="package__heading beginner__heading">
                                         <h3>Beginner</h3>
                                     </div>
-                                    <div class="package__price">
+                                    <div class="package__price package__price--beginner">
                                         <span>£</span>35
                                     </div>
                                 </div>
@@ -221,7 +216,7 @@
                                 <div class="package__heading committed__heading">
                                     <h3>Committed</h3>
                                 </div>
-                                <div class="package__price">
+                                <div class="package__price package__price--committed">
                                     <span>£</span>165
                                 </div>
                                 <div class="package__body">
@@ -288,7 +283,7 @@
                                 <div class="package__heading achiever__heading">
                                     <h3>Achiever</h3>
                                 </div>
-                                <div class="package__price">
+                                <div class="package__price package__price--achiever">
                                     <span>£</span>295
                                 </div>
                                 <div class="package__body">
@@ -352,7 +347,7 @@
                         
                             
                     </div>
-                    <a id="packagesBack" class="card__main-btn-back btn">Back</a>
+                    
             </div>
 
             <div class="services__container">
@@ -496,14 +491,8 @@
                                 <li><svg height="1.2rem" viewBox="1 -1 511.99998 511"  xmlns="http://www.w3.org/2000/svg"><path d="m79.296875 300.792969h-66.066406c-7.308594 0-13.230469 5.921875-13.230469 13.230469v196.398437h92.527344v-196.398437c0-7.308594-5.925782-13.230469-13.230469-13.230469zm0 0" fill="#49c3e0"/><path d="m44.136719 300.792969h-30.90625c-7.308594 0-13.230469 5.921875-13.230469 13.230469v196.394531h30.90625v-196.394531c0-7.308594 5.921875-13.230469 13.230469-13.230469zm0 0" fill="#00a5c6"/><path d="m219.121094 248.980469h-66.066406c-7.308594 0-13.230469 5.921875-13.230469 13.230469v248.210937h92.527343v-248.210937c0-7.308594-5.925781-13.230469-13.230468-13.230469zm0 0" fill="#3ac7b4"/><path d="m183.960938 248.980469h-30.90625c-7.308594 0-13.230469 5.921875-13.230469 13.230469v248.210937h30.90625v-248.210937c0-7.308594 5.921875-13.230469 13.230469-13.230469zm0 0" fill="#00ad94"/><path d="m358.945312 197.167969h-66.066406c-7.304687 0-13.230468 5.921875-13.230468 13.230469v300.019531h92.527343v-300.019531c0-7.308594-5.921875-13.230469-13.230469-13.230469zm0 0" fill="#ffcd38"/><path d="m323.785156 197.167969h-30.90625c-7.304687 0-13.230468 5.925781-13.230468 13.230469v300.023437h30.90625v-300.023437c0-7.308594 5.925781-13.230469 13.230468-13.230469zm0 0" fill="#e7b835"/><path d="m498.769531 145.355469h-66.066406c-7.304687 0-13.226563 5.921875-13.226563 13.230469v351.832031h92.523438v-351.832031c0-7.308594-5.921875-13.230469-13.230469-13.230469zm0 0" fill="#ff8c57"/><path d="m463.609375 145.355469h-30.90625c-7.304687 0-13.230469 5.921875-13.230469 13.230469v351.835937h30.90625v-351.835937c0-7.308594 5.925782-13.230469 13.230469-13.230469zm0 0" fill="#ec6a34"/><path d="m488.207031 3.464844-83.589843-2.960938c-6.910157-.242187-11.140626 7.503906-7.195313 13.1875l13.484375 19.40625c-45.398438 27.199219-190.671875 103.664063-388.574219 103.664063v55.515625c134.109375 0 244.898438-33.214844 314.222657-61.078125 50.71875-20.386719 87.082031-40.785157 106.09375-52.398438l11.957031 17.214844c3.945312 5.679687 12.683593 4.421875 14.867187-2.140625l26.40625-79.363281c1.769532-5.320313-2.070312-10.847657-7.671875-11.046875zm0 0" fill="#da5b65"/></svg> I know what it takes to succeed.</li>
                             </ul>
                             
-                            <h3>Now, let's <span>team up</span> and get your <span>goals</span> crushed!
-                                    See the package deals and take action:</h3>
+                            <h3>Now, let's <span>team up</span> and get your <span>goals</span> crushed!</h3>
                         </div>
-                        <div id="packagesBtn" class="card__main-btn btn">
-                            Packages & Prices
-                        </div>
-                        
-
                     </div>
                         
                 </div>  
@@ -553,7 +542,6 @@
     <div class="section-divider">
         <div class="section-divider__container">
             <h2 class="section-divider__text" >What do <span>people</span> say?</h2>
-            <!-- <h4 class="section-divider__text2"> Happy clients share their experiences</h4> -->
         </div>
     </div>
 
@@ -568,14 +556,6 @@
         
         <div class="modal__background" id="modal__background">
             <div class="reviews__modal" id="modal">
-                <!-- <div class="reviews__screen--logo">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="222" height="167.739" viewBox="0 0 122 67.739">
-                        <g id="Logo" transform="translate(-146 -11)">
-                            <text id="yourPT" transform="translate(207 52)" fill="#000" font-size="38" font-family="SegoeUI, Segoe UI" letter-spacing="0.02em"><tspan x="-60.18" y="0">yourPT</tspan></text>
-                            <text id="RYTIS" transform="translate(214.633 73.739)" fill="#000" font-size="20" font-family="SegoeUI, Segoe UI" letter-spacing="0.5em"><tspan x="-44.722" y="0">RYTIS</tspan></text>
-                        </g>
-                    </svg>
-                </div> -->
                 <div class="modal__container">
                     <span class="modal__close">&times;</span>
                     <div class="modal__details">
@@ -654,8 +634,20 @@
                     </div>
                 </div>
 
-                <div class="reviews-logo">
-                    
+                <div id="client9"  class="bubble reviews__bubbles__bubble10">
+                    <div class="bubble__outer-circ">
+                        <div class="bubble__inner-circ">
+                            <img src="/assets/personal.jpg" alt="client">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="client10"  class="bubble reviews__bubbles__bubble10">
+                    <div class="bubble__outer-circ">
+                        <div class="bubble__inner-circ">
+                            <img src="/assets/personal.jpg" alt="client">
+                        </div>
+                    </div>
                 </div>
 
                 <div  id="client6" class="bubble reviews__bubbles__bubble6" data-name="Jurgita" data-picture="/assets/Jurgita.jpg" data-text="Very good trainer">
@@ -679,20 +671,7 @@
                         </div>
                     </div>
                 </div>
-                <div  id="client9" class="bubble reviews__bubbles__bubble9">
-                    <div class="bubble__outer-circ">
-                        <div class="bubble__inner-circ">
-                            <img src="/assets/personal.jpg" alt="client">
-                        </div>
-                    </div>
-                </div>
-                <div id="client10"  class="bubble reviews__bubbles__bubble10">
-                    <div class="bubble__outer-circ">
-                        <div class="bubble__inner-circ">
-                            <img src="/assets/personal.jpg" alt="client">
-                        </div>
-                    </div>
-                </div>
+                
 
                 
                 
@@ -802,12 +781,7 @@
         <div class="footer__container">
 
             <div class="footer__nav-logo">
-                <svg xmlns="http://www.w3.org/2000/svg" width="105" height="58" viewBox="0 0 122 67.739">
-                    <g id="Logo" transform="translate(-146 -11)">
-                        <text id="yourPT" transform="translate(207 52)" fill="#fff" font-size="38" font-family="SegoeUI, Segoe UI" letter-spacing="0.02em"><tspan x="-60.18" y="0">yourPT</tspan></text>
-                        <text id="RYTIS" transform="translate(214.633 73.739)" fill="#fff" font-size="20" font-family="SegoeUI, Segoe UI" letter-spacing="0.5em"><tspan x="-44.722" y="0">RYTIS</tspan></text>
-                    </g>
-                </svg>
+                <img src="./assets/logo.png" alt="logo">
             </div>
             <div class="footer__nav">
                 

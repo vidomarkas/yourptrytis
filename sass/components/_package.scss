@@ -4,11 +4,14 @@
   padding: 3.5rem;
   //   box-shadow: inset 1.2rem 0rem 5rem rgba(0, 0, 0, 0.6);
   //   transition: all 1s;
+  width: 33%;
 
   @include respond(tab-port) {
     padding: 1rem;
-    width: 80%;
-    margin: 0 auto;
+    // width: 80%;
+    // margin: 2rem auto;
+    border: 1px solid #000;
+    border-radius: 10px;
   }
   @include respond(sm-phone) {
     padding: 1rem;
@@ -51,6 +54,14 @@
     font-size: 6rem;
     text-align: center;
     font-weight: 700;
+
+    &--beginner::after {
+      background-color: #d020d61c;
+    }
+    &--committed {
+    }
+    &--achiever {
+    }
     span {
       font-size: 3rem;
       font-weight: 400;
@@ -72,7 +83,7 @@
       border-top: none;
       background-color: rgba(0, 0, 0, 0.2);
       padding: 0;
-      font-size: 1.6rem;
+      font-size: 2rem;
     }
 
     &__disabled {
@@ -109,26 +120,14 @@
   }
 }
 
-.package:hover {
-  //   transform: scale(1.1);
-  //   transition: all 1s;
-}
-
-.beginner__heading {
-}
-.committed__heading {
-}
-.achiever__heading {
-}
-
 .beginner__heading::after {
-  height: 60px;
-  width: 120%;
+  height: 150px;
+  width: 100%;
   background-color: #f5c7f77a;
   content: "";
   position: absolute;
-  bottom: 10px;
-  left: -10%;
+  bottom: -50px;
+  left: 0;
   z-index: -1;
   transform: skewX(-6deg) skewY(-6deg);
   border-radius: 5px;
@@ -137,13 +136,13 @@
   }
 }
 .committed__heading::after {
-  height: 60px;
-  width: 120%;
-  background-color: #c8e6f5;
+  height: 150px;
+  width: 100%;
+  background-color: #c8e6f565;
   content: "";
   position: absolute;
-  bottom: 10px;
-  left: -10%;
+  bottom: -50px;
+  left: 0;
   z-index: -1;
   transform: skewX(-6deg) skewY(-6deg);
   border-radius: 5px;
@@ -152,13 +151,13 @@
   }
 }
 .achiever__heading::after {
-  height: 60px;
-  width: 120%;
-  background-color: #94e736;
+  width: 100%;
+  background-color: #94e73652;
   content: "";
   position: absolute;
-  bottom: 10px;
-  left: -10%;
+  height: 150px;
+  bottom: -50px;
+  left: 0;
   z-index: -1;
   transform: skewX(-6deg) skewY(-6deg);
   border-radius: 5px;
