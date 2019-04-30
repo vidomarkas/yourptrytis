@@ -19,6 +19,7 @@
   // overflow-x: hidden;
   width: 100vw;
   min-height: 100vh;
+  margin-bottom: 4rem;
 
   @include respond(tab-port) {
     min-height: 80rem;

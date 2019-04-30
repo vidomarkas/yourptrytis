@@ -289,14 +289,14 @@ body {
 
 .card {
   position: relative;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   display: flex;
   background: #000;
   color: #fff; }
   .card__main {
     color: #fff;
     background: #000;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     box-shadow: 0rem 0.3rem 2rem rgba(83, 83, 83, 0.356);
     position: relative; }
     .card__main__container {
@@ -308,11 +308,11 @@ body {
       .card__main__container h2 {
         text-align: center; }
       .card__main__container h3 {
-        padding-top: 2rem;
-        padding-bottom: 2rem; }
+        padding-top: 2.4rem;
+        padding-bottom: 2.4rem; }
       @media (max-width: 25em) {
         .card__main__container {
-          padding: .6rem; } }
+          padding: 2rem; } }
     .card__main-title {
       font-size: 2.6rem;
       line-height: 2.8rem;
@@ -326,10 +326,10 @@ body {
       color: #b0afaf;
       font-weight: 300;
       font-size: 1rem;
-      padding: .5rem 0 0 0; }
+      padding: 0.5rem 0 0 0; }
     .card__main-text {
-      font-size: 1.4rem;
-      line-height: 2rem;
+      font-size: 2rem;
+      line-height: 2.8rem;
       font-weight: 400; }
       .card__main-text span {
         color: #28B0F2; }
@@ -339,21 +339,21 @@ body {
       text-align: center;
       padding: 1.5rem 3rem;
       font-size: 2rem;
-      border-radius: .5rem; }
+      border-radius: 0.5rem; }
       .card__main-btn-back {
-        padding: .5rem 1rem;
+        padding: 0.5rem 1rem;
         position: absolute;
         bottom: 5%;
         left: 5%;
-        border-radius: .5rem; }
+        border-radius: 0.5rem; }
     .card__main__img {
       height: 20rem;
       width: 100%;
       margin: 0 auto;
       background-size: cover;
       background-position: center;
-      border-top-left-radius: .5rem;
-      border-top-right-radius: .5rem; }
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem; }
       .card__main__img-personal {
         background-image: url(/assets/training.jpg); }
       .card__main__img-consult {
@@ -378,19 +378,19 @@ body {
       .card__details {
         font-size: 1.5rem;
         line-height: 1.9rem;
-        padding: .3rem; } }
+        padding: 0.3rem; } }
 
 .overlay {
   display: block;
   position: absolute;
-  text-shadow: .1rem .1rem .6rem #000;
+  text-shadow: 0.1rem 0.1rem 0.6rem #000;
   content: "";
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   z-index: 1; }
   @media (max-width: 56.25em) {
     .overlay {
@@ -450,8 +450,11 @@ body {
   @media (max-width: 56.25em) {
     .package {
       padding: 1rem;
-      border: 1px solid #000;
       border-radius: 10px; } }
+  @media (max-width: 37.5em) {
+    .package {
+      width: 88%;
+      margin-bottom: 3rem; } }
   @media (max-width: 25em) {
     .package {
       padding: 1rem;
@@ -459,7 +462,6 @@ body {
       margin: 0 auto; } }
   @media (max-width: 56.25em) {
     .package__head {
-      margin: auto 5rem;
       border-top: none;
       padding: 1rem; } }
   .package__heading {
@@ -469,12 +471,16 @@ body {
     @media (max-width: 56.25em) {
       .package__heading {
         font-size: 2.8rem; } }
+    @media (max-width: 37.5em) {
+      .package__heading {
+        font-size: 2.1rem; } }
+    @media (max-width: 25em) {
+      .package__heading {
+        font-size: 4rem; } }
   .package__price {
     font-size: 6rem;
     text-align: center;
     font-weight: 700; }
-    .package__price--beginner::after {
-      background-color: #d020d61c; }
     .package__price span {
       font-size: 3rem;
       font-weight: 400;
@@ -490,11 +496,22 @@ body {
     @media (max-width: 56.25em) {
       .package__body {
         border-top: none;
-        background-color: rgba(0, 0, 0, 0.2);
         padding: 0;
         font-size: 2rem; } }
+    @media (max-width: 37.5em) {
+      .package__body {
+        border-top: none;
+        width: 70%;
+        font-size: 2rem;
+        margin: 0 auto; } }
+    @media (max-width: 25em) {
+      .package__body {
+        border-top: none;
+        width: 100%;
+        font-size: 2rem;
+        margin: 0 auto; } }
     .package__body__disabled {
-      color: #b0afaf; }
+      color: rgba(0, 0, 0, 0.6); }
     .package__body svg {
       height: 1.2rem; }
   .package__buy {
@@ -530,7 +547,9 @@ body {
   border-radius: 5px; }
   @media (max-width: 56.25em) {
     .beginner__heading::after {
-      width: 100%; } }
+      width: 100%;
+      height: 50px;
+      bottom: 0; } }
 
 .committed__heading::after {
   height: 150px;
@@ -545,7 +564,9 @@ body {
   border-radius: 5px; }
   @media (max-width: 56.25em) {
     .committed__heading::after {
-      width: 100%; } }
+      width: 100%;
+      height: 50px;
+      bottom: 0; } }
 
 .achiever__heading::after {
   width: 100%;
@@ -560,7 +581,9 @@ body {
   border-radius: 5px; }
   @media (max-width: 56.25em) {
     .achiever__heading::after {
-      width: 100%; } }
+      width: 100%;
+      height: 50px;
+      bottom: 0; } }
 
 .contact__form {
   box-shadow: 0rem 0rem 8rem rgba(0, 0, 0, 0.5);
@@ -987,7 +1010,8 @@ body {
 .reviews {
   position: relative;
   width: 100vw;
-  min-height: 100vh; }
+  min-height: 100vh;
+  margin-bottom: 4rem; }
   @media (max-width: 56.25em) {
     .reviews {
       min-height: 80rem; } }
@@ -1154,8 +1178,8 @@ body {
 
 .packages__pricing {
   text-align: center;
-  font-size: 3.4rem;
-  margin-bottom: 2.7rem; }
+  font-size: 3.9rem;
+  margin-bottom: 7.3rem; }
 
 .packages__beginner {
   color: #000; }
