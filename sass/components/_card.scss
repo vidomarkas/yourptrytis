@@ -75,6 +75,15 @@
       span {
         color: $color-primary;
       }
+
+      @include respond(tab-port) {
+        font-size: 2.4rem;
+        line-height: 3rem;
+      }
+
+      @include respond(phone) {
+        font-size: 2.4rem;
+      }
     }
 
     &-btn {
