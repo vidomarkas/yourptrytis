@@ -16,7 +16,6 @@
 
 .reviews {
   position: relative;
-  // overflow-x: hidden;
   width: 100vw;
   min-height: 100vh;
   margin-bottom: 4rem;
@@ -33,7 +32,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    // z-index: -50;
     height: 100%;
     width: 100vw;
 
@@ -80,13 +78,10 @@
     left: 50%;
     top: 50%;
     border-radius: 1rem;
-    // height: auto;
     width: 60%;
     background: #fff;
-    // border-radius: 50%;
     transform: skewY(-3deg) translateY(-50%) translateX(-50%);
     z-index: 5000;
-    // margin-top: 10rem;
     @include respond(tab-land) {
       width: 80%;
     }
@@ -99,7 +94,6 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-gap: 20px;
     height: 100%;
     width: 60%;
     margin: 0 auto;
@@ -112,52 +106,5 @@
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(4, 1fr);
     }
-
-    &__bubble1 {
-      // top: 400px;
-    }
-    &__bubble2 {
-      // top: 400px;
-    }
-    &__bubble3 {
-      // top: 400px;
-    }
-    &__bubble4 {
-      // top: 400px;
-    }
-    &__bubble5 {
-      // top: 400px;
-    }
-    &__bubble6 {
-      // top: 400px;
-    }
-    &__bubble7 {
-      // top: 400px;
-    }
-    &__bubble8 {
-      // top: 400px;
-    }
-    &__bubble9 {
-      // top: 400px;
-    }
-    &__bubble10 {
-      // top: 400px;
-    }
   }
-
-  // &-logo {
-  //   grid-column: 2 / span 2;
-  //   grid-row: 2 / 3;
-  //   // height: 100%;
-  //   // width: 100%;
-  //   overflow: hidden;
-  //   z-index: 10;
-  //   transform: skewY(-3deg) translateY(-1.6rem);
-  //   // background-image: url("../../assets/Logo.png");
-  //   background-size: cover;
-  //   // background-size: cover;
-  //   color: rgba(53, 53, 53, 0.397);
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  // }
 }
