@@ -17,13 +17,13 @@
     // animation: floatY 20s infinite ease-out forwards;
 
     @include respond(phone) {
-      height: 16rem;
-      width: 16rem;
-    }
-    @include respond(sm-phone) {
       height: 14rem;
       width: 14rem;
       margin: 1.5rem 0;
+    }
+    @include respond(sm-phone) {
+      // height: 14rem;
+      // width: 14rem;
     }
   }
 
