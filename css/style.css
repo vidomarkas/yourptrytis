@@ -429,7 +429,8 @@ body {
     @media (max-width: 25em) {
       .bubble__outer-circ {
         height: 14rem;
-        width: 14rem; } }
+        width: 14rem;
+        margin: 1.5rem 0; } }
   .bubble__inner-circ {
     position: absolute;
     top: 50%;
