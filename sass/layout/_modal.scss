@@ -80,6 +80,12 @@
       text-align: center;
       max-height: 25vh;
       overflow-y: scroll;
+      -ms-overflow-style: none; // IE 10+
+      scrollbar-width: none; // Firefox
+
+      &::-webkit-scrollbar {
+        display: none; // Safari and Chrome
+      }
     }
   }
 }

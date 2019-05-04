@@ -96,6 +96,7 @@
     grid-template-rows: repeat(3, 1fr);
     height: 100%;
     width: 60%;
+    grid-gap: 1rem;
     margin: 0 auto;
 
     @include respond(tab-land) {

@@ -424,10 +424,6 @@ body {
     margin: 1.5rem; }
     @media (max-width: 37.5em) {
       .bubble__outer-circ {
-        height: 16rem;
-        width: 16rem; } }
-    @media (max-width: 25em) {
-      .bubble__outer-circ {
         height: 14rem;
         width: 14rem;
         margin: 1.5rem 0; } }
@@ -442,8 +438,8 @@ body {
     overflow: hidden; }
     @media (max-width: 37.5em) {
       .bubble__inner-circ {
-        height: 14rem;
-        width: 14rem; } }
+        height: 12rem;
+        width: 12rem; } }
     @media (max-width: 25em) {
       .bubble__inner-circ {
         height: 12rem;
@@ -1082,6 +1078,7 @@ body {
     grid-template-rows: repeat(3, 1fr);
     height: 100%;
     width: 60%;
+    grid-gap: 1rem;
     margin: 0 auto; }
     @media (max-width: 75em) {
       .reviews__bubbles {
@@ -1253,7 +1250,11 @@ body {
     padding: 2rem;
     text-align: center;
     max-height: 25vh;
-    overflow-y: scroll; }
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none; }
+    .modal__body-text::-webkit-scrollbar {
+      display: none; }
 
 .quotes-right {
   text-align: right; }
