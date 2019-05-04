@@ -111,6 +111,17 @@
     transform: translate(-50%, -120%);
     box-shadow: 0rem 0.6rem 2rem rgba(134, 134, 134, 0.692);
 
+    @include respond(tab-port) {
+      height: 14rem;
+      width: 14rem;
+      transform: translate(-50%, -160%);
+    }
+
+    @include respond(sm-phone) {
+      height: 14rem;
+      width: 14rem;
+    }
+
     img {
       height: 85%;
 

@@ -427,6 +427,10 @@ body {
         height: 14rem;
         width: 14rem;
         margin: 1.5rem 0; } }
+    @media (max-width: 25em) {
+      .bubble__outer-circ {
+        height: 12rem;
+        width: 12rem; } }
   .bubble__inner-circ {
     position: absolute;
     top: 50%;
@@ -442,8 +446,8 @@ body {
         width: 12rem; } }
     @media (max-width: 25em) {
       .bubble__inner-circ {
-        height: 12rem;
-        width: 12rem; } }
+        height: 11rem;
+        width: 11rem; } }
     .bubble__inner-circ img {
       height: 100%; }
 
@@ -1269,6 +1273,15 @@ body {
   left: 50%;
   transform: translate(-50%, -120%);
   box-shadow: 0rem 0.6rem 2rem rgba(134, 134, 134, 0.692); }
+  @media (max-width: 56.25em) {
+    .portrait__back {
+      height: 14rem;
+      width: 14rem;
+      transform: translate(-50%, -160%); } }
+  @media (max-width: 25em) {
+    .portrait__back {
+      height: 14rem;
+      width: 14rem; } }
   .portrait__back img {
     height: 85%;
     border-radius: 50%;
