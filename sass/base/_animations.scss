@@ -43,41 +43,43 @@
 //     }
 // }
 
-
 $rotation-size: 3px;
 $timing: 1.2s;
 
 @keyframes glowing {
-  0% {box-shadow: 0px 0px 20px #fff}
-  50% {box-shadow: 0px 0px 0px #fff}
-  100% {box-shadow: 0px 0px 20px #fff}
+  0% {
+    box-shadow: 0px 0px 20px #fff;
+  }
+  50% {
+    box-shadow: 0px 0px 0px #fff;
+  }
+  100% {
+    box-shadow: 0px 0px 20px #fff;
+  }
 }
-
 
 @keyframes floatPast {
-    0% {
-        left: 2800px;
-    }
-  
-    100% {
-        left: -200px;
-    }
-}
+  0% {
+    left: 2800px;
+  }
 
+  100% {
+    left: -200px;
+  }
+}
 
 @keyframes floatY {
   0% {
-    transform:  translateY(0px);
-    
+    transform: translateY(0px);
   }
   25% {
-    transform:  translateY(20px);
+    transform: translateY(20px);
   }
   50% {
-    transform:  translateY(0px);
+    transform: translateY(0px);
   }
   75% {
-    transform:  translateY(20px);
+    transform: translateY(20px);
   }
   100% {
     transform: translateY(0px);
@@ -86,16 +88,35 @@ $timing: 1.2s;
 
 @keyframes floatX {
   0% {
-    transform:  translateX(0px);
+    transform: translateX(0px);
   }
   50% {
-    transform:  translateX(20px);
+    transform: translateX(20px);
   }
   100% {
     transform: translateX(0px);
   }
 }
 
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
 
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
 
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
 
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}

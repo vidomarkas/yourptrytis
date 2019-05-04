@@ -23,9 +23,13 @@
     transition: all 0.4s;
     width: 24rem;
     margin-top: 5rem;
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    animation-delay: 2s;
 
     @include respond(tab-land) {
-      text-align: left;
     }
     @include respond(tab-port) {
       margin: 5rem auto;
@@ -44,9 +48,9 @@
   }
 
   &-cta:hover {
-    transform: scale(1.05);
-    transition: all 0.4s;
+    // transform: scale(1.05);
+    // transition: all 0.4s;
     //border: 3px solid #fff;
-    box-shadow: none;
+    // box-shadow: none;
   }
 }
