@@ -375,13 +375,13 @@ body {
       border-top-left-radius: 0.5rem;
       border-top-right-radius: 0.5rem; }
       .card__main__img-personal {
-        background-image: url(/assets/training.jpg); }
+        background-image: url(/assets/training.webp); }
       .card__main__img-consult {
-        background-image: url(/assets/danielle-cerullo-782570-unsplash.jpg); }
+        background-image: url(/assets/danielle-cerullo-782570-unsplash.webp); }
       .card__main__img-plans {
-        background-image: url(/assets/meghan-holmes-1057329-unsplash.jpg); }
+        background-image: url(/assets/meghan-holmes-1057329-unsplash.webp); }
       .card__main__img-diet {
-        background-image: url(/assets/buffet-chicken-cooking-5938.jpg); }
+        background-image: url(/assets/buffet-chicken-cooking-5938.webp); }
   .card__details {
     z-index: 2;
     position: absolute;
@@ -668,7 +668,7 @@ body {
       min-height: 80rem; } }
   .header__background {
     position: absolute;
-    background-image: url(/assets/meghan-holmes-779221-unsplash.jpg);
+    background-image: url(/assets/meghan-holmes-779221-unsplash.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -955,7 +955,7 @@ body {
     background-size: cover;
     background-position: center;
     height: 18rem;
-    text-shadow: .1rem .1rem .6rem #000; }
+    text-shadow: 0.1rem 0.1rem 0.6rem #000; }
     @media (max-width: 75em) {
       .services__consultation {
         grid-column: 2 / 3;
@@ -971,7 +971,7 @@ body {
     background-size: cover;
     background-position: center;
     height: 18rem;
-    text-shadow: .1rem .1rem .6rem #000; }
+    text-shadow: 0.1rem 0.1rem 0.6rem #000; }
     @media (max-width: 75em) {
       .services__plans {
         grid-column: 3 / 4;
@@ -983,11 +983,11 @@ body {
   .services__diet {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
-    background-image: url(/assets/diet.jpg);
+    background-image: url(/assets/diet.webp);
     background-size: cover;
     background-position: center;
     height: 18rem;
-    text-shadow: .1rem .1rem .6rem #000; }
+    text-shadow: 0.1rem 0.1rem 0.6rem #000; }
     @media (max-width: 75em) {
       .services__diet {
         grid-column: 4 / 5;
@@ -1002,7 +1002,7 @@ body {
     background-size: cover;
     background-position: center;
     height: 18rem;
-    text-shadow: .1rem .1rem .6rem #000;
+    text-shadow: 0.1rem 0.1rem 0.6rem #000;
     position: relative; }
     @media (max-width: 75em) {
       .services__personal {

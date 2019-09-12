@@ -1,161 +1,146 @@
 .services:before {
-    content: "";
-    background-image: linear-gradient(to bottom, rgba(53, 53, 53, 0.397) 0%,rgb(255, 255, 255) 100%);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -6;
-    transform: skewY(-3deg) translate(0,-5rem);
-
+  content: "";
+  background-image: linear-gradient(
+    to bottom,
+    rgba(53, 53, 53, 0.397) 0%,
+    rgb(255, 255, 255) 100%
+  );
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -6;
+  transform: skewY(-3deg) translate(0, -5rem);
 }
-
 
 .services {
+  position: relative;
+  // margin-top: 8rem;
+  margin-bottom: 12rem;
+  // min-height: 100vh;
+  height: auto;
+
+  &__container {
+    display: grid;
+
+    grid-template-columns: 29% 69%;
+    grid-auto-rows: 18rem 18rem 18rem 18rem;
+    grid-gap: 2.3rem;
+    width: 80%;
+    margin: 0 auto;
+
+    @include respond(tab-land) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: auto auto;
+    }
+    @include respond(tab-port) {
+      width: 96%;
+      grid-auto-rows: 8rem auto;
+      grid-gap: 2rem;
+    }
+    @include respond(sm-phone) {
+      width: 96%;
+      grid-auto-rows: 8rem auto;
+      grid-gap: 2rem;
+    }
+  }
+
+  &__consultation {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
+    background-image: url(/assets/consultation.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 18rem;
+    text-shadow: 0.1rem 0.1rem 0.6rem #000;
+
+    @include respond(tab-land) {
+      //width < 1200px
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      overflow: hidden;
+    }
+
+    @include respond(tab-port) {
+      height: 8rem;
+    }
+  }
+
+  &__plans {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+
+    background-image: url(/assets/plans.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 18rem;
+    text-shadow: 0.1rem 0.1rem 0.6rem #000;
+
+    @include respond(tab-land) {
+      //width < 1200px
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+      overflow: hidden;
+    }
+
+    @include respond(tab-port) {
+      height: 8rem;
+    }
+  }
+
+  &__diet {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+
+    background-image: url(/assets/diet.webp);
+    background-size: cover;
+    background-position: center;
+    height: 18rem;
+    text-shadow: 0.1rem 0.1rem 0.6rem #000;
+
+    @include respond(tab-land) {
+      //width < 1200px
+      grid-column: 4 / 5;
+      grid-row: 1 / 2;
+    }
+
+    @include respond(tab-port) {
+      height: 8rem;
+    }
+  }
+
+  &__personal {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    background-image: url(/assets/personal.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 18rem;
+    text-shadow: 0.1rem 0.1rem 0.6rem #000;
     position: relative;
-    // margin-top: 8rem;
-    margin-bottom: 12rem;
-    // min-height: 100vh;
-    height: auto;
-    
 
-    
-
-    &__container {
-        display: grid;
-        
-        grid-template-columns: 29% 69%;
-        grid-auto-rows: 18rem 18rem 18rem 18rem;
-        grid-gap: 2.3rem;
-        width: 80%;
-        margin: 0 auto;
-
-        @include respond(tab-land) { 
-            grid-template-columns: repeat(4, 1fr) ;
-            grid-auto-rows: auto auto;
-        }
-        @include respond(tab-port) { 
-            width: 96%;
-            grid-auto-rows: 8rem auto;
-            grid-gap: 2rem;
-        }
-        @include respond(sm-phone) { 
-            width: 96%;
-            grid-auto-rows: 8rem auto;
-            grid-gap: 2rem;
-        }
-        
+    @include respond(tab-land) {
+      //width < 1200px
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
     }
 
-    &__consultation {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-        
-        background-image: url(/assets/consultation.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 18rem; 
-        text-shadow: .1rem .1rem .6rem #000;
-
-        @include respond(tab-land) { //width < 1200px
-            grid-column: 2 / 3;
-            grid-row: 1 / 2;
-            overflow: hidden;
-        }
-
-        @include respond(tab-port){
-            height: 8rem;
-        }
-        
+    @include respond(tab-port) {
+      height: 8rem;
     }
+  }
 
-   
+  &__main {
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
 
-    &__plans {
-        grid-column: 1 / 2;
-        grid-row: 3 / 4;
-
-        background-image: url(/assets/plans.jpeg);
-        background-size: cover;
-        background-position: center;
-        height: 18rem;
-        text-shadow: .1rem .1rem .6rem #000;
-
-        @include respond(tab-land) { //width < 1200px
-            grid-column: 3 / 4;
-            grid-row: 1 / 2;
-            overflow: hidden;
-        }
-
-        @include respond(tab-port){
-            height: 8rem;
-        }
-        
+    @include respond(tab-land) {
+      //width < 1200px
+      grid-column: 1 / 5;
+      grid-row: 2 / 3;
     }
-
-    
-
-
-    &__diet {
-        
-        grid-column: 1 / 2;
-        grid-row: 4 / 5;
-
-        background-image: url(/assets/diet.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 18rem;
-        text-shadow: .1rem .1rem .6rem #000;
-        
-
-        @include respond(tab-land) { //width < 1200px
-            grid-column: 4 / 5;
-            grid-row: 1 / 2;
-        }
-
-        @include respond(tab-port){
-            height: 8rem;
-        }
-    }
-
-    
-    
-
-    &__personal {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-
-        background-image: url(/assets/personal.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 18rem;
-        text-shadow: .1rem .1rem .6rem #000;
-        position: relative;
-
-        @include respond(tab-land) { //width < 1200px
-            grid-column: 1 / 2;
-            grid-row: 1 / 2;
-        }
-
-        @include respond(tab-port){
-            height: 8rem;
-        }
-        
-    }
-
-    
-
-    &__main {
-        
-        grid-column: 2 / 3;
-        grid-row: 1 / 5;
-
-        @include respond(tab-land) { //width < 1200px
-            grid-column: 1 / 5;
-            grid-row: 2 / 3;
-        }
-        
-    }
+  }
 }
-
