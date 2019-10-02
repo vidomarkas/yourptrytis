@@ -9,16 +9,12 @@
   cursor: pointer;
 
   &-cta {
-    // height: 72px;
-    // width: 373px;
     font-size: 2rem;
     font-weight: 500;
     color: #fff;
-    // margin: 5rem auto;
     padding: 1rem 3rem;
     border-radius: 0.5rem;
     position: relative;
-    // transform: skewY(-3deg);
     box-shadow: 0rem 0rem 2rem rgb(65, 65, 65);
     transition: all 0.4s;
     width: 24rem;
@@ -29,28 +25,15 @@
     perspective: 1000px;
     animation-delay: 2s;
 
-    @include respond(tab-land) {
-    }
     @include respond(tab-port) {
       margin: 5rem auto;
     }
 
     @include respond(phone) {
-      //width < 1200px
       font-size: 2em;
-      //    padding: 1rem 3rem;
     }
     @include respond(sm-phone) {
-      //width < 1200px
       font-size: 2em;
-      //    padding: 1rem 2rem;
     }
-  }
-
-  &-cta:hover {
-    // transform: scale(1.05);
-    // transition: all 0.4s;
-    //border: 3px solid #fff;
-    // box-shadow: none;
   }
 }

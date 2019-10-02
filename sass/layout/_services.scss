@@ -16,9 +16,7 @@
 
 .services {
   position: relative;
-  // margin-top: 8rem;
   margin-bottom: 12rem;
-  // min-height: 100vh;
   height: auto;
 
   &__container {
@@ -57,7 +55,6 @@
     text-shadow: 0.1rem 0.1rem 0.6rem #000;
 
     @include respond(tab-land) {
-      //width < 1200px
       grid-column: 2 / 3;
       grid-row: 1 / 2;
       overflow: hidden;
@@ -79,7 +76,6 @@
     text-shadow: 0.1rem 0.1rem 0.6rem #000;
 
     @include respond(tab-land) {
-      //width < 1200px
       grid-column: 3 / 4;
       grid-row: 1 / 2;
       overflow: hidden;
@@ -94,14 +90,13 @@
     grid-column: 1 / 2;
     grid-row: 4 / 5;
 
-    background-image: url(/assets/diet.webp);
+    background-image: url(/assets/diet.jpg);
     background-size: cover;
     background-position: center;
     height: 18rem;
     text-shadow: 0.1rem 0.1rem 0.6rem #000;
 
     @include respond(tab-land) {
-      //width < 1200px
       grid-column: 4 / 5;
       grid-row: 1 / 2;
     }
@@ -123,7 +118,6 @@
     position: relative;
 
     @include respond(tab-land) {
-      //width < 1200px
       grid-column: 1 / 2;
       grid-row: 1 / 2;
     }
@@ -138,7 +132,6 @@
     grid-row: 1 / 5;
 
     @include respond(tab-land) {
-      //width < 1200px
       grid-column: 1 / 5;
       grid-row: 2 / 3;
     }

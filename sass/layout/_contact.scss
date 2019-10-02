@@ -1,137 +1,116 @@
 .contact {
-    position: relative;
-    min-height: 60vh;
-    width: 100vw;
+  position: relative;
+  min-height: 60vh;
+  width: 100vw;
 
-    
-    
+  &__container {
+    width: 80%;
+    margin: 0 auto;
 
-    &__container {
-        width: 80%;
-        margin: 0 auto;
-
-        @include respond(tab-port) {
-            width: 90%;
-        }
+    @include respond(tab-port) {
+      width: 90%;
     }
+  }
+  a {
+    text-decoration: none;
+  }
+
+  &__header {
+    text-align: center;
+    font-size: 4rem;
+    color: $color-black-light;
+    span {
+      color: $color-primary;
+      text-shadow: 0rem 0rem 0.6rem rgb(78, 78, 78);
+    }
+  }
+
+  &__subheader {
+    color: $color-black-light;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  &__flex {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5rem;
+    }
+  }
+
+  &__details {
+    height: 40rem;
+
+    ul {
+      list-style: none;
+    }
+
+    h5 {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 2rem;
+      display: inline;
+    }
+
     a {
-        text-decoration: none;
+      font-size: 2rem;
     }
 
-    &__header {
-        text-align: center;
-        font-size: 4rem;
-        color: $color-black-light;
-        span {
-            color: $color-primary;
-            text-shadow: 0rem 0rem .6rem rgb(78, 78, 78);
-        }
+    svg {
+      display: inline;
+      margin-right: 0.5rem;
+      height: 2rem;
     }
+  }
 
-    &__subheader {
-        color: $color-black-light;
-        text-align: center;
-        font-size: 1.8rem;
-        font-weight: 400;
+  &__map {
+    height: 20rem;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0.2rem 0.2rem 0.6rem rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin-top: 5rem;
+
+    @include respond(tab-port) {
+      height: 200px;
     }
+  }
+  &__form {
+    height: 40rem;
+    width: 34%;
 
-    &__flex {
-        margin-top: 10rem;
-        display: flex;
-        justify-content: space-around;
-        height: auto;
-
-        @include respond(phone) {
-            flex-direction: column;
-            align-items: center;
-            margin-top: 5rem;
-        }
+    @include respond(tab-port) {
+      height: 46rem;
+      width: 40%;
     }
-
-    &__details {
-        
-        
-        height: 40rem;
-        
-
-        ul {
-            list-style: none;
-        }
-
-        h5 {
-            font-size: 4rem;
-            
-        }
-        
-        p {
-            font-size: 2rem;
-            display: inline;
-        }
-
-        a {
-            font-size: 2rem;
-            
-        }
-
-        svg {
-            display: inline;
-            margin-right: .5rem;
-            height: 2rem;
-        }
-        
+    @include respond(phone) {
+      width: 70%;
+      height: 46rem;
     }
-    
-    &__map {
-        
-        height: 20rem;
-        width: 100%;
-        overflow: hidden;
-        box-shadow: .2rem .2rem .6rem rgba(0, 0, 0, .5);
-        position: relative;
-        margin-top: 5rem;
-
-        @include respond(tab-port) {
-            height: 200px;
-        }
-        
-        
-        
-    }
-    &__form {
-        height: 40rem;
-        width: 34%;
-
-        @include respond(tab-port) {
-            height: 46rem;
-            width: 40%;
-        }
-        @include respond(phone) {
-            width: 70%;
-            height: 46rem;
-        }
-        
-        // justify-content: flex-start;
-        
-    }
-        
-    
+  }
 }
 
 .contact:before {
-    content: "";
-    background-image: linear-gradient(to bottom, rgba(53, 53, 53, 0.397) 0%,rgb(255, 255, 255) 100%);
-    position: absolute;
-    width: 100%;
-    height: 130%;
-    top: 0;
-    left: 0;
-    z-index: -2;
-    transform: skewY(-3deg) translate(0,-5rem);
-    
+  content: "";
+  background-image: linear-gradient(
+    to bottom,
+    rgba(53, 53, 53, 0.397) 0%,
+    rgb(255, 255, 255) 100%
+  );
+  position: absolute;
+  width: 100%;
+  height: 130%;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  transform: skewY(-3deg) translate(0, -5rem);
 }
-
-
-
-
-
-

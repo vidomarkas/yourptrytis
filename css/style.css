@@ -194,7 +194,6 @@ a:visited {
 body {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
-  /* font-size: 16px; */
   line-height: 1.7; }
 
 .u-center-text {
@@ -375,13 +374,13 @@ body {
       border-top-left-radius: 0.5rem;
       border-top-right-radius: 0.5rem; }
       .card__main__img-personal {
-        background-image: url(/assets/training.webp); }
+        background-image: url(/assets/training.jpg); }
       .card__main__img-consult {
-        background-image: url(/assets/danielle-cerullo-782570-unsplash.webp); }
+        background-image: url(/assets/danielle-cerullo-782570-unsplash.jpg); }
       .card__main__img-plans {
-        background-image: url(/assets/meghan-holmes-1057329-unsplash.webp); }
+        background-image: url(/assets/meghan-holmes-1057329-unsplash.jpg); }
       .card__main__img-diet {
-        background-image: url(/assets/buffet-chicken-cooking-5938.webp); }
+        background-image: url(/assets/buffet-chicken-cooking-5938.jpg); }
   .card__details {
     z-index: 2;
     position: absolute;
@@ -654,8 +653,8 @@ body {
   .contact__form-button {
     display: inline-block;
     border: none;
-    padding: .3rem 4rem;
-    border-radius: .5rem;
+    padding: 0.3rem 4rem;
+    border-radius: 0.5rem;
     font-size: 1.8rem;
     line-height: 1.8rem;
     margin: 0 auto; }
@@ -668,7 +667,7 @@ body {
       min-height: 80rem; } }
   .header__background {
     position: absolute;
-    background-image: url(/assets/meghan-holmes-779221-unsplash.webp);
+    background-image: url(/assets/meghan-holmes-779221-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -983,7 +982,7 @@ body {
   .services__diet {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
-    background-image: url(/assets/diet.webp);
+    background-image: url(/assets/diet.jpg);
     background-size: cover;
     background-position: center;
     height: 18rem;
@@ -1154,7 +1153,7 @@ body {
       font-size: 2rem; }
     .contact__details svg {
       display: inline;
-      margin-right: .5rem;
+      margin-right: 0.5rem;
       height: 2rem; }
   .contact__map {
     height: 20rem;
@@ -1204,9 +1203,6 @@ body {
   font-size: 3.9rem;
   margin-bottom: 7.3rem; }
 
-.packages__beginner {
-  color: #000; }
-
 .modal {
   position: fixed;
   display: block;
@@ -1214,7 +1210,6 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%; }
   .modal__background {
     position: fixed;

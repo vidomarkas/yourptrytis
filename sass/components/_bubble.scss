@@ -1,5 +1,4 @@
 .bubble {
-  // animation: floatX 3.2s*10 infinite linear forwards, floatPast 3.2s*20 infinite linear -45s;
   margin: 0 auto;
 
   &__outer-circ {
@@ -7,14 +6,11 @@
     position: relative;
     height: 20rem;
     width: 20rem;
-    // width: 100%;
-    // height: 100%;
     border-radius: 0.5rem;
     transform: skewY(-3deg);
     background: #fff;
     box-shadow: 0rem 0.6rem 2rem rgba(134, 134, 134, 0.692);
     margin: 1.5rem;
-    // animation: floatY 20s infinite ease-out forwards;
 
     @include respond(phone) {
       height: 14rem;
@@ -34,8 +30,6 @@
     transform: translate(-50%, -50%);
     height: 17.5rem;
     width: 17.5rem;
-    // width: 100%;
-    // height: 100%;
     border-radius: 0.5rem;
     overflow: hidden;
 
