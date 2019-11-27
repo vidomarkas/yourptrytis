@@ -1,7 +1,10 @@
+![yourptrytis](https://user-images.githubusercontent.com/37672494/69763875-7544c900-1166-11ea-91b0-3a54faa638c6.png)
+
+
 # yourptrytis
 [Live version](https://yourptrytis.com/)
 
-Static website presenting personal trainer services. Everything was made from scratch, without using a framework.
+Static website presenting personal trainer services.
 
 ## Technologies used:
 * HTML5
