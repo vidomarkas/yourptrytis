@@ -2,7 +2,7 @@
 
 
 # yourptrytis
-[Live version](https://yourptrytis.com/)
+[Live version](https://yourptrytis.netlify.com/)
 
 Static website presenting personal trainer services.
 
